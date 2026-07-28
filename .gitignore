@@ -1,0 +1,12 @@
+# ===== Obsidian 系统垃圾 =====
+.trash/
+.DS_Store
+Thumbs.db
+~*.tmp
+
+# ===== 设备相关（跨设备同步时易冲突，忽略掉） =====
+# 桌面/手机的窗口布局，不同设备不一样，不共享
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+# 本地索引缓存，可重建
+.obsidian/cache/
