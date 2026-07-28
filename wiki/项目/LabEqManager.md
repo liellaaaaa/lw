@@ -1,7 +1,7 @@
 ---
 created: 2026-07-28
 updated: 2026-07-28
-tags: [项目，毕业设计, AI]
+tags: [项目/毕业设计, AI]
 repo: https://github.com/liellaaaaa/LabEqManager
 ---
 
