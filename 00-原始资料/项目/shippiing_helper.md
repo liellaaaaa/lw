@@ -12,9 +12,10 @@ tags:
 repo: https://github.com/liellaaaaa/shippiing_helper
 ---
 
-# shippiing_helper · 船务部外贸制单与文档一体化平台
+# shippiing_helper · 船务部制单与文档一体化平台
 
-> 注：仓库名 `shippiing_helper` 为 `shipping_helper` 的拼写变体（README 内仍称 shipping_helper）。
+> 仓库名 `shippiing_helper` 为 `shipping_helper` 的拼写变体（README 内仍称 shipping_helper）。
+> **时间线**：2026-05-28 首次提交，此前有一个 PyQt5 桌面版尝试（`260527_giveup_shipping_helper`）于 5/27 被放弃；当前版本采用 FastAPI + Vue3 Web 架构重写，已持续开发约两个月、临近收尾。GitHub 200+ 次提交。
 
 ## 项目简介
 
