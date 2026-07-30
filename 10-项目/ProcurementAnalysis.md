@@ -128,6 +128,10 @@ repo: https://github.com/liellaaaaa/ProcurementAnalysis
 - 用户行为追踪 + 漏斗分析 + 热力图
 - 操作日志全链路（数据库迁移→关联用户）
 
+## 相关知识
+
+- [[../20-知识/业务拆解方法/业务需求拆解与AI切入点]] — 基于本项目和 shipping-helper 提炼的拆解方法论
+
 ## 飞书文档
 
 - [[../20-知识/飞书文档/procurement_log|采购分析助手-项目日志（飞书）]]

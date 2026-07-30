@@ -172,6 +172,10 @@ https://github.com/liellaaaaa/shippiing_helper
 - OnlyOffice 集成范式（JWT + 单端口代理 + 模板占位符填充）可迁移到后续项目。
 - **AI集成里程碑**：7/20 将 DeepSeek AI 嵌入 PI 解析流程，从传统正则匹配升级为 AI 语义识别。
 
+## 相关知识
+
+- [[../20-知识/业务拆解方法/业务需求拆解与AI切入点]] — 基于本项目和采购分析助手提炼的拆解方法论
+
 ## 飞书文档
 
 - [[../20-知识/飞书文档/shipping_log|shipping-helper-项目日志（飞书）]]
