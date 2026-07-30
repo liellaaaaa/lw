@@ -100,6 +100,22 @@ https://github.com/liellaaaaa/shippiing_helper
 - **数据库为 SQLite + 手写迁移**：多环境易不一致
 - **硬编码密钥**：`JWT_SECRET` 默认 `shipping-helper-secret-key-change-in-production`，生产需改
 
+## 待探索 / 收尾决策清单
+
+> 来源：消化笔记整理；收尾阶段需要本人拍板。
+
+- [ ] 收尾优先级：先补认证（收紧 `auth_middleware` 白名单 + 统一到 `get_current_user`），还是先补用户体系（`users.json` → 数据库表）？
+- [ ] 是否用 Alembic 替代手写迁移（`migrations/001–016`）？
+- [ ] 是否换 Postgres 替代 SQLite？
+- [ ] 是否引入 RBAC 简单角色？
+- [ ] 能否沉淀为「自研企业工具」通用模板？（OnlyOffice 集成范式可迁移到后续项目）
+- [ ] 补充 `data/users.json`（部署前必补，否则登录链路断）
+
+## 个人价值
+
+- 2026-05-28 起独立从 0 开发（前身 `260527_giveup_shipping_helper` PyQt5 桌面版同日废弃），代表从「用 AI 平台」到「自己造企业工具」的能力跃迁。
+- OnlyOffice 集成范式（JWT + 单端口代理 + 模板占位符填充）可迁移到后续项目。
+
 ## 相关链接
 
 - 后端入口/中间件：`backend/app/main.py`
