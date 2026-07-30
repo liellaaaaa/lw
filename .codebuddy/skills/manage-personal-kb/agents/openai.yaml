@@ -1,0 +1,7 @@
+interface:
+  display_name: "个人知识库管理与调用"
+  short_description: "检索、记录、整理并安全调用本地个人知识库，支持项目与知识沉淀"
+  default_prompt: "使用 $manage-personal-kb 检索我的个人知识库并列出实际来源。"
+
+policy:
+  allow_implicit_invocation: true
