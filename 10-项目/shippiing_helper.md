@@ -1,6 +1,7 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-30
+status: 95% · 调整阶段 · 即将进入维护
 tags:
   - 项目
   - 船务/外贸
@@ -15,7 +16,8 @@ repo: https://github.com/liellaaaaa/shippiing_helper
 # shippiing_helper · 船务部制单与文档一体化平台
 
 > 仓库名 `shippiing_helper` 为 `shipping_helper` 的拼写变体（README 内仍称 shipping_helper）。
-> **时间线**：2026-05-28 首次提交，此前有一个 PyQt5 桌面版尝试（`260527_giveup_shipping_helper`）于 5/27 被放弃；当前版本采用 FastAPI + Vue3 Web 架构重写，已持续开发约两个月、临近收尾。GitHub 200+ 次提交。
+> **时间线**：2026-05-28 首次提交，此前有一个 PyQt5 桌面版尝试（`260527_giveup_shipping_helper`）于 5/27 被放弃；当前版本采用 FastAPI + Vue3 Web 架构重写。
+> **状态**：95%，与船务部对接中，处于最后的调整阶段，即将进入维护。GitHub 200+ 次提交。
 
 ## 项目简介
 
@@ -100,16 +102,13 @@ https://github.com/liellaaaaa/shippiing_helper
 - **数据库为 SQLite + 手写迁移**：多环境易不一致
 - **硬编码密钥**：`JWT_SECRET` 默认 `shipping-helper-secret-key-change-in-production`，生产需改
 
-## 待探索 / 收尾决策清单
+## 调整阶段待办
 
-> 来源：消化笔记整理；收尾阶段需要本人拍板。
+> 95%，船务部对接反馈后的最后调整。
 
-- [ ] 收尾优先级：先补认证（收紧 `auth_middleware` 白名单 + 统一到 `get_current_user`），还是先补用户体系（`users.json` → 数据库表）？
-- [ ] 是否用 Alembic 替代手写迁移（`migrations/001–016`）？
-- [ ] 是否换 Postgres 替代 SQLite？
-- [ ] 是否引入 RBAC 简单角色？
-- [ ] 能否沉淀为「自研企业工具」通用模板？（OnlyOffice 集成范式可迁移到后续项目）
+- [ ] 认证与用户体系的收口方案（维护阶段再评估 Alembic / Postgres / RBAC 等大改项）
 - [ ] 补充 `data/users.json`（部署前必补，否则登录链路断）
+- [ ] 最终交付前做一次完整的功能回归测试
 
 ## 个人价值
 
