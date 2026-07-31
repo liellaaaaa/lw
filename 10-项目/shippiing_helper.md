@@ -176,7 +176,7 @@ https://github.com/liellaaaaa/shippiing_helper
 
 - [[../20-知识/业务拆解方法/业务需求拆解与AI切入点]] — 基于本项目和采购分析助手提炼的拆解方法论
 
-## 飞书文档
+## 工作文稿
 
 - [[../20-知识/工作文稿/shipping_log|shipping-helper-项目日志（飞书）]]
 

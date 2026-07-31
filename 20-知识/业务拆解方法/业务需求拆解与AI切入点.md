@@ -92,6 +92,6 @@ Phase 3（持续）：AI 增强 + 边界优化 → 进入维护
 
 ## 来源
 
-- 飞书文档：procurement_log（采购分析助手项目日志）、shipping_log（shipping-helper项目日志）
+- 工作文稿：procurement_log（采购分析助手项目日志）、shipping_log（shipping-helper项目日志）
 - 5月/6月月度工作总结
 - 项目笔记：ProcurementAnalysis、shippiing_helper
