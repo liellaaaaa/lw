@@ -1,6 +1,6 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - 项目
   - 自媒体/内容
@@ -8,7 +8,10 @@ tags:
   - Vue
   - RAG
   - LLM
+period: 入职前
 repo: https://github.com/liellaaaaa/sparkcanvas
+github_created: 2026-01-08
+github_pushed: 2026-01-08
 ---
 
 # sparkcanvas · 自媒体全自动内容生产系统（流量爆破）

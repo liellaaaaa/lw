@@ -1,7 +1,8 @@
 ---
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 status: 60% · 开发中
+period: 入职后
 tags:
   - 项目
   - 退税/报关
@@ -10,6 +11,8 @@ tags:
   - 纯静态
   - 数据不出境
 repo: https://github.com/liellaaaaa/Tax_check
+github_created: 2026-07-15
+github_pushed: 2026-07-30
 ---
 
 # Tax_check · 退税资料智能审核助手（P0 原型）

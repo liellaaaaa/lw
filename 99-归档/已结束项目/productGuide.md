@@ -1,6 +1,6 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - 项目
   - AI应用
@@ -8,7 +8,10 @@ tags:
   - Python
   - LLM
   - 美食/导购
+period: 入职前
 repo: https://github.com/liellaaaaa/productGuide
+github_created: 2026-04-05
+github_pushed: 2026-04-07
 ---
 
 # productGuide · 美食/超市商品导购助手（RAG）

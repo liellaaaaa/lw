@@ -1,12 +1,15 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - 项目
   - 船务/外贸
   - 废弃
   - PyQt5
+period: 入职后
 repo: https://github.com/liellaaaaa/260527_giveup_shipping_helper
+github_created: 2026-05-25
+github_pushed: 2026-05-28
 ---
 
 # 260527_giveup_shipping_helper · 已废弃的船务助手（无有效代码）

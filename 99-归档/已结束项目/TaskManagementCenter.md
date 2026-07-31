@@ -1,12 +1,15 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - 项目
   - 占位
   - 空仓库
   - 任务管理
+period: 入职后
 repo: https://github.com/liellaaaaa/TaskManagementCenter
+github_created: 2026-04-28
+github_pushed: 2026-04-28
 ---
 
 # TaskManagementCenter · 占位仓库（暂无内容）

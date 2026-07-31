@@ -1,8 +1,11 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags: [项目, 毕业设计, AI]
+period: 入职前
 repo: https://github.com/liellaaaaa/LabEqManager
+github_created: 2026-01-10
+github_pushed: 2026-02-16
 ---
 
 # LabEqManager · 大学实验室设备管理系统

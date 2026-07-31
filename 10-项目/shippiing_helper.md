@@ -1,7 +1,8 @@
 ---
 created: 2026-07-28
-updated: 2026-07-30
+updated: 2026-07-31
 status: 95% · 调整阶段 · 即将进入维护
+period: 入职后
 tags:
   - 项目
   - 船务/外贸
@@ -11,6 +12,8 @@ tags:
   - SQLite
   - OnlyOffice
 repo: https://github.com/liellaaaaa/shippiing_helper
+github_created: 2026-05-28
+github_pushed: 2026-07-29
 ---
 
 # shippiing_helper · 船务部制单与文档一体化平台

@@ -1,12 +1,15 @@
 ---
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - 项目
   - 学习记录
   - Python
   - 练手项目
+period: 入职前
 repo: https://github.com/liellaaaaa/MKtech
+github_created: 2025-10-19
+github_pushed: 2025-10-21
 ---
 
 # MKtech · 三个月 Python+AI 学习档案与练手项目 TaskMpg

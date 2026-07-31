@@ -1,7 +1,8 @@
 ---
 created: 2026-07-28
-updated: 2026-07-30
+updated: 2026-07-31
 status: 50% · 开发中
+period: 入职后
 tags:
   - 项目
   - AI应用
@@ -12,6 +13,8 @@ tags:
   - LLM
   - RAG
 repo: https://github.com/liellaaaaa/ai-sales-coach
+github_created: 2026-07-22
+github_pushed: 2026-07-22
 ---
 
 # ai-sales-coach · AI 销售陪练 / 培训 Web 应用（mvp-main）

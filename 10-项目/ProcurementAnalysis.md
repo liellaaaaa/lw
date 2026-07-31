@@ -1,7 +1,8 @@
 ---
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 status: 维护模式
+period: 入职后
 tags:
   - 项目
   - 原料/采购
@@ -10,6 +11,8 @@ tags:
   - SQLAlchemy
   - 数据分析
 repo: https://github.com/liellaaaaa/ProcurementAnalysis
+github_created: 2026-04-30
+github_pushed: 2026-07-30
 ---
 
 # ProcurementAnalysis · 原料采购数据获取与展示平台
