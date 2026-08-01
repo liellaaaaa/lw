@@ -181,7 +181,7 @@ https://github.com/liellaaaaa/shippiing_helper
 
 ## 工作文稿
 
-- [[../20-知识/工作文稿/shipping_log|shipping-helper-项目日志（飞书）]]
+- [[shipping-helper-项目日志|shipping-helper-项目日志（飞书）]]
 
 ## 相关链接
 
