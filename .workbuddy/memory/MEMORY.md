@@ -6,3 +6,9 @@
   - 四个汇总：2606/2607 各有 acceptance（验收）+ issues（问题反馈）
   - 两个项目日志：procurement_log（采购助手）、shipping_log（shipping-helper）
 - 以后追加内容时按表格行列写入，保持表格结构
+
+## 日报协作约定（2026-08-03 用户授权）
+- 用户授权：日报可由 AI 在其简写基础上补充展开（补全项目全名、模块归属、动作含义），直接落库到 `01-每日记录/日报/YYYY-MM-DD.md`，无需逐条确认
+- 日报格式：Frontmatter(created/updated/tags:[日报]) + 核心摘要 + 今日完成/明日计划/遇到的问题 + 相关链接（关联 `10-项目/`）
+- 每次新增日报后同步更新 `01-每日记录/日报/日报索引.md`（按月份分组、更新顶部篇数与日期范围）
+- 缩写对照：TT助手 = shippiing_helper（船务/报关助手）；业务陪练助手 = ai-sales-coach；退税审单 = Tax_check；采购分析助手 = ProcurementAnalysis；培训助手 = 宏昊AI助手平台模块；文婷姐 = 审核/对接人
