@@ -1,7 +1,7 @@
 ---
 created: 2026-07-28
-updated: 2026-07-31
-status: 95% · 调整阶段 · 即将进入维护
+updated: 2026-08-06
+status: 98% · 功能闭环 · 进入收尾维护
 period: 入职后
 tags:
   - 项目
@@ -13,14 +13,14 @@ tags:
   - OnlyOffice
 repo: https://github.com/liellaaaaa/shippiing_helper
 github_created: 2026-05-28
-github_pushed: 2026-07-29
+github_pushed: 2026-08-05
 ---
 
 # shippiing_helper · 船务部制单与文档一体化平台
 
 > 仓库名 `shippiing_helper` 为 `shipping_helper` 的拼写变体（README 内仍称 shipping_helper）。
 > **时间线**：2026-05-28 首次提交，此前有一个 PyQt5 桌面版尝试（`260527_giveup_shipping_helper`）于 5/27 被放弃；当前版本采用 FastAPI + Vue3 Web 架构重写。
-> **状态**：95%，与船务部对接中，处于最后的调整阶段，即将进入维护。GitHub 200+ 次提交。
+> **状态**：98%，船务部持续使用中。7 月底至 8 月初完成多轮功能增强与架构重构（JSON→SQLite 迁移、报关单动态扩展、产品拆行等），功能已基本闭环，进入收尾维护阶段。GitHub 250+ 次提交。
 
 ## 项目简介
 
@@ -37,11 +37,12 @@ https://github.com/liellaaaaa/shippiing_helper
 
 ## 技术栈
 
-- 后端：Python + **FastAPI**，`uvicorn`，**SQLAlchemy** + **Pydantic**，SQLite（`database.py`，手写增量迁移 `migrations/001–016`，非 Alembic）
+- 后端：Python + **FastAPI**，`uvicorn`，**SQLAlchemy** + **Pydantic**，SQLite（`database.py`，手写增量迁移 `migrations/001–018`，非 Alembic）
 - 解析/生成：`PyMuPDF`(PDF 文本/字段抽取)、`python-docx` / `openpyxl`(Word/Excel)、`python-multipart`(上传)、`aiohttp`/`requests`(外部，如 OnlyOffice Document Server)、`pytesseract`/`tesseract`(OCR 自检)
 - 前端：Vue 3 + **TypeScript** + Vite + Pinia + Vue Router + axios（JWT 拦截器）；`frontend/dist` 由后端 `StaticFiles` 单端口托管
 - 集成：**OnlyOffice** Document Server（JWT + 单端口代理 + 模板占位符填充）
 - 自检：`/health` 多组件（api / onlyoffice / database / tesseract）
+- **AI 集成**：DeepSeek API（PI 文件解析优先 AI 识别 → 降级 Regex 匹配）
 
 ## 系统架构
 
@@ -65,7 +66,8 @@ https://github.com/liellaaaaa/shippiing_helper
 - **DocumentTemplate**(`document_templates`)：Booking/MSDS 模板 + `placeholders` JSON
 - **AuditLog**(`audit_logs`)：审计日志（`event_type`/`user_name`/`module`/`action_time`/`detail`/`ip_address`）
 - 其它：`PackagingType`(`packaging_types`)、`ProductKnowledge`(`products_knowledge`)（在 `order.py` 内）
-- **User**：注意 `models/user.py` 仅为 **Pydantic schema**（`name`/`password`），**非** SQLAlchemy 表；用户来自 `data/users.json`
+- **User**(`users`)：08-01 重构后已迁入 SQLite（`models/user.py` + `schemas/auth.py`），不再是 Pydantic schema + json 文件
+- **reference_data.py（08-01 新增）**：7 张引用数据表统一管理——`pallets`/`container_specs`/`declaration_elements`/`ingredient_mappings`/`translation_mappings`/`msds_templates`；`products_knowledge` 并入 `customs_codes`（新增 `product_appearance` 列）；`packaging_types` 补 `is_palletizable`
 
 ## 核心功能模块（backend/app/api/v1）
 
@@ -98,20 +100,22 @@ https://github.com/liellaaaaa/shippiing_helper
 
 ## 需注意的已知问题
 
-- **认证中间件冗余**：`main.py` 的 `auth_middleware` 白名单几乎放行全部 `/api/v1/*`（仅 `orders` 受保护），JWT 鉴权形同虚设；且与 `auth.py` 的 `get_current_user` 依赖机制并存、职责重叠
-- **users.json 缺失**：`auth_service.py` 指向 `data/users.json`，全仓无此文件；`load_users()` 文件缺失时返回 `[]`，登录必失败（需自建用户文件）
-- **README vs 代码不匹配**：README 模型清单漏列 `msds_ledger.py`/`audit_log.py`/`template.py`/`order_item_transport_report.py`；仓库名拼写 `shippiing_helper` 与 README 内 `shipping_helper` 不一致
-- **User 无数据库表**：所谓 User 仅 Pydantic schema + json 文件，无法多用户/权限管控
-- **数据库为 SQLite + 手写迁移**：多环境易不一致
+- ~~**认证中间件冗余**~~：已通过 08-01 重构部分解决（users 迁入数据库，auth 统一走 DB）
+- ~~**users.json 缺失**~~：✅ 已解决——08-01 重构将 users.json 及所有静态 JSON 迁入 SQLite（migration 018）
+- ~~**User 无数据库表**~~：✅ 已解决——08-01 重构后 User 为正式 SQLAlchemy 表
+- **README vs 代码不匹配**：仓库名拼写 `shippiing_helper` 与 README 内 `shipping_helper` 不一致；08-01 已更新 README/CLAUDE/AGENTS 文档
+- **数据库为 SQLite + 手写迁移**：多环境易不一致（已积累 18 个迁移脚本）
 - **硬编码密钥**：`JWT_SECRET` 默认 `shipping-helper-secret-key-change-in-production`，生产需改
 
-## 调整阶段待办
+## 收尾维护待办
 
-> 95%，船务部对接反馈后的最后调整。
+> 98%，功能基本闭环，剩余为船务部反馈的小项与维护评估。
 
-- [ ] 认证与用户体系的收口方案（维护阶段再评估 Alembic / Postgres / RBAC 等大改项）
-- [ ] 补充 `data/users.json`（部署前必补，否则登录链路断）
+- [x] ~~认证与用户体系收口~~（08-01 JSON→SQLite 迁移已解决核心问题）
+- [x] ~~补充 `data/users.json`~~（08-01 迁入数据库）
 - [ ] 最终交付前做一次完整的功能回归测试
+- [ ] 申报要素台账功能（日报 08-05 计划项）
+- [ ] 评估 Alembic / Postgres / RBAC 等大改项（维护阶段再议）
 
 ## 开发历程（来自飞书项目日志 + 月度汇报）
 
@@ -159,6 +163,23 @@ https://github.com/liellaaaaa/shippiing_helper
 | 7/13 | 币制字段全链路打通、报关单模板重构为占位符模式                              |
 | 7/16 | 包装计算新增"每桶实际装入量"、台账编辑/删除/判重                           |
 | 7/20 | **PI解析接入DeepSeek AI**（优先AI识别→降级Regex匹配，准确率大幅提升）      |
+| 7/27 | **产品分组功能**（合并预览支持父子结构、台账持久化、文档生成适配）；PI解析增加付款条款提取及TT/LC分类；订舱单装货港移除广州预设改为自定义选项；UUID兼容HTTP非安全上下文 |
+| 7/28 | 新增国家/城市翻译字典与 `parse_destination()`；报关单目的港字段使用解析后的目的字段；币制/数量行自动填充所有产品；新增乌兹别克斯坦/中亚翻译；运费/保险币制自动跟随订单币制 |
+| 7/29 | CIF保险英文条款修正（含目的港+C.I.C.）；报关资料装箱单单位/合同日期/保险条款修复；订舱单元数/复数随数量自适应（1→PALLET/DRUM，N→PALLETS/DRUMS）；单位检测遗漏PALLET单数形式修复；报关资料合同sheet合并单元格异常修复；MSDS台账表单优化 |
+| 7/31 | 发票号生成保留地区缩写，仅将公司前缀 HT/HH/MH 替换为 IN |
+
+### 八月：架构重构 + 功能增强
+
+| 日期   | 里程碑                                                  |
+| ---- | ---------------------------------------------------- |
+| 8/1  | **🔥 JSON→SQLite 架构重构**：静态数据 JSON 与 users.json 迁入 SQLite（7 张新表 + migration 018）；`products_knowledge` 并入 `customs_codes`；6 个服务改读库；删除 8 个 references JSON 文件；User 正式成为数据库表 |
+| 8/1  | 移除文档编辑页空白模板与"我的模板"功能及关联代码（精简） |
+| 8/1  | 更新 README/CLAUDE/AGENTS 项目结构、API 概览与功能进度至当前状态 |
+| 8/4  | 报关资料币制显示中文化（USD→美元，CNY/RMB→人民币） |
+| 8/4  | **报关单按产品数动态扩展**（解除 6 产品上限，按产品数自动扩展行数）；扩展块行高取自块2 |
+| 8/5  | **PI目的港解析规范化**：国家/港口映射抽至 `core/destination_map.py`，三处目的港提取统一归一化（如 KEELUNG→基隆） |
+| 8/5  | **入库前校验包装计算**：未计算包装的产品可确认后强制入库 |
+| 8/5  | **同一产品支持拆多行录入**：移除批次去重折叠，粘贴同产品多行全部保留（如 3000 拆 1000+2000）；拆行金额按数量×单价分摊；重复检测改为订单级（订单号已入台账弹窗确认后覆盖更新） |
 
 ### 交付后反馈与待定项
 
@@ -169,11 +190,15 @@ https://github.com/liellaaaaa/shippiing_helper
 - MSDS翻译优化（成分名匹配、空格差异处理）
 - 订单处理功能扩展（产品组合、包装计算优化、价格条款、付款方式等）
 
+> 截至 8/5，部分反馈项已通过功能增强覆盖（如付款方式 TT/LC 分类、价格条款、产品拆行等）。
+
 ## 个人价值
 
 - 2026-05-28 起独立从 0 开发（前身 `260527_giveup_shipping_helper` PyQt5 桌面版同日废弃），代表从「用 AI 平台」到「自己造企业工具」的能力跃迁。
 - OnlyOffice 集成范式（JWT + 单端口代理 + 模板占位符填充）可迁移到后续项目。
 - **AI集成里程碑**：7/20 将 DeepSeek AI 嵌入 PI 解析流程，从传统正则匹配升级为 AI 语义识别。
+- **架构演进里程碑**：8/1 完成 JSON→SQLite 数据层统一迁移，从"静态文件 + 手动管理"升级为"数据库统一管理 + 迁移脚本"，解决长期存在的 users.json 缺失与用户体系问题。
+- **报关单动态扩展**：8/4 解除 6 产品上限，按产品数自动扩展——从"固定模板"升级为"数据驱动模板"。
 
 ## 相关知识
 
