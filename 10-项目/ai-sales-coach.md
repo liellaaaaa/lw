@@ -1,7 +1,7 @@
 ---
 created: 2026-07-28
-updated: 2026-07-31
-status: 50% · 开发中
+updated: 2026-08-06
+status: 50% · 主力开发中
 period: 入职后
 tags:
   - 项目
@@ -12,6 +12,7 @@ tags:
   - React
   - LLM
   - RAG
+  - DeepSeek
 repo: https://github.com/liellaaaaa/ai-sales-coach
 github_created: 2026-07-22
 github_pushed: 2026-07-22
@@ -20,7 +21,7 @@ github_pushed: 2026-07-22
 # ai-sales-coach · AI 销售陪练 / 培训 Web 应用（mvp-main）
 
 > **对接部门**：营销部门（整个营销体系，非单一销售团队）
-> **状态**：50%，仍在本人的主力开发阶段。
+> **状态**：50%，仍在本人的主力开发阶段。MVP 已从 MiniMax 切换到 DeepSeek V4 Flash 模型（07-22），后续计划推进运营直接到业务部门了解实际场景（日报 08-05）。
 
 ## 项目简介
 
@@ -29,6 +30,10 @@ github_pushed: 2026-07-22
 ## 接手背景
 
 本人（肖聪，AI 技术专员）于 **2026 年 7 月中旬**正式接手 / 负责本项目，当前为 mvp-main 版本，进度约 50%。此前（4–6 月）知识库中出现的 `ai-sales-coach` 相关记录属前期阶段，**本笔记聚焦本人接手后的内容**。
+
+**技术变更**：07-22 MVP 从 MiniMax 切换到 DeepSeek V4 Flash 模型，降低调用成本。
+
+**后续计划**（日报 08-05）：推进运营直接到业务部门了解实际场景，完善业务陪练能力。
 
 ## 仓库地址
 

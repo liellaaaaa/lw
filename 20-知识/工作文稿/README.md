@@ -8,6 +8,7 @@
 > - [[../../10-项目/宏昊AI助手|宏昊AI助手]] — 四批次验收+问题汇总
 > - [[../../10-项目/ProcurementAnalysis|ProcurementAnalysis]] — 采购助手开发历程
 > - [[../../10-项目/shippiing_helper|shippiing_helper]] — shipping-helper 开发历程
+> - [[入职以来AI应用交付量化汇总|入职以来AI应用交付量化汇总]] — 全量交付盘点
 > - [[../工作全景图_肖聪_202604-07|工作全景图]] — 工作全景
 > - [[../工作大事记_2026Q2|工作大事记]] — 里程碑时间线
 
@@ -16,16 +17,14 @@
 | 文件名 | 类型 | 已提取至 |
 |--------|------|----------|
 | 07_AI_enablement.md | AI提效计划（7月） | 全景图/项目笔记 |
-| 06_monthly_report.md | 6月工作总结 | 全景图/大事记/项目笔记 |
-| 05_monthly_report.md | 5月工作总结 | 全景图/大事记/项目笔记 |
-| 04_monthly_report.md | 4月工作总结 | 全景图/大事记/项目笔记 |
-| 2607_acceptance.md | 宏昊 2607 验收 | 验收方法论/宏昊AI助手 |
-| 2607_issues.md | 宏昊 2607 问题反馈 | 验收方法论/宏昊AI助手 |
-| 2606_acceptance.md | 宏昊 2606 验收 | 验收方法论/宏昊AI助手 |
-| 2606_issues.md | 宏昊 2606 问题反馈 | 验收方法论/宏昊AI助手 |
-| procurement_log.md | 采购助手项目日志 | 业务拆解/ProcurementAnalysis |
-| shipping_log.md | shipping-helper 项目日志 | 业务拆解/shippiing_helper |
-| incr_value_plan.md | 增量价值方案 | 项目笔记 |
-| time_mgmt.md | 时间管理记录 | — |
-| Training_Assistant_Phase1_Test.md | 培训助手阶段验收 | 验收方法论 |
-| Tax_Check.md | 税务自查材料 | Tax_check |
+| 2026年6月肖聪月度工作总结报告.md | 6月工作总结 | 全景图/大事记/项目笔记 |
+| 2026年5月肖聪月度工作总结报告.md | 5月工作总结 | 全景图/大事记/项目笔记 |
+| 2026年4月肖聪月度工作总结报告.md | 4月工作总结 | 全景图/大事记/项目笔记 |
+| 2607_HH验收汇总.md | 宏昊 2607 验收 | 验收方法论/宏昊AI助手 |
+| 2607_自建应用问题反馈.md | 宏昊 2607 问题反馈 | 验收方法论/宏昊AI助手 |
+| 2606_HH验收汇总.md | 宏昊 2606 验收 | 验收方法论/宏昊AI助手 |
+| 2606_HH问题反馈汇总.md | 宏昊 2606 问题反馈 | 验收方法论/宏昊AI助手 |
+| 2608_自建应用问题反馈.md | 宏昊 2608 问题反馈 | 宏昊AI助手 |
+| 采购分析助手-项目日志.md | 采购助手项目日志 | 业务拆解/ProcurementAnalysis |
+| shipping-helper-项目日志.md | shipping-helper 项目日志 | 业务拆解/shippiing_helper |
+| 入职以来AI应用交付量化汇总.md | 入职以来全量交付盘点 | 项目笔记 |
