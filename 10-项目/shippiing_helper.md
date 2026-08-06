@@ -13,7 +13,7 @@ tags:
   - OnlyOffice
 repo: https://github.com/liellaaaaa/shippiing_helper
 github_created: 2026-05-28
-github_pushed: 2026-08-05
+github_pushed: 2026-08-06
 ---
 
 # shippiing_helper · 船务部制单与文档一体化平台
@@ -180,6 +180,9 @@ https://github.com/liellaaaaa/shippiing_helper
 | 8/5  | **PI目的港解析规范化**：国家/港口映射抽至 `core/destination_map.py`，三处目的港提取统一归一化（如 KEELUNG→基隆） |
 | 8/5  | **入库前校验包装计算**：未计算包装的产品可确认后强制入库 |
 | 8/5  | **同一产品支持拆多行录入**：移除批次去重折叠，粘贴同产品多行全部保留（如 3000 拆 1000+2000）；拆行金额按数量×单价分摊；重复检测改为订单级（订单号已入台账弹窗确认后覆盖更新） |
+| 8/6  | 目的港台账保留源数据（中英混合取英文），港口/国家对照迁入数据库表统一管理 |
+| 8/6  | 修复 PI 合同表粘贴时行首片段未合并导致未解析到数据的问题 |
+| 8/6  | MSDS 台账导入增加必填校验，含量不一致时按新配方列出并阻止自动选中 |
 
 ### 交付后反馈与待定项
 
