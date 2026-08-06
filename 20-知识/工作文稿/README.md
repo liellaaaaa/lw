@@ -27,4 +27,5 @@
 | 2608_自建应用问题反馈.md | 宏昊 2608 问题反馈 | 宏昊AI助手 |
 | 采购分析助手-项目日志.md | 采购助手项目日志 | 业务拆解/ProcurementAnalysis |
 | shipping-helper-项目日志.md | shipping-helper 项目日志 | 业务拆解/shippiing_helper |
+| ai-sales-coach-项目日志.md | ai-sales-coach 项目日志 | 业务拆解/ai-sales-coach |
 | 入职以来AI应用交付量化汇总.md | 入职以来全量交付盘点 | 项目笔记 |
