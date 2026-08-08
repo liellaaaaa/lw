@@ -89,4 +89,4 @@ github_pushed: 2026-08-07
 - 仓库：https://github.com/liellaaaaa/Data_masking
 - 版本说明：`VERSION.md`
 - 核心逻辑：`mask_tool.py`
-- 项目日志：[[../20-知识/工作文稿/Data_masking-项目日志|Data_masking 项目日志]]
+- 项目日志：[[Data_masking-项目日志|Data_masking 项目日志]]

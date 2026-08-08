@@ -25,11 +25,11 @@ related: []
 未来任何"在线编辑 Word/Excel 模板并导出"的需求（别的项目、甚至内部工具）可直接复用这套模式，不必重新踩 OnlyOffice 的坑。
 
 ## 🔗 关键链接
-- 项目：[[../../10-项目/shippiing_helper.md|shippiing_helper]]
-- 数据层笔记：[[../../10-项目/shippiing_helper.md#需注意的已知问题|shippiing_helper 数据层运维债]]
+- 项目：[[shippiing_helper|shippiing_helper]]
+- 数据层笔记：[[shippiing_helper#需注意的已知问题|shippiing_helper 数据层运维债]]
 
 ## ❓ 待探索
 - [ ] 高并发下 Document Server 资源占用？
 
 ## 📎 参考
-- 原始资料：[[../../10-项目/shippiing_helper.md]]
+- 原始资料：[[shippiing_helper]]
