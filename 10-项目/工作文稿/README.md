@@ -19,10 +19,11 @@
 |--------|------|----------|
 | 07_AI_enablement.md | AI提效计划（7月） | 全景图/项目笔记 |
 | 2607_HH验收汇总.md | 宏昊 2607 验收 | 验收方法论/宏昊AI助手 |
-| 2607_自建应用问题反馈.md | 宏昊 2607 问题反馈 | 验收方法论/宏昊AI助手 |
+| 2607_自建应用问题反馈_采购.md | 宏昊 2607 采购问题反馈 | 业务拆解/ProcurementAnalysis |
+| 2607_自建应用问题反馈_TT.md | 宏昊 2607 TT问题反馈 | 业务拆解/shippiing_helper |
 | 2606_HH验收汇总.md | 宏昊 2606 验收 | 验收方法论/宏昊AI助手 |
 | 2606_HH问题反馈汇总.md | 宏昊 2606 问题反馈 | 验收方法论/宏昊AI助手 |
-| 2608_自建应用问题反馈.md | 宏昊 2608 问题反馈 | 宏昊AI助手 |
+| 2608_自建应用问题反馈_TT.md | 宏昊 2608 TT问题反馈 | 业务拆解/shippiing_helper |
 | 采购分析助手-项目日志.md | 采购助手项目日志 | 业务拆解/ProcurementAnalysis |
 | shipping-helper-项目日志.md | shipping-helper 项目日志 | 业务拆解/shippiing_helper |
 | ai-sales-coach-项目日志.md | ai-sales-coach 项目日志 | 业务拆解/ai-sales-coach |
