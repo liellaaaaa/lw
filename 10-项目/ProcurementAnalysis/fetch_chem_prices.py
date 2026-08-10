@@ -125,17 +125,22 @@ def main():
     for name, cat, cas in ITEMS:
         if cas:
             url = BASE.format(cas=cas)
+            fetched = False
             try:
                 html = fetch(url)
                 price, unit, updated, dod = parse_guidechem(html)
-                if not price:
-                    rows.append((cat, name, '未解析到', unit, updated, url, '检查页面'))
-                    errs.append((name, '未解析到', '检查页面'))
-                else:
+                if price:
                     rows.append((cat, name, price, '元/吨' if unit == 'CNY/TON' else unit, updated, url, f'盖德自动·DoD {dod}' if dod else '盖德自动'))
+                    fetched = True
             except Exception as e:
-                rows.append((cat, name, 'ERR', '-', '-', url, str(e)[:40]))
-                errs.append((name, 'ERR', str(e)[:40]))
+                pass  # 404/网络异常 → 降级到锚定表
+            if not fetched:
+                if name in MANUAL:
+                    price, unit, date, murl, note = MANUAL[name]
+                    rows.append((cat, name, price, unit, date, murl, f'需复核·{note}'))
+                else:
+                    rows.append((cat, name, 'ERR', '-', '-', url, '盖德404且无锚定'))
+                    errs.append((name, 'ERR', '盖德404'))
         else:
             # 无 CAS：查锚定表
             if name in MANUAL:
