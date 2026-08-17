@@ -1,0 +1,408 @@
+SLIDE SIZE: 28.43 x 15.98 cm  (1075x604 px)
+SLIDES: 10
+
+===== SLIDE 1 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 标题幻灯片
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(2.74,4.19) size=(22.93x6.55)cm fill=SOLID (1):BFBFBF
+    AUTO_SHAPE (1) name='AutoShape 3' pos=(10.02,10.75) size=(8.74x2.28)cm fill=BACKGROUND (5):None
+      P0: '部   门：'
+        run '部   门：'[sz=16.79,b=False,i=False,name=微软雅黑,rgb=052B7C]
+      P1: '汇报人：'
+        run '汇报人：'[sz=16.79,b=False,i=False,name=微软雅黑,rgb=052B7C]
+    AUTO_SHAPE (1) name='AutoShape 4' pos=(2.66,8.53) size=(8.33x0.82)cm fill=GRADIENT (3):None line=4472C4
+      P0: '助力企业利润持续增长'
+        run '助力企业利润持续增长'[sz=11.75,b=False,i=False,name=微软雅黑,rgb=052B7C]
+    PICTURE (13) name='Picture 5' pos=(13.29,9.51) size=(5.4x0.38)cm
+      [PICTURE]
+    AUTO_SHAPE (1) name='AutoShape 6' pos=(14.03,8.44) size=(4.08x0.9)cm fill=BACKGROUND (5):None
+      P0: '- 机密受控 -'
+        run '- '[sz=15.1,b=True,i=False,name=Arial,rgb=052B7C]
+        run '机密受控'[sz=15.1,b=True,i=False,name=楷体_GB2312,rgb=052B7C]
+        run ' -'[sz=15.1,b=True,i=False,name=Arial,rgb=052B7C]
+    AUTO_SHAPE (1) name='AutoShape 7' pos=(0.0,4.96) size=(28.44x4.86)cm fill=SOLID (1):4472C4
+      P0: '月份PBC执行进度报告'
+        run '月份PBC执行进度报告'[sz=36.95,b=True,i=False,name=微软雅黑,rgb=FFFFFF]
+
+===== SLIDE 2 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 1_标题幻灯片
+    LINE (9) name='Connector 2' pos=(9.62,3.48) size=(0.0x8.4)cm line=2F5597
+    GROUP (6) name='Group 3' pos=(3.82,5.8) size=(5.4x2.91)cm
+      AUTO_SHAPE (1) name='AutoShape 4' pos=(4.87,5.8) size=(3.3x1.41)cm fill=BACKGROUND (5):None
+        P0: '目 录'
+          run '目 录'[sz=27.0,b=True,i=False,name=微软雅黑,rgb=2F5597]
+      AUTO_SHAPE (1) name='AutoShape 5' pos=(3.82,7.3) size=(5.4x1.41)cm fill=BACKGROUND (5):None
+        P0: 'Contents'
+          run 'Contents'[sz=27.0,b=True,i=False,name=微软雅黑,rgb=2F5597]
+    AUTO_SHAPE (1) name='AutoShape 6' pos=(10.85,2.38) size=(14.7x10.61)cm fill=BACKGROUND (5):None
+      P0: '一、组织绩效目标完成情况'
+        run '一、组织绩效目标完成情况'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+      P1: '二、关键举措完成情况'
+        run '二、关键举措完成情况'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+      P2: '三、其他需汇报的工作'
+        run '三、其他需汇报的工作'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+      P3: '四、组织与人员管理完成情况'
+        run '四、组织与人员管理完成情况'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+      P4: '五、需公司解决或支持事项'
+        run '五、需公司解决或支持事项'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+      P5: '六、下季度工作计划'
+        run '六、下季度工作计划'[sz=24.0,b=True,i=False,name=微软雅黑,rgb=000000]
+
+===== SLIDE 3 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.42,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '一、组织绩效目标完成情况'
+        run '一、组织绩效目标完成情况'[sz=15.1,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(1.12,2.0) size=(26.21x7.92)cm
+      TABLE rows=9 cols=12
+        R0: ['序号', '战略要点', '考核指标', '权重', '评价标准', '', '', '单位', '上年度同期实际', '同比改进', '实际完成结果', '得分']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+          cell[0,7] fill=DAE3F3
+          cell[0,8] fill=DAE3F3
+          cell[0,9] fill=DAE3F3
+          cell[0,10] fill=DAE3F3
+          cell[0,11] fill=DAE3F3
+        R1: ['', '', '', '', '底线值', '达标值', '挑战值', '', '', '', '', '']
+          cell[1,4] fill=DAE3F3
+          cell[1,5] fill=DAE3F3
+          cell[1,6] fill=DAE3F3
+        R2: ['', '', '', '', '80分', '100分', '120分', '', '', '', '', '']
+          cell[2,4] fill=DAE3F3
+          cell[2,5] fill=DAE3F3
+          cell[2,6] fill=DAE3F3
+        R3: ['1', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', ' ', '\u3000']
+          cell[3,0] fill=FFFFFF
+          cell[3,3] fill=E7E6E6
+          cell[3,4] fill=FFFFFF
+          cell[3,5] fill=FFFFFF
+          cell[3,6] fill=FFFFFF
+          cell[3,7] fill=FFFFFF
+          cell[3,8] fill=FFFFFF
+          cell[3,9] fill=FFFFFF
+        R4: ['2', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[4,0] fill=FFFFFF
+          cell[4,3] fill=E7E6E6
+          cell[4,4] fill=FFFFFF
+          cell[4,5] fill=FFFFFF
+          cell[4,6] fill=FFFFFF
+          cell[4,7] fill=FFFFFF
+          cell[4,8] fill=FFFFFF
+          cell[4,9] fill=FFFFFF
+        R5: ['3', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[5,0] fill=FFFFFF
+          cell[5,3] fill=E7E6E6
+          cell[5,4] fill=FFFFFF
+          cell[5,5] fill=FFFFFF
+          cell[5,6] fill=FFFFFF
+          cell[5,7] fill=FFFFFF
+          cell[5,8] fill=FFFFFF
+          cell[5,9] fill=FFFFFF
+        R6: ['4', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[6,0] fill=FFFFFF
+          cell[6,3] fill=E7E6E6
+          cell[6,4] fill=FFFFFF
+          cell[6,5] fill=FFFFFF
+          cell[6,6] fill=FFFFFF
+          cell[6,7] fill=FFFFFF
+          cell[6,8] fill=FFFFFF
+          cell[6,9] fill=FFFFFF
+        R7: ['5', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[7,0] fill=FFFFFF
+          cell[7,2] fill=FFFFFF
+          cell[7,3] fill=E7E6E6
+          cell[7,4] fill=FFFFFF
+          cell[7,5] fill=FFFFFF
+          cell[7,6] fill=FFFFFF
+          cell[7,7] fill=FFFFFF
+          cell[7,8] fill=FFFFFF
+          cell[7,9] fill=FFFFFF
+        R8: [' ', '', '', '100%', '【组织绩效目标】得分小计', '', '', '', '', '权重：', '%', '\u3000']
+          cell[8,0] fill=FCE4D6
+          cell[8,3] fill=FCE4D6
+          cell[8,4] fill=FCE4D6
+          cell[8,9] fill=FCE4D6
+          cell[8,10] fill=FCE4D6
+          cell[8,11] fill=FCE4D6
+    AUTO_SHAPE (1) name='AutoShape 4' pos=(0.82,10.29) size=(9.35x0.94)cm fill=BACKGROUND (5):None
+      P0: '未达标项原因分析及改进策略：'
+        run '未达标项原因分析及改进策略：'[sz=16.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    AUTO_SHAPE (1) name='AutoShape 5' pos=(1.06,11.23) size=(26.21x2.56)cm fill=BACKGROUND (5):None line=000000
+      P0: '1、'
+        run '1'[sz=15.1,b=False,i=False,name=Arial,rgb=000000]
+        run '、'[sz=15.1,b=False,i=False,name=Songti SC,rgb=000000]
+      P1: '2、'
+        run '2'[sz=15.1,b=False,i=False,name=Arial,rgb=000000]
+        run '、'[sz=15.1,b=False,i=False,name=Songti SC,rgb=000000]
+      P2: '3、'
+        run '3'[sz=15.1,b=False,i=False,name=Arial,rgb=000000]
+        run '、'[sz=15.1,b=False,i=False,name=Songti SC,rgb=000000]
+    AUTO_SHAPE (1) name='AutoShape 6' pos=(0.82,14.02) size=(20.61x1.03)cm fill=BACKGROUND (5):None
+      P0: '注意点：与PBC签订指标保持一致；绩效数据准确；自己算出得分'
+        run '注意点'[sz=15.1,b=True,i=False,name=微软雅黑,rgb=FF0000]
+        run '：与PBC签订指标保持一致；绩效数据准确；自己算出得分'[sz=15.1,b=False,i=False,name=微软雅黑,rgb=FF0000]
+
+===== SLIDE 4 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '二、关键举措完成情况'
+        run '二、关键举措完成情况'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(0.18,2.2) size=(28.0x10.4)cm
+      TABLE rows=4 cols=7
+        R0: ['序号', '战略要点', '关键举措', '权重', '计划\n完成时间', '目标\n完成情况', '自评等级']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+          cell[0,5] fill=DAE3F3
+          cell[0,6] fill=DAE3F3
+        R1: ['1', '\u3000', ' ', ' ', ' ', ' ', ' ']
+          cell[1,0] fill=FFFFFF
+          cell[1,1] fill=FFFFFF
+          cell[1,2] fill=FFFFFF
+          cell[1,3] fill=F2F2F2
+          cell[1,4] fill=FFFFFF
+          cell[1,5] fill=FFFFFF
+          cell[1,6] fill=FFFFFF
+        R2: ['2', '\u3000', ' ', ' ', ' ', '\u3000', ' ']
+          cell[2,0] fill=FFFFFF
+          cell[2,1] fill=FFFFFF
+          cell[2,2] fill=FFFFFF
+          cell[2,3] fill=F2F2F2
+          cell[2,4] fill=FFFFFF
+          cell[2,5] fill=FFFFFF
+          cell[2,6] fill=FFFFFF
+        R3: ['3', '\u3000', ' ', '\u3000', '\u3000', '\u3000', ' ']
+          cell[3,0] fill=FFFFFF
+          cell[3,1] fill=FFFFFF
+          cell[3,2] fill=FFFFFF
+          cell[3,3] fill=F2F2F2
+          cell[3,4] fill=FFFFFF
+          cell[3,5] fill=FFFFFF
+          cell[3,6] fill=FFFFFF
+
+===== SLIDE 5 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '三、其他需汇报的工作'
+        run '三、其他需汇报的工作'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    AUTO_SHAPE (1) name='AutoShape 3' pos=(1.02,1.81) size=(21.6x0.85)cm fill=BACKGROUND (5):None
+      P0: '备注：指PBC关键举措外的重点工作事项（已完成或计划开展的均可）'
+        run '备注：指PBC关键举措外的重点工作事项（已完成或计划开展的均可）'[sz=14.0,b=False,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 4' pos=(0.82,3.31) size=(26.2x10.28)cm
+      TABLE rows=3 cols=4
+        R0: ['序号', '关键事项', '计划完成时间', '当前进展']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+        R1: ['1', '\u3000', '\u3000', '\u3000']
+        R2: ['2', '\u3000', '\u3000', '\u3000']
+
+===== SLIDE 6 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '四、组织与人员管理完成情况'
+        run '四'[sz=15.1,b=True,i=False,name=微软雅黑,rgb=000000]
+        run '、组织与人员管理完成情况'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(0.22,3.02) size=(28.0x10.48)cm
+      TABLE rows=4 cols=7
+        R0: ['序号', '战略要点', '关键举措', '权重', '计划完成时间', '目标完成情况', '自评等级']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+          cell[0,5] fill=DAE3F3
+          cell[0,6] fill=DAE3F3
+        R1: ['1', '\u3000', ' ', ' ', ' ', '\u3000', ' ']
+          cell[1,0] fill=FFFFFF
+          cell[1,1] fill=FFFFFF
+          cell[1,2] fill=FFFFFF
+          cell[1,3] fill=F2F2F2
+          cell[1,4] fill=FFFFFF
+          cell[1,5] fill=FFFFFF
+          cell[1,6] fill=FFFFFF
+        R2: ['2', '\u3000', ' ', ' ', ' ', '\u3000', ' ']
+          cell[2,0] fill=FFFFFF
+          cell[2,1] fill=FFFFFF
+          cell[2,2] fill=FFFFFF
+          cell[2,3] fill=F2F2F2
+          cell[2,4] fill=FFFFFF
+          cell[2,5] fill=FFFFFF
+          cell[2,6] fill=FFFFFF
+        R3: ['3', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', ' ']
+          cell[3,0] fill=FFFFFF
+          cell[3,1] fill=FFFFFF
+          cell[3,2] fill=FFFFFF
+          cell[3,3] fill=F2F2F2
+          cell[3,4] fill=FFFFFF
+          cell[3,5] fill=FFFFFF
+          cell[3,6] fill=FFFFFF
+
+===== SLIDE 7 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '五、需公司解决或支持事项'
+        run '五'[sz=15.1,b=True,i=False,name=微软雅黑,rgb=000000]
+        run '、需公司解决或支持事项'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(1.02,2.0) size=(26.6x11.6)cm
+      TABLE rows=4 cols=5
+        R0: ['序号', '需求事项', '提供部门', '提供责任人', '完成时间']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+        R1: ['\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+        R2: ['\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+        R3: ['\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+
+===== SLIDE 8 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(8.23x1.03)cm fill=BACKGROUND (5):None
+      P0: '六、下季度组织绩效目标'
+        run '六、下季度组织绩效目标'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(0.92,2.29) size=(25.8x12.2)cm
+      TABLE rows=9 cols=9
+        R0: ['序号', '战略要点', '考核指标', '权重', '评价标准', '', '', '单位', '上年度同期实际']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+          cell[0,7] fill=DAE3F3
+          cell[0,8] fill=DAE3F3
+        R1: ['', '', '', '', '底线值', '达标值', '挑战值', '', '']
+          cell[1,4] fill=DAE3F3
+          cell[1,5] fill=DAE3F3
+          cell[1,6] fill=DAE3F3
+        R2: ['', '', '', '', '80分', '100分', '120分', '', '']
+          cell[2,4] fill=DAE3F3
+          cell[2,5] fill=DAE3F3
+          cell[2,6] fill=DAE3F3
+        R3: ['1', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[3,0] fill=FFFFFF
+          cell[3,3] fill=E7E6E6
+          cell[3,4] fill=FFFFFF
+          cell[3,5] fill=FFFFFF
+          cell[3,6] fill=FFFFFF
+          cell[3,7] fill=FFFFFF
+          cell[3,8] fill=FFFFFF
+        R4: ['2', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[4,0] fill=FFFFFF
+          cell[4,3] fill=E7E6E6
+          cell[4,4] fill=FFFFFF
+          cell[4,5] fill=FFFFFF
+          cell[4,6] fill=FFFFFF
+          cell[4,7] fill=FFFFFF
+          cell[4,8] fill=FFFFFF
+        R5: ['3', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[5,0] fill=FFFFFF
+          cell[5,3] fill=E7E6E6
+          cell[5,4] fill=FFFFFF
+          cell[5,5] fill=FFFFFF
+          cell[5,6] fill=FFFFFF
+          cell[5,7] fill=FFFFFF
+          cell[5,8] fill=FFFFFF
+        R6: ['4', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[6,0] fill=FFFFFF
+          cell[6,3] fill=E7E6E6
+          cell[6,4] fill=FFFFFF
+          cell[6,5] fill=FFFFFF
+          cell[6,6] fill=FFFFFF
+          cell[6,7] fill=FFFFFF
+          cell[6,8] fill=FFFFFF
+        R7: ['5', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[7,0] fill=FFFFFF
+          cell[7,2] fill=FFFFFF
+          cell[7,3] fill=E7E6E6
+          cell[7,4] fill=FFFFFF
+          cell[7,5] fill=FFFFFF
+          cell[7,6] fill=FFFFFF
+          cell[7,7] fill=FFFFFF
+          cell[7,8] fill=FFFFFF
+        R8: ['【组织绩效目标】权重合计100%', '', '', '100%', ' ', '', '', '', '']
+          cell[8,0] fill=FCE4D6
+          cell[8,3] fill=FCE4D6
+          cell[8,4] fill=FCE4D6
+
+===== SLIDE 9 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 4_自定义版式
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(0.82,0.13) size=(9.2x1.03)cm fill=BACKGROUND (5):None
+      P0: '六、下季度关键举措'
+        run '六'[sz=15.1,b=True,i=False,name=微软雅黑,rgb=000000]
+        run '、下季度关键举措'[sz=18.0,b=True,i=False,name=微软雅黑,rgb=000000]
+    TABLE (19) name='Table 3' pos=(0.22,1.8) size=(27.0x13.4)cm
+      TABLE rows=7 cols=5
+        R0: ['序号', '战略要点', '关键举措', '权重', '计划完成时间']
+          cell[0,0] fill=DAE3F3
+          cell[0,1] fill=DAE3F3
+          cell[0,2] fill=DAE3F3
+          cell[0,3] fill=DAE3F3
+          cell[0,4] fill=DAE3F3
+        R1: ['1', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[1,0] fill=FFFFFF
+          cell[1,1] fill=FFFFFF
+          cell[1,2] fill=FFFFFF
+          cell[1,3] fill=F2F2F2
+          cell[1,4] fill=FFFFFF
+        R2: ['2', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[2,0] fill=FFFFFF
+          cell[2,1] fill=FFFFFF
+          cell[2,2] fill=FFFFFF
+          cell[2,3] fill=F2F2F2
+          cell[2,4] fill=FFFFFF
+        R3: ['3', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[3,0] fill=FFFFFF
+          cell[3,1] fill=FFFFFF
+          cell[3,2] fill=FFFFFF
+          cell[3,3] fill=F2F2F2
+          cell[3,4] fill=FFFFFF
+        R4: ['4', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[4,0] fill=FFFFFF
+          cell[4,1] fill=FFFFFF
+          cell[4,2] fill=FFFFFF
+          cell[4,3] fill=F2F2F2
+          cell[4,4] fill=FFFFFF
+        R5: ['5', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[5,0] fill=FFFFFF
+          cell[5,3] fill=F2F2F2
+        R6: ['6', '\u3000', '\u3000', '\u3000', '\u3000']
+          cell[6,0] fill=FFFFFF
+          cell[6,1] fill=FFFFFF
+          cell[6,2] fill=FFFFFF
+          cell[6,3] fill=F2F2F2
+          cell[6,4] fill=FFFFFF
+
+===== SLIDE 10 =====
+  BG err fill type _NoFill has no foreground color, call .solid() or .patterned() first
+  LAYOUT: 标题幻灯片
+    AUTO_SHAPE (1) name='AutoShape 2' pos=(2.74,4.19) size=(22.93x6.55)cm fill=SOLID (1):BFBFBF
+    AUTO_SHAPE (1) name='AutoShape 3' pos=(2.66,8.53) size=(8.33x0.82)cm fill=GRADIENT (3):None line=4472C4
+      P0: '助力企业利润持续增长'
+        run '助力企业利润持续增长'[sz=11.75,b=False,i=False,name=微软雅黑,rgb=052B7C]
+    PICTURE (13) name='Picture 4' pos=(13.29,9.51) size=(5.4x0.38)cm
+      [PICTURE]
+    AUTO_SHAPE (1) name='AutoShape 5' pos=(14.03,8.44) size=(4.08x0.9)cm fill=BACKGROUND (5):None
+      P0: '- 机密受控 -'
+        run '- '[sz=15.1,b=True,i=False,name=Arial,rgb=052B7C]
+        run '机密受控'[sz=15.1,b=True,i=False,name=楷体_GB2312,rgb=052B7C]
+        run ' -'[sz=15.1,b=True,i=False,name=Arial,rgb=052B7C]
+    AUTO_SHAPE (1) name='AutoShape 6' pos=(0.0,4.96) size=(28.44x4.86)cm fill=SOLID (1):4472C4
+      P0: '汇报完毕！'
+        run '汇报完毕！'[sz=36.95,b=True,i=False,name=微软雅黑,rgb=FFFFFF]
+      P1: '没有绩效，一切无效'
+        run '没有绩效，一切无效'[sz=36.95,b=True,i=False,name=微软雅黑,rgb=FFFFFF]
