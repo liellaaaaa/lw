@@ -1,0 +1,185 @@
+=== boot pid=23840 ts=2026-08-17 17:23:35.774 cwd=E:\lw\PPT\入职以来AI工作复盘 argv=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx ===
+[2026-08-17 17:23:35.773] [INFO ] [pid=23840] [start] invoked pid=23840 cwd=E:\lw\PPT\入职以来AI工作复盘 daemonChild=no dev=no argv=[--project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx]
+[2026-08-17 17:23:35.775] [INFO ] [pid=23840] [start] spawning daemon projectDir=E:\lw\PPT\入职以来AI工作复盘 filename=入职以来AI工作复盘.pptx
+[2026-08-17 17:23:35.829] [INFO ] [pid=23840] [start] daemon spawned childPid=39484; waiting started ipc
+=== boot pid=39484 ts=2026-08-17 17:23:37.383 cwd=E:\lw\PPT\入职以来AI工作复盘 argv=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx --__daemon-child ===
+[2026-08-17 17:23:37.382] [INFO ] [pid=39484] [start] invoked pid=39484 cwd=E:\lw\PPT\入职以来AI工作复盘 daemonChild=yes dev=no argv=[--project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx --__daemon-child]
+[2026-08-17 17:23:37.383] [INFO ] [pid=39484] [start] daemon child runWorker ppid=23840
+[2026-08-17 17:23:37.384] [INFO ] [pid=39484] [worker] start projectDir=E:\lw\PPT\入职以来AI工作复盘 filename=入职以来AI工作复盘.pptx version=5.4.4
+[2026-08-17 17:23:37.385] [INFO ] [pid=39484] [worker] init ok dirs=ready
+[2026-08-17 17:23:37.385] [INFO ] [pid=39484] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-08-17 17:23:37.385] [INFO ] [pid=39484] [worker] openFile start
+[2026-08-17 17:23:37.386] [INFO ] [pid=39484] [open-file] copy blank.pptx start src=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\resources\pptx\blank.pptx dest=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:23:37.391] [INFO ] [pid=39484] [open-file] copy blank.pptx ok dest=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=4
+[2026-08-17 17:23:37.420] [ERROR] [pid=39484] [http] editorStatus http 404 url=http://127.0.0.1:39099/api/editor/status body={"code":-1,"message":"no editor open for file_path=E:\\lw\\PPT\\入职以来AI工作复盘\\入职以来AI工作复盘.pptx"} ms=29
+[2026-08-17 17:23:37.421] [INFO ] [pid=39484] [open-file] open send url=http://127.0.0.1:39099/localapi/open filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:23:37.431] [INFO ] [pid=39484] [open-file] open ok fileId=9F3A5D81 fileType=slide filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=10
+[2026-08-17 17:23:37.431] [INFO ] [pid=39484] [worker] openFile ok fileId=9F3A5D81 filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:23:37.432] [INFO ] [pid=39484] [worker] previewUrl=http://127.0.0.1:39099/static/slide/pc.html?local_edit=1&client=sdk_local&localFilePath=E%3A%5Clw%5CPPT%5C%E5%85%A5%E8%81%8C%E4%BB%A5%E6%9D%A5AI%E5%B7%A5%E4%BD%9C%E5%A4%8D%E7%9B%98%5C%E5%85%A5%E8%81%8C%E4%BB%A5%E6%9D%A5AI%E5%B7%A5%E4%BD%9C%E5%A4%8D%E7%9B%98.pptx
+[2026-08-17 17:23:37.432] [INFO ] [pid=39484] [state] state.json not found, creating path=E:\lw\PPT\入职以来AI工作复盘\.slidep\state.json filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:23:37.434] [INFO ] [pid=39484] [worker] commitEndpoint=http://127.0.0.1:39099/localapi/commitrevision
+[2026-08-17 17:23:37.438] [INFO ] [pid=39484] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"9F3A5D81-5A1E-4FD0-9531-B55BA569A57D"}
+[2026-08-17 17:23:37.442] [INFO ] [pid=39484] [mcp] mcp:slide_get_info ok ms=3
+[2026-08-17 17:23:37.443] [INFO ] [pid=39484] [purge] purge start backendSlideCount=0
+[2026-08-17 17:23:37.443] [INFO ] [pid=39484] [purge] purge ok removed=0 ms=8
+[2026-08-17 17:23:37.443] [INFO ] [pid=39484] [worker] initial sync submitted pages=0
+[2026-08-17 17:23:37.444] [INFO ] [pid=39484] [sync] submit nextRound=1 dirty=<none> pendingDirtySize=0 merged=no
+[2026-08-17 17:23:37.444] [INFO ] [pid=39484] [sync] drain start round=1 pendingDirtySize=0
+[2026-08-17 17:23:37.444] [INFO ] [pid=39484] [sync] aligned round=1 attempt=1 size=0 desired=0 pendingDirtySize=0
+[2026-08-17 17:23:37.446] [INFO ] [pid=39484] [worker] ready fileId=9F3A5D81 backendUrl=http://127.0.0.1:39099 initialPages=0 ms=62
+[2026-08-17 17:23:37.447] [INFO ] [pid=39484] [sync] reconcile ok round=1 attempt=1 ms=3
+[2026-08-17 17:23:37.447] [INFO ] [pid=39484] [sync] drain end round=1 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=3
+[2026-08-17 17:23:37.448] [INFO ] [pid=23840] [start] daemon started childPid=39484 ms=1673
+[2026-08-17 17:23:37.451] [INFO ] [pid=39484] [watcher] ready dir=E:\lw\PPT\入职以来AI工作复盘\slides
+[2026-08-17 17:24:51.513] [INFO ] [pid=39484] [watcher] event=add file=slides\01_cover.slide
+[2026-08-17 17:24:52.021] [INFO ] [pid=39484] [watcher] flush batch dirty=[01_cover] size=1
+[2026-08-17 17:24:52.022] [INFO ] [pid=39484] [sync] submit nextRound=2 dirty=01_cover pendingDirtySize=1 merged=no
+[2026-08-17 17:24:52.022] [INFO ] [pid=39484] [sync] drain start round=2 pendingDirtySize=1
+[2026-08-17 17:24:52.023] [INFO ] [pid=39484] [sync] step=add round=2 attempt=1 pageId=01_cover index=0
+[2026-08-17 17:24:52.023] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-17 17:24:52.024] [INFO ] [pid=39484] [render] start pageId=01_cover file=E:\lw\PPT\入职以来AI工作复盘\slides\01_cover.slide
+[2026-08-17 17:24:52.386] [INFO ] [pid=39484] [render] ok pageId=01_cover slides=1 ms=362
+[2026-08-17 17:24:52.387] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:24:52.402] [INFO ] [pid=39484] [commit] commit send pageId=5152e6 targetIndex=0 version=1 baseVersion=0 revisionBytes=8596
+[2026-08-17 17:24:52.409] [INFO ] [pid=39484] [commit] commit ok pageId=5152e6 revisionId=c5b2ee5d ms=6
+[2026-08-17 17:24:52.411] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=01_cover slideId=5152e6 index=0 version=1 baseVersion=0 revisionId=c5b2ee5d code=0 images=[local=0 remote=0 cached=0 failed=0] ms=388
+[2026-08-17 17:24:52.412] [INFO ] [pid=39484] [sync] aligned round=2 attempt=1 size=1 desired=1 pendingDirtySize=0
+[2026-08-17 17:24:52.412] [INFO ] [pid=39484] [sync] reconcile ok round=2 attempt=1 ms=389
+[2026-08-17 17:24:52.412] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:24:52.412] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:24:52.429] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=16
+[2026-08-17 17:24:52.430] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=18
+[2026-08-17 17:24:52.431] [INFO ] [pid=39484] [sync] drain end round=2 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=409
+[2026-08-17 17:26:30.057] [INFO ] [pid=39484] [watcher] event=add file=slides\02_catalog.slide
+[2026-08-17 17:26:30.568] [INFO ] [pid=39484] [watcher] flush batch dirty=[02_catalog] size=1
+[2026-08-17 17:26:30.569] [INFO ] [pid=39484] [sync] submit nextRound=3 dirty=02_catalog pendingDirtySize=1 merged=no
+[2026-08-17 17:26:30.569] [INFO ] [pid=39484] [sync] drain start round=3 pendingDirtySize=1
+[2026-08-17 17:26:30.570] [INFO ] [pid=39484] [sync] step=add round=3 attempt=1 pageId=02_catalog index=1
+[2026-08-17 17:26:30.570] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=02_catalog index=1
+[2026-08-17 17:26:30.571] [INFO ] [pid=39484] [render] start pageId=02_catalog file=E:\lw\PPT\入职以来AI工作复盘\slides\02_catalog.slide
+[2026-08-17 17:26:30.637] [INFO ] [pid=39484] [render] ok pageId=02_catalog slides=1 ms=66
+[2026-08-17 17:26:30.637] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:26:30.646] [INFO ] [pid=39484] [commit] commit send pageId=b7dfd5 targetIndex=1 version=2 baseVersion=1 revisionBytes=9524
+[2026-08-17 17:26:30.651] [INFO ] [pid=39484] [commit] commit ok pageId=b7dfd5 revisionId=a9641b61 ms=5
+[2026-08-17 17:26:30.654] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=02_catalog slideId=b7dfd5 index=1 version=2 baseVersion=1 revisionId=a9641b61 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=84
+[2026-08-17 17:26:30.654] [INFO ] [pid=39484] [sync] aligned round=3 attempt=1 size=2 desired=2 pendingDirtySize=0
+[2026-08-17 17:26:30.654] [INFO ] [pid=39484] [sync] reconcile ok round=3 attempt=1 ms=85
+[2026-08-17 17:26:30.655] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:26:30.655] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:26:30.672] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=17
+[2026-08-17 17:26:30.672] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=17
+[2026-08-17 17:26:30.673] [INFO ] [pid=39484] [sync] drain end round=3 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=104
+[2026-08-17 17:26:47.121] [INFO ] [pid=39484] [watcher] event=add file=slides\03_overview.slide
+[2026-08-17 17:26:47.633] [INFO ] [pid=39484] [watcher] flush batch dirty=[03_overview] size=1
+[2026-08-17 17:26:47.635] [INFO ] [pid=39484] [sync] submit nextRound=4 dirty=03_overview pendingDirtySize=1 merged=no
+[2026-08-17 17:26:47.638] [INFO ] [pid=39484] [sync] drain start round=4 pendingDirtySize=1
+[2026-08-17 17:26:47.639] [INFO ] [pid=39484] [sync] step=add round=4 attempt=1 pageId=03_overview index=2
+[2026-08-17 17:26:47.640] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=03_overview index=2
+[2026-08-17 17:26:47.641] [INFO ] [pid=39484] [render] start pageId=03_overview file=E:\lw\PPT\入职以来AI工作复盘\slides\03_overview.slide
+[2026-08-17 17:26:47.747] [INFO ] [pid=39484] [render] ok pageId=03_overview slides=1 ms=106
+[2026-08-17 17:26:47.748] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:26:47.756] [INFO ] [pid=39484] [commit] commit send pageId=5ed7f5 targetIndex=2 version=3 baseVersion=2 revisionBytes=19240
+[2026-08-17 17:26:47.765] [INFO ] [pid=39484] [commit] commit ok pageId=5ed7f5 revisionId=85f0affe ms=7
+[2026-08-17 17:26:47.766] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=03_overview slideId=5ed7f5 index=2 version=3 baseVersion=2 revisionId=85f0affe code=0 images=[local=0 remote=0 cached=0 failed=0] ms=126
+[2026-08-17 17:26:47.767] [INFO ] [pid=39484] [sync] aligned round=4 attempt=1 size=3 desired=3 pendingDirtySize=0
+[2026-08-17 17:26:47.767] [INFO ] [pid=39484] [sync] reconcile ok round=4 attempt=1 ms=128
+[2026-08-17 17:26:47.767] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:26:47.767] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:26:47.789] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=20
+[2026-08-17 17:26:47.789] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=22
+[2026-08-17 17:26:47.789] [INFO ] [pid=39484] [sync] drain end round=4 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=151
+[2026-08-17 17:27:00.846] [INFO ] [pid=39484] [watcher] event=add file=slides\04_app_table.slide
+[2026-08-17 17:27:01.356] [INFO ] [pid=39484] [watcher] flush batch dirty=[04_app_table] size=1
+[2026-08-17 17:27:01.356] [INFO ] [pid=39484] [sync] submit nextRound=5 dirty=04_app_table pendingDirtySize=1 merged=no
+[2026-08-17 17:27:01.357] [INFO ] [pid=39484] [sync] drain start round=5 pendingDirtySize=1
+[2026-08-17 17:27:01.358] [INFO ] [pid=39484] [sync] step=add round=5 attempt=1 pageId=04_app_table index=3
+[2026-08-17 17:27:01.359] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=04_app_table index=3
+[2026-08-17 17:27:01.363] [INFO ] [pid=39484] [render] start pageId=04_app_table file=E:\lw\PPT\入职以来AI工作复盘\slides\04_app_table.slide
+[2026-08-17 17:27:01.499] [INFO ] [pid=39484] [render] ok pageId=04_app_table slides=1 ms=136
+[2026-08-17 17:27:01.500] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:27:01.506] [INFO ] [pid=39484] [commit] commit send pageId=dd631e targetIndex=3 version=4 baseVersion=3 revisionBytes=25628
+[2026-08-17 17:27:01.517] [INFO ] [pid=39484] [commit] commit ok pageId=dd631e revisionId=eced333d ms=11
+[2026-08-17 17:27:01.520] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=04_app_table slideId=dd631e index=3 version=4 baseVersion=3 revisionId=eced333d code=0 images=[local=0 remote=0 cached=0 failed=0] ms=161
+[2026-08-17 17:27:01.521] [INFO ] [pid=39484] [sync] aligned round=5 attempt=1 size=4 desired=4 pendingDirtySize=0
+[2026-08-17 17:27:01.521] [INFO ] [pid=39484] [sync] reconcile ok round=5 attempt=1 ms=163
+[2026-08-17 17:27:01.521] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:01.521] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:01.551] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=29
+[2026-08-17 17:27:01.551] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=30
+[2026-08-17 17:27:01.551] [INFO ] [pid=39484] [sync] drain end round=5 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=194
+[2026-08-17 17:27:17.230] [INFO ] [pid=39484] [watcher] event=add file=slides\05_procurement.slide
+[2026-08-17 17:27:17.742] [INFO ] [pid=39484] [watcher] flush batch dirty=[05_procurement] size=1
+[2026-08-17 17:27:17.743] [INFO ] [pid=39484] [sync] submit nextRound=6 dirty=05_procurement pendingDirtySize=1 merged=no
+[2026-08-17 17:27:17.744] [INFO ] [pid=39484] [sync] drain start round=6 pendingDirtySize=1
+[2026-08-17 17:27:17.744] [INFO ] [pid=39484] [sync] step=add round=6 attempt=1 pageId=05_procurement index=4
+[2026-08-17 17:27:17.745] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=05_procurement index=4
+[2026-08-17 17:27:17.746] [INFO ] [pid=39484] [render] start pageId=05_procurement file=E:\lw\PPT\入职以来AI工作复盘\slides\05_procurement.slide
+[2026-08-17 17:27:17.875] [INFO ] [pid=39484] [render] ok pageId=05_procurement slides=1 ms=130
+[2026-08-17 17:27:17.876] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:27:17.887] [INFO ] [pid=39484] [commit] commit send pageId=a58bbe targetIndex=4 version=5 baseVersion=4 revisionBytes=18008
+[2026-08-17 17:27:17.894] [INFO ] [pid=39484] [commit] commit ok pageId=a58bbe revisionId=b9c4aee4 ms=5
+[2026-08-17 17:27:17.895] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=05_procurement slideId=a58bbe index=4 version=5 baseVersion=4 revisionId=b9c4aee4 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=150
+[2026-08-17 17:27:17.895] [INFO ] [pid=39484] [sync] aligned round=6 attempt=1 size=5 desired=5 pendingDirtySize=0
+[2026-08-17 17:27:17.895] [INFO ] [pid=39484] [sync] reconcile ok round=6 attempt=1 ms=151
+[2026-08-17 17:27:17.896] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:17.896] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:17.927] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=30
+[2026-08-17 17:27:17.927] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=31
+[2026-08-17 17:27:17.928] [INFO ] [pid=39484] [sync] drain end round=6 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=184
+[2026-08-17 17:27:33.127] [INFO ] [pid=39484] [watcher] event=add file=slides\06_shipping.slide
+[2026-08-17 17:27:33.642] [INFO ] [pid=39484] [watcher] flush batch dirty=[06_shipping] size=1
+[2026-08-17 17:27:33.643] [INFO ] [pid=39484] [sync] submit nextRound=7 dirty=06_shipping pendingDirtySize=1 merged=no
+[2026-08-17 17:27:33.643] [INFO ] [pid=39484] [sync] drain start round=7 pendingDirtySize=1
+[2026-08-17 17:27:33.644] [INFO ] [pid=39484] [sync] step=add round=7 attempt=1 pageId=06_shipping index=5
+[2026-08-17 17:27:33.644] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=06_shipping index=5
+[2026-08-17 17:27:33.645] [INFO ] [pid=39484] [render] start pageId=06_shipping file=E:\lw\PPT\入职以来AI工作复盘\slides\06_shipping.slide
+[2026-08-17 17:27:33.737] [INFO ] [pid=39484] [render] ok pageId=06_shipping slides=1 ms=92
+[2026-08-17 17:27:33.737] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:27:33.743] [INFO ] [pid=39484] [commit] commit send pageId=6cfcca targetIndex=5 version=6 baseVersion=5 revisionBytes=22224
+[2026-08-17 17:27:33.750] [INFO ] [pid=39484] [commit] commit ok pageId=6cfcca revisionId=b56d69cd ms=6
+[2026-08-17 17:27:33.752] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=06_shipping slideId=6cfcca index=5 version=6 baseVersion=5 revisionId=b56d69cd code=0 images=[local=0 remote=0 cached=0 failed=0] ms=108
+[2026-08-17 17:27:33.752] [INFO ] [pid=39484] [sync] aligned round=7 attempt=1 size=6 desired=6 pendingDirtySize=0
+[2026-08-17 17:27:33.753] [INFO ] [pid=39484] [sync] reconcile ok round=7 attempt=1 ms=109
+[2026-08-17 17:27:33.753] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:33.753] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:27:33.789] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=36
+[2026-08-17 17:27:33.790] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=37
+[2026-08-17 17:27:33.790] [INFO ] [pid=39484] [sync] drain end round=7 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=147
+[2026-08-17 17:28:29.821] [INFO ] [pid=39484] [watcher] event=add file=slides\07_other_tools.slide
+[2026-08-17 17:28:30.334] [INFO ] [pid=39484] [watcher] flush batch dirty=[07_other_tools] size=1
+[2026-08-17 17:28:30.334] [INFO ] [pid=39484] [sync] submit nextRound=8 dirty=07_other_tools pendingDirtySize=1 merged=no
+[2026-08-17 17:28:30.335] [INFO ] [pid=39484] [sync] drain start round=8 pendingDirtySize=1
+[2026-08-17 17:28:30.335] [INFO ] [pid=39484] [sync] step=add round=8 attempt=1 pageId=07_other_tools index=6
+[2026-08-17 17:28:30.335] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=07_other_tools index=6
+[2026-08-17 17:28:30.336] [INFO ] [pid=39484] [render] start pageId=07_other_tools file=E:\lw\PPT\入职以来AI工作复盘\slides\07_other_tools.slide
+[2026-08-17 17:28:30.419] [INFO ] [pid=39484] [render] ok pageId=07_other_tools slides=1 ms=83
+[2026-08-17 17:28:30.419] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:28:30.426] [INFO ] [pid=39484] [commit] commit send pageId=00c60d targetIndex=6 version=7 baseVersion=6 revisionBytes=24472
+[2026-08-17 17:28:30.433] [INFO ] [pid=39484] [commit] commit ok pageId=00c60d revisionId=46c5a3a8 ms=7
+[2026-08-17 17:28:30.435] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=07_other_tools slideId=00c60d index=6 version=7 baseVersion=6 revisionId=46c5a3a8 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=100
+[2026-08-17 17:28:30.436] [INFO ] [pid=39484] [sync] aligned round=8 attempt=1 size=7 desired=7 pendingDirtySize=0
+[2026-08-17 17:28:30.436] [INFO ] [pid=39484] [sync] reconcile ok round=8 attempt=1 ms=101
+[2026-08-17 17:28:30.436] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:28:30.437] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:28:30.481] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=44
+[2026-08-17 17:28:30.482] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=46
+[2026-08-17 17:28:30.482] [INFO ] [pid=39484] [sync] drain end round=8 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=147
+[2026-08-17 17:28:45.460] [INFO ] [pid=39484] [watcher] event=add file=slides\08_skill.slide
+[2026-08-17 17:28:45.961] [INFO ] [pid=39484] [watcher] flush batch dirty=[08_skill] size=1
+[2026-08-17 17:28:45.962] [INFO ] [pid=39484] [sync] submit nextRound=9 dirty=08_skill pendingDirtySize=1 merged=no
+[2026-08-17 17:28:45.962] [INFO ] [pid=39484] [sync] drain start round=9 pendingDirtySize=1
+[2026-08-17 17:28:45.963] [INFO ] [pid=39484] [sync] step=add round=9 attempt=1 pageId=08_skill index=7
+[2026-08-17 17:28:45.964] [INFO ] [pid=39484] [backend-ops] addSlideAt start pageId=08_skill index=7
+[2026-08-17 17:28:45.967] [INFO ] [pid=39484] [render] start pageId=08_skill file=E:\lw\PPT\入职以来AI工作复盘\slides\08_skill.slide
+[2026-08-17 17:28:46.036] [INFO ] [pid=39484] [render] ok pageId=08_skill slides=1 ms=70
+[2026-08-17 17:28:46.037] [INFO ] [pid=39484] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-17 17:28:46.043] [INFO ] [pid=39484] [commit] commit send pageId=961be6 targetIndex=7 version=8 baseVersion=7 revisionBytes=19720
+[2026-08-17 17:28:46.050] [INFO ] [pid=39484] [commit] commit ok pageId=961be6 revisionId=a6e9ffc1 ms=5
+[2026-08-17 17:28:46.051] [INFO ] [pid=39484] [backend-ops] addSlideAt ok pageId=08_skill slideId=961be6 index=7 version=8 baseVersion=7 revisionId=a6e9ffc1 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=87
+[2026-08-17 17:28:46.051] [INFO ] [pid=39484] [sync] aligned round=9 attempt=1 size=8 desired=8 pendingDirtySize=0
+[2026-08-17 17:28:46.052] [INFO ] [pid=39484] [sync] reconcile ok round=9 attempt=1 ms=89
+[2026-08-17 17:28:46.052] [INFO ] [pid=39484] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:28:46.052] [INFO ] [pid=39484] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-17 17:28:46.101] [INFO ] [pid=39484] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=49
+[2026-08-17 17:28:46.101] [INFO ] [pid=39484] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=49
+[2026-08-17 17:28:46.102] [INFO ] [pid=39484] [sync] drain end round=9 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=140

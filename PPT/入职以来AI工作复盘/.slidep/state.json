@@ -1,0 +1,45 @@
+{
+  "filePath": "E:\\lw\\PPT\\入职以来AI工作复盘\\入职以来AI工作复盘.pptx",
+  "lastCommit": {
+    "01_cover": {
+      "revisionId": "c5b2ee5d8bb46fc59aac552c06685cd19b65966b",
+      "version": 1,
+      "at": "2026-08-17 17:24:52.410"
+    },
+    "02_catalog": {
+      "revisionId": "a9641b61b2559d6883c07a153c172e93f39f88f4",
+      "version": 2,
+      "at": "2026-08-17 17:26:30.652"
+    },
+    "03_overview": {
+      "revisionId": "85f0affe7617a580aa362645766d3baa46dc983b",
+      "version": 3,
+      "at": "2026-08-17 17:26:47.765"
+    },
+    "04_app_table": {
+      "revisionId": "eced333da18cf3111877bcc6b44eaa532b46f359",
+      "version": 4,
+      "at": "2026-08-17 17:27:01.518"
+    },
+    "05_procurement": {
+      "revisionId": "b9c4aee46218f1a0b2ecf8b47e9cf5af0ec5ce93",
+      "version": 5,
+      "at": "2026-08-17 17:27:17.894"
+    },
+    "06_shipping": {
+      "revisionId": "b56d69cdcfc0baecdd3a4c8bc4db2d3e82c7af4b",
+      "version": 6,
+      "at": "2026-08-17 17:27:33.751"
+    },
+    "07_other_tools": {
+      "revisionId": "46c5a3a8c035358b1489657239650c3a11f5f4e3",
+      "version": 7,
+      "at": "2026-08-17 17:28:30.433"
+    },
+    "08_skill": {
+      "revisionId": "a6e9ffc1aa36c7f0f94bb0540ac690aa8f3d7edc",
+      "version": 8,
+      "at": "2026-08-17 17:28:46.050"
+    }
+  }
+}

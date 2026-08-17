@@ -1,0 +1,18 @@
+<Slide style={{ width:'1280px', height:'720px', position:'relative', background:'#FFFFFF', fontFamily:'微软雅黑' }}>
+  <Box style={{ position:'absolute', left:56, top:80, right:56, flexDirection:'row', gap:48, height:520, alignItems:'center' }}>
+    <Box style={{ width:300, justifyContent:'center' }}>
+      <Text style={{ fontSize:54, fontWeight:'bold', color:'#2F5597' }}>目录</Text>
+      <Text style={{ fontSize:24, color:'#2F5597', marginTop:8, letterSpacing:4 }}>CONTENTS</Text>
+    </Box>
+    <Box style={{ width:2, height:300, background:'#4472C4' }} />
+    <Box style={{ flex:1, flexDirection:'column', gap:20, justifyContent:'center' }}>
+      {['一、工作概览与量化总览','二、内部工作：自研应用交付','三、内部工作：Skill 抽象与复用','四、内部工作：培训与推广','五、外部工作：宏昊AI助手平台','六、下阶段计划与需支持事项'].map((t, i) => (
+        <Text key={i} style={{ fontSize:24, fontWeight:'bold', color:'#1A1A1A' }}>{t}</Text>
+      ))}
+    </Box>
+  </Box>
+  <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
+    <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>02 / 13</Text>
+  </Box>
+</Slide>

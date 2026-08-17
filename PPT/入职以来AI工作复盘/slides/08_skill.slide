@@ -1,0 +1,32 @@
+<Slide style={{ width:'1280px', height:'720px', position:'relative', background:'#FFFFFF', fontFamily:'微软雅黑' }}>
+  <Box style={{ position:'absolute', left:56, top:36, flexDirection:'row', alignItems:'center', gap:12 }}>
+    <Box style={{ width:8, height:34, background:'#4472C4' }} />
+    <Text style={{ fontSize:30, fontWeight:'bold', color:'#052B7C' }}>三、Skill 抽象与复用</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:118, right:56, background:'#052B7C', borderRadius:10, padding:'14px 22px' }}>
+    <Text style={{ fontSize:17, color:'#FFFFFF', lineHeight:1.5 }}>与「建应用」并列的内部第二条交付路径：复现工作场景 → 抽象输入输出 → 复用 / 赋能业务自建。</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:200, right:56, flexDirection:'row', gap:28 }}>
+    <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:24, flexDirection:'column', gap:12 }}>
+      <Text style={{ fontSize:22, fontWeight:'bold', color:'#4472C4' }}>tax-refund-audit（退税审单 Skill）</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 抽象退税审单工作流为可复用 Skill，交付财务部</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 与 Tax_check 应用互补：应用做 OCR + 条款矩阵「体检」，Skill 做审单流程复用与下沉</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 降低对专人 / 专工具的依赖</Text>
+      <Box style={{ marginTop:4, background:'#DAE3F3', borderRadius:6, padding:'6px 12px', alignSelf:'flex-start' }}><Text style={{ fontSize:15, fontWeight:'bold', color:'#052B7C' }}>状态：已交付财务使用</Text></Box>
+    </Box>
+    <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:24, flexDirection:'column', gap:12 }}>
+      <Text style={{ fontSize:22, fontWeight:'bold', color:'#4472C4' }}>daily-commodity-price-scraper（价格爬取 Skill）</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 作为「钩子」培养采购部门自主制作 Skill 的能力</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 后续仍回采购部门培训，巩固「自建 Skill」能力</Text>
+      <Text style={{ fontSize:17, color:'#1A1A1A', lineHeight:1.7 }}>· 体现理念：赋能业务自建，AI 小组退后为把关角色</Text>
+      <Box style={{ marginTop:4, background:'#DAE3F3', borderRadius:6, padding:'6px 12px', alignSelf:'flex-start' }}><Text style={{ fontSize:15, fontWeight:'bold', color:'#052B7C' }}>状态：赋能中（回培训）</Text></Box>
+    </Box>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
+    <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>08 / 13</Text>
+  </Box>
+</Slide>
