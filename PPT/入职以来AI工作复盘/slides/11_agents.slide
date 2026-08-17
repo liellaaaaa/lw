@@ -1,0 +1,35 @@
+<Slide style={{ width:'1280px', height:'720px', position:'relative', background:'#FFFFFF', fontFamily:'微软雅黑' }}>
+  <Box style={{ position:'absolute', left:56, top:36, flexDirection:'row', alignItems:'center', gap:12 }}>
+    <Box style={{ width:8, height:34, background:'#4472C4' }} />
+    <Text style={{ fontSize:30, fontWeight:'bold', color:'#052B7C' }}>五、智能体矩阵与内容生成</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:120, right:56 }}>
+    <Table
+      style={{ width:'100%', height:440 }}
+      defaultTextStyle={{ fontSize:15, textAlign:'center', color:'#1A1A1A' }}
+      defaultCellStyle={{ border:{ left:{width:1,color:'#CCCCCC'}, right:{width:1,color:'#CCCCCC'}, top:{width:1,color:'#CCCCCC'}, bottom:{width:1,color:'#CCCCCC'} } }}
+      cells={[
+        [ {text:'智能体', textStyle:{bold:true,color:'#1A1A1A'}, cellStyle:{background:{color:'#DAE3F3'}}},
+          {text:'面向', textStyle:{bold:true,color:'#1A1A1A'}, cellStyle:{background:{color:'#DAE3F3'}}},
+          {text:'知识规模', textStyle:{bold:true,color:'#1A1A1A'}, cellStyle:{background:{color:'#DAE3F3'}}},
+          {text:'结构规模', textStyle:{bold:true,color:'#1A1A1A'}, cellStyle:{background:{color:'#DAE3F3'}}},
+          {text:'状态', textStyle:{bold:true,color:'#1A1A1A'}, cellStyle:{background:{color:'#DAE3F3'}}},
+          {text:'核心价值', textStyle:{bold:true,color:'#1A1A1A',textAlign:'left'}, cellStyle:{background:{color:'#DAE3F3'}}} ],
+        [ '说明书助手', '销售 / 业务', 'TDS 产品库', '6 模式 / 16 节提示词', '已上线', {text:'TDS 咨询秒级应答、选型有据不误导客户', textStyle:{textAlign:'left'}} ],
+        [ '销售 SOP / 全能助手', '销售', '7 份 SOP 源文件', '6 场景触发', '已上线', {text:'销售动作标准化、话术统一、新人即上手', textStyle:{textAlign:'left'}} ],
+        [ '业务智能助理', '营销中心 / 业务', 'SKILL.md + templates + role', '3 阶段 / 4 岗位自适应', {text:'迭代中 v5', textStyle:{color:'#C0504D',bold:true}}, {text:'客户问题全流程 AI 化 + 合规红线校验', textStyle:{textAlign:'left'}} ],
+        [ '应用工艺助手', '研发为主 + 业务', '工艺手册 + 研发培训', '20+ 疵病排查', '已上线', {text:'染整专业问答、客户质疑标准答案', textStyle:{textAlign:'left'}} ],
+      ]}
+    />
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:568, right:56 }}>
+    <Text style={{ fontSize:16, color:'#1A1A1A', lineHeight:1.5 }}>另有「培训助手」「视频 / 图片生成助手」等能力，构成平台智能体矩阵；06-12 提出 seedance/seedream 独立化诉求，07-14 图片 · 视频生成独立应用落地（营销 / 销售自助生产素材）。</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
+    <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>11 / 13</Text>
+  </Box>
+</Slide>

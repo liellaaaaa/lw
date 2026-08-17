@@ -2,44 +2,69 @@
   "filePath": "E:\\lw\\PPT\\入职以来AI工作复盘\\入职以来AI工作复盘.pptx",
   "lastCommit": {
     "01_cover": {
-      "revisionId": "c5b2ee5d8bb46fc59aac552c06685cd19b65966b",
-      "version": 1,
-      "at": "2026-08-17 17:24:52.410"
+      "revisionId": "cd74a7040c51dbafc43f5e439f84aec07a2e3d3e",
+      "version": 14,
+      "at": "2026-08-17 17:35:20.143"
     },
     "02_catalog": {
-      "revisionId": "a9641b61b2559d6883c07a153c172e93f39f88f4",
-      "version": 2,
-      "at": "2026-08-17 17:26:30.652"
+      "revisionId": "3b9204def1eca07cbc620131b069eff72cb55e39",
+      "version": 15,
+      "at": "2026-08-17 17:35:20.208"
     },
     "03_overview": {
-      "revisionId": "85f0affe7617a580aa362645766d3baa46dc983b",
-      "version": 3,
-      "at": "2026-08-17 17:26:47.765"
+      "revisionId": "3bb2a129b7dfd15cbe408d7d11986686b91748f6",
+      "version": 16,
+      "at": "2026-08-17 17:35:20.308"
     },
     "04_app_table": {
-      "revisionId": "eced333da18cf3111877bcc6b44eaa532b46f359",
-      "version": 4,
-      "at": "2026-08-17 17:27:01.518"
+      "revisionId": "4931dc274595eb8b523ba9c6cb0d81bec80563ce",
+      "version": 17,
+      "at": "2026-08-17 17:35:20.427"
     },
     "05_procurement": {
-      "revisionId": "b9c4aee46218f1a0b2ecf8b47e9cf5af0ec5ce93",
-      "version": 5,
-      "at": "2026-08-17 17:27:17.894"
+      "revisionId": "bdd3e2b490cdfb2dc1922f6c6e540e5966b4576d",
+      "version": 18,
+      "at": "2026-08-17 17:35:20.509"
     },
     "06_shipping": {
-      "revisionId": "b56d69cdcfc0baecdd3a4c8bc4db2d3e82c7af4b",
-      "version": 6,
-      "at": "2026-08-17 17:27:33.751"
+      "revisionId": "46b1e3c2d23621fbdfbdb8dc45860ee10826340f",
+      "version": 19,
+      "at": "2026-08-17 17:35:20.593"
     },
     "07_other_tools": {
-      "revisionId": "46c5a3a8c035358b1489657239650c3a11f5f4e3",
-      "version": 7,
-      "at": "2026-08-17 17:28:30.433"
+      "revisionId": "d04d3394a1c46fbf321d4bba8027d4d1b42db20c",
+      "version": 20,
+      "at": "2026-08-17 17:35:20.681"
     },
     "08_skill": {
-      "revisionId": "a6e9ffc1aa36c7f0f94bb0540ac690aa8f3d7edc",
-      "version": 8,
-      "at": "2026-08-17 17:28:46.050"
+      "revisionId": "effa04581e7312f1a31c0cbeb108a278bf978c7f",
+      "version": 21,
+      "at": "2026-08-17 17:35:20.750"
+    },
+    "09_training": {
+      "revisionId": "f06e95bd089bcd728ce8b58ecbac4aa1ac22aa64",
+      "version": 22,
+      "at": "2026-08-17 17:35:20.843"
+    },
+    "10_acceptance": {
+      "revisionId": "18e5f50aa4138c3801ba96016c395abd1b2731e7",
+      "version": 23,
+      "at": "2026-08-17 17:35:20.925"
+    },
+    "11_agents": {
+      "revisionId": "5250cc0df296b67395347bd1f656d5ad21f18486",
+      "version": 24,
+      "at": "2026-08-17 17:35:21.015"
+    },
+    "12_next": {
+      "revisionId": "f1f7d59cafe3c498a1a171a29019c6747a4fc47d",
+      "version": 25,
+      "at": "2026-08-17 17:35:21.095"
+    },
+    "13_ending": {
+      "revisionId": "152c6fe23cec7bfa55b18f726ccc3229fb249198",
+      "version": 26,
+      "at": "2026-08-17 17:35:21.124"
     }
   }
 }

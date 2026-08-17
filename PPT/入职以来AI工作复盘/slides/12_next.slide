@@ -1,0 +1,33 @@
+<Slide style={{ width:'1280px', height:'720px', position:'relative', background:'#FFFFFF', fontFamily:'微软雅黑' }}>
+  <Box style={{ position:'absolute', left:56, top:36, flexDirection:'row', alignItems:'center', gap:12 }}>
+    <Box style={{ width:8, height:34, background:'#4472C4' }} />
+    <Text style={{ fontSize:30, fontWeight:'bold', color:'#052B7C' }}>六、下阶段计划与需支持事项</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:130, right:56, flexDirection:'row', gap:36 }}>
+    <Box style={{ flex:1.4, flexDirection:'column', gap:14 }}>
+      <Text style={{ fontSize:20, fontWeight:'bold', color:'#052B7C' }}>下阶段计划</Text>
+      {['业务智能助理上线前完成检索稳定性测试，沉淀为营销中心标准智能体','推动供应商修复待解项（图片变视频范围、竖屏不支持）','建立工具活跃度 / 采纳率轻量看板','补采采购 / 船务「节省工时」量化，用于增量价值申报','Tax_check / Data_masking 持续运营深化','价格爬取 Skill 回采购培训，巩固「自建 Skill」能力'].map((t, i) => (
+        <Box key={i} style={{ flexDirection:'row', alignItems:'flex-start', gap:12 }}>
+          <Box style={{ width:8, height:8, background:'#4472C4', borderRadius:2, marginTop:8 }} />
+          <Text style={{ fontSize:16, color:'#1A1A1A', lineHeight:1.5 }}>{t}</Text>
+        </Box>
+      ))}
+    </Box>
+
+    <Box style={{ flex:1, flexDirection:'column', gap:14 }}>
+      <Text style={{ fontSize:20, fontWeight:'bold', color:'#C0504D' }}>需支持事项</Text>
+      {['业务智能助理检索测试需营销中心提供真实客户问题样本','待解项修复依赖供应商排期，需领导推动优先级','工时量化需业务方配合记录使用前后耗时','采纳率看板需 IT / 数据侧轻量支持'].map((t, i) => (
+        <Box key={i} style={{ flexDirection:'row', alignItems:'flex-start', gap:12 }}>
+          <Box style={{ width:8, height:8, background:'#C0504D', borderRadius:2, marginTop:8 }} />
+          <Text style={{ fontSize:16, color:'#1A1A1A', lineHeight:1.5 }}>{t}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
+    <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>12 / 13</Text>
+  </Box>
+</Slide>
