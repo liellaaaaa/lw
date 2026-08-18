@@ -1,0 +1,44 @@
+<Slide style={{ width:'1280px', height:'720px', position:'relative', background:'#FFFFFF', fontFamily:'微软雅黑' }}>
+  <Box style={{ position:'absolute', left:56, top:36, flexDirection:'row', alignItems:'center', gap:12 }}>
+    <Box style={{ width:8, height:34, background:'#4472C4' }} />
+    <Text style={{ fontSize:30, fontWeight:'bold', color:'#052B7C' }}>自研应用与 Skill 交付 · 融合总览</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:118, right:56, flexDirection:'column', gap:16 }}>
+    <Box style={{ flexDirection:'row', gap:18, height:236 }}>
+      <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:'18px 22px', flexDirection:'column', gap:8 }}>
+        <Text style={{ fontSize:22, fontWeight:'bold', color:'#052B7C' }}>采购分析助手<Text style={{ fontSize:14, fontWeight:'normal', color:'#888' }}> ProcurementAnalysis</Text></Text>
+        <Text style={{ fontSize:17, color:'#1A1A1A' }}>数据 <span style={{ fontWeight:'bold', color:'#4472C4' }}>15,227</span> 条 · 品类 <span style={{ fontWeight:'bold' }}>61</span> · 模块 <span style={{ fontWeight:'bold' }}>7</span></Text>
+        <Text style={{ fontSize:16, color:'#1A1A1A', lineHeight:1.5 }}>29 天交付采购部；看板看趋势、预警推异常、供应商横向比价，把「拍脑袋比价」变「看数据决策」。</Text>
+      </Box>
+      <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:'18px 22px', flexDirection:'column', gap:8 }}>
+        <Text style={{ fontSize:22, fontWeight:'bold', color:'#052B7C' }}>船务 T/T 协议自动化<Text style={{ fontSize:14, fontWeight:'normal', color:'#888' }}> shipping-helper</Text></Text>
+        <Text style={{ fontSize:17, color:'#1A1A1A' }}>单证 <span style={{ fontWeight:'bold', color:'#4472C4' }}>4</span> 类 · HS 编码 <span style={{ fontWeight:'bold' }}>389</span> · 进度 <span style={{ fontWeight:'bold' }}>95%+</span></Text>
+        <Text style={{ fontSize:16, color:'#1A1A1A', lineHeight:1.5 }}>录入基础数据即生成 Booking/LOI/MSDS/报关单证、自动算包装与 HS；PI 解析接入 DeepSeek，把「人填」变「系统出」。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection:'row', gap:18, height:236 }}>
+      <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:'18px 22px', flexDirection:'column', gap:8 }}>
+        <Text style={{ fontSize:22, fontWeight:'bold', color:'#052B7C' }}>财务三件套</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>· 数据脱敏 .exe（12 法，07-28 交付）</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>· 对账单 纯前端 HTML（已交付，零部署）</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>· Tax_check .exe（16+ 单据 OCR，08-01 交付收尾）</Text>
+      </Box>
+      <Box style={{ flex:1, background:'#F4F7FC', borderRadius:12, padding:'18px 22px', flexDirection:'column', gap:8 }}>
+        <Text style={{ fontSize:22, fontWeight:'bold', color:'#052B7C' }}>Skill 抽象与复用</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>· tax-refund-audit：审单流程抽象复用，交付财务</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>· price-scraper：钩子培养采购自建 Skill</Text>
+        <Text style={{ fontSize:15, color:'#1A1A1A', lineHeight:1.5 }}>与「建应用」并列的第二条交付路径</Text>
+      </Box>
+    </Box>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:616, right:56, background:'#052B7C', borderRadius:8, padding:'10px 18px' }}>
+    <Text style={{ fontSize:16, color:'#FFFFFF', lineHeight:1.4 }}>四条交付路径统一收口：自研应用（采购 / 船务 / 财务三件套）+ Skill 抽象复用，覆盖采购、船务、财务三部门；数据脱敏与 Tax_check 走本地 .exe 满足敏感数据不出境。</Text>
+  </Box>
+
+  <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
+    <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>05 / 10</Text>
+  </Box>
+</Slide>

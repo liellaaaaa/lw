@@ -2,24 +2,24 @@
   "filePath": "E:\\lw\\PPT\\入职以来AI工作复盘\\入职以来AI工作复盘.pptx",
   "lastCommit": {
     "01_cover": {
-      "revisionId": "cd74a7040c51dbafc43f5e439f84aec07a2e3d3e",
-      "version": 14,
-      "at": "2026-08-17 17:35:20.143"
+      "revisionId": "68567d8f4dd0a291b49030d794cac563f0f36cfa",
+      "version": 47,
+      "at": "2026-08-18 09:23:41.834"
     },
     "02_catalog": {
-      "revisionId": "3b9204def1eca07cbc620131b069eff72cb55e39",
-      "version": 15,
-      "at": "2026-08-17 17:35:20.208"
+      "revisionId": "3933b84e437340ec98f030165e28a424d135a816",
+      "version": 48,
+      "at": "2026-08-18 09:23:41.905"
     },
     "03_overview": {
-      "revisionId": "3bb2a129b7dfd15cbe408d7d11986686b91748f6",
-      "version": 16,
-      "at": "2026-08-17 17:35:20.308"
+      "revisionId": "a1dd87965609a06a6c427080600f132ebb083810",
+      "version": 49,
+      "at": "2026-08-18 09:23:42.008"
     },
     "04_app_table": {
-      "revisionId": "4931dc274595eb8b523ba9c6cb0d81bec80563ce",
-      "version": 17,
-      "at": "2026-08-17 17:35:20.427"
+      "revisionId": "897712300c7b217856cdc2abd555b08b9946272b",
+      "version": 50,
+      "at": "2026-08-18 09:23:42.136"
     },
     "05_procurement": {
       "revisionId": "bdd3e2b490cdfb2dc1922f6c6e540e5966b4576d",
@@ -65,6 +65,36 @@
       "revisionId": "152c6fe23cec7bfa55b18f726ccc3229fb249198",
       "version": 26,
       "at": "2026-08-17 17:35:21.124"
+    },
+    "05_app_fusion": {
+      "revisionId": "2c5b4d3362f8ed2138008e5f7c6aa6debe222321",
+      "version": 51,
+      "at": "2026-08-18 09:23:42.260"
+    },
+    "06_training": {
+      "revisionId": "663b4c078c2a9da199039a22b196d1efa4873616",
+      "version": 52,
+      "at": "2026-08-18 09:23:42.356"
+    },
+    "07_acceptance": {
+      "revisionId": "e2f4530cfd4e81bd4a86ed9790da0d954018ae98",
+      "version": 53,
+      "at": "2026-08-18 09:23:42.453"
+    },
+    "08_agents": {
+      "revisionId": "c7e19d6b93c48a25fbdf4f4cb17c3a9018972075",
+      "version": 54,
+      "at": "2026-08-18 09:23:42.546"
+    },
+    "09_next": {
+      "revisionId": "78d2ff03247398f88a8b5b03913ce623f15839e5",
+      "version": 55,
+      "at": "2026-08-18 09:23:42.627"
+    },
+    "10_ending": {
+      "revisionId": "14f393a73169cd85fb18c25fd6024b26ad728ac7",
+      "version": 56,
+      "at": "2026-08-18 09:23:42.660"
     }
   }
 }

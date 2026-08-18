@@ -425,3 +425,482 @@
 [2026-08-17 17:35:40.169] [INFO ] [pid=12068] [validate] --all mode: found 13 files in E:\lw\PPT\入职以来AI工作复盘\slides
 [2026-08-17 17:35:40.170] [INFO ] [pid=12068] [validate] batch start files=13 checkOverflow=true
 [2026-08-17 17:35:41.175] [INFO ] [pid=12068] [validate] batch done total=13 passed=13 failed=0 ms=1007
+[2026-08-18 09:22:47.155] [INFO ] [pid=34616] [watcher] event=add file=slides\05_app_fusion.slide
+[2026-08-18 09:22:47.406] [INFO ] [pid=34616] [watcher] event=unlink file=slides\05_procurement.slide
+[2026-08-18 09:22:47.407] [INFO ] [pid=34616] [watcher] flush batch dirty=[05_app_fusion] size=1
+[2026-08-18 09:22:47.407] [INFO ] [pid=34616] [sync] submit nextRound=2 dirty=05_app_fusion pendingDirtySize=1 merged=no
+[2026-08-18 09:22:47.407] [INFO ] [pid=34616] [sync] drain start round=2 pendingDirtySize=1
+[2026-08-18 09:22:47.408] [INFO ] [pid=34616] [sync] step=remove-orphan round=2 attempt=1 pageId=05_procurement index=4
+[2026-08-18 09:22:47.409] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=4
+[2026-08-18 09:22:47.412] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=1 merged=yes
+[2026-08-18 09:22:47.412] [INFO ] [pid=34616] [watcher] event=unlink file=slides\06_shipping.slide
+[2026-08-18 09:22:47.412] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=1 merged=yes
+[2026-08-18 09:22:47.413] [INFO ] [pid=34616] [watcher] event=unlink file=slides\07_other_tools.slide
+[2026-08-18 09:22:47.413] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=1 merged=yes
+[2026-08-18 09:22:47.420] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":4}
+[2026-08-18 09:22:47.426] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=6
+[2026-08-18 09:22:47.426] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=4 serverVersion=40 ms=17
+[2026-08-18 09:22:47.427] [INFO ] [pid=34616] [sync] step=remove-orphan round=2 attempt=1 pageId=06_shipping index=4
+[2026-08-18 09:22:47.427] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=4
+[2026-08-18 09:22:47.430] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":4}
+[2026-08-18 09:22:47.434] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=4
+[2026-08-18 09:22:47.435] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=4 serverVersion=41 ms=8
+[2026-08-18 09:22:47.435] [INFO ] [pid=34616] [sync] step=remove-orphan round=2 attempt=1 pageId=07_other_tools index=4
+[2026-08-18 09:22:47.435] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=4
+[2026-08-18 09:22:47.439] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":4}
+[2026-08-18 09:22:47.440] [INFO ] [pid=34616] [watcher] event=unlink file=slides\08_skill.slide
+[2026-08-18 09:22:47.440] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=1 merged=yes
+[2026-08-18 09:22:47.442] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:22:47.443] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=4 serverVersion=42 ms=8
+[2026-08-18 09:22:47.443] [INFO ] [pid=34616] [sync] step=remove-orphan round=2 attempt=1 pageId=08_skill index=4
+[2026-08-18 09:22:47.443] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=4
+[2026-08-18 09:22:47.447] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":4}
+[2026-08-18 09:22:47.449] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:22:47.450] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=4 serverVersion=43 ms=7
+[2026-08-18 09:22:47.450] [INFO ] [pid=34616] [sync] step=add round=2 attempt=1 pageId=05_app_fusion index=4
+[2026-08-18 09:22:47.450] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=05_app_fusion index=4
+[2026-08-18 09:22:47.451] [INFO ] [pid=34616] [render] start pageId=05_app_fusion file=E:\lw\PPT\入职以来AI工作复盘\slides\05_app_fusion.slide
+[2026-08-18 09:22:47.634] [INFO ] [pid=34616] [render] ok pageId=05_app_fusion slides=1 ms=183
+[2026-08-18 09:22:47.635] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:47.649] [INFO ] [pid=34616] [commit] commit send pageId=a5c075 targetIndex=4 version=27 baseVersion=43 revisionBytes=28476
+[2026-08-18 09:22:47.652] [INFO ] [pid=34616] [watcher] event=add file=slides\_archived\07_other_tools.slide
+[2026-08-18 09:22:47.652] [INFO ] [pid=34616] [watcher] event=add file=slides\_archived\05_procurement.slide
+[2026-08-18 09:22:47.652] [INFO ] [pid=34616] [watcher] event=add file=slides\_archived\08_skill.slide
+[2026-08-18 09:22:47.653] [INFO ] [pid=34616] [watcher] event=add file=slides\_archived\06_shipping.slide
+[2026-08-18 09:22:47.659] [INFO ] [pid=34616] [commit] commit ok pageId=a5c075 revisionId=3a3a69a2 ms=9
+[2026-08-18 09:22:47.661] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=05_app_fusion slideId=a5c075 index=4 version=27 baseVersion=43 revisionId=3a3a69a2 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=211
+[2026-08-18 09:22:47.661] [INFO ] [pid=34616] [sync] step=remove-orphan round=2 attempt=1 pageId=09_training index=5
+[2026-08-18 09:22:47.662] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=5
+[2026-08-18 09:22:47.665] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":5}
+[2026-08-18 09:22:47.667] [WARN ] [pid=34616] [mcp] mcp:slide_remove_slide jsonrpc error code=-32603 message=RemoveSlide failed: SlideEditor::RemoveSlide: page_index out of range ms=2
+[2026-08-18 09:22:47.668] [ERROR] [pid=34616] [backend-ops] removeSlideAt FAIL index=5 ms=6
+[2026-08-18 09:22:47.668] [WARN ] [pid=34616] [worker] reconcile failed (_f: mcp:slide_remove_slide jsonrpc error: code=-32603 message=RemoveSlide failed: SlideEditor::RemoveSlide: page_index out of range); trying soft recovery (purge backend + sync version, no editor restart)
+[2026-08-18 09:22:47.671] [INFO ] [pid=34616] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv"}
+[2026-08-18 09:22:47.674] [INFO ] [pid=34616] [mcp] mcp:slide_get_info ok ms=3
+[2026-08-18 09:22:47.674] [INFO ] [pid=34616] [purge] purge start backendSlideCount=5
+[2026-08-18 09:22:47.677] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:22:47.680] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:22:47.683] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:22:47.687] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:22:47.690] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:22:47.694] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:22:47.697] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:22:47.700] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:22:47.704] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:22:47.707] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:22:47.707] [INFO ] [pid=34616] [purge] purge ok removed=5 ms=39
+[2026-08-18 09:22:47.710] [INFO ] [pid=34616] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv"}
+[2026-08-18 09:22:47.713] [INFO ] [pid=34616] [mcp] mcp:slide_get_info ok ms=3
+[2026-08-18 09:22:47.714] [INFO ] [pid=34616] [backend-ops] seedServerVersion from=44 to=10
+[2026-08-18 09:22:47.714] [INFO ] [pid=34616] [worker] recovery (soft) ok: purged=5 backendNow=0page(s) version=10, view reset; reconcile will redo full sync
+[2026-08-18 09:22:47.714] [INFO ] [pid=34616] [sync] reconcile FAIL but recovered via onReconcileFailure round=2 attempt=1 (recovery 1/2) ms=306; re-running reconcile
+[2026-08-18 09:22:47.715] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=01_cover index=0
+[2026-08-18 09:22:47.715] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-18 09:22:47.716] [INFO ] [pid=34616] [render] start pageId=01_cover file=E:\lw\PPT\入职以来AI工作复盘\slides\01_cover.slide
+[2026-08-18 09:22:47.738] [INFO ] [pid=34616] [render] ok pageId=01_cover slides=1 ms=23
+[2026-08-18 09:22:47.739] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:47.741] [INFO ] [pid=34616] [commit] commit send pageId=6b4226 targetIndex=0 version=28 baseVersion=10 revisionBytes=8596
+[2026-08-18 09:22:47.747] [INFO ] [pid=34616] [commit] commit ok pageId=6b4226 revisionId=0ca680e2 ms=5
+[2026-08-18 09:22:47.749] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=01_cover slideId=6b4226 index=0 version=28 baseVersion=10 revisionId=0ca680e2 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=34
+[2026-08-18 09:22:47.749] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=02_catalog index=1
+[2026-08-18 09:22:47.749] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=02_catalog index=1
+[2026-08-18 09:22:47.750] [INFO ] [pid=34616] [render] start pageId=02_catalog file=E:\lw\PPT\入职以来AI工作复盘\slides\02_catalog.slide
+[2026-08-18 09:22:47.782] [INFO ] [pid=34616] [render] ok pageId=02_catalog slides=1 ms=32
+[2026-08-18 09:22:47.782] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:47.786] [INFO ] [pid=34616] [commit] commit send pageId=f7ae6b targetIndex=1 version=29 baseVersion=11 revisionBytes=9516
+[2026-08-18 09:22:47.788] [INFO ] [pid=34616] [watcher] event=unlink file=slides\09_training.slide
+[2026-08-18 09:22:47.788] [INFO ] [pid=34616] [watcher] flush batch dirty=[07_other_tools,05_procurement,08_skill,06_shipping] size=4
+[2026-08-18 09:22:47.788] [INFO ] [pid=34616] [sync] submit round=2 dirty=07_other_tools,05_procurement,08_skill,06_shipping pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.789] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.789] [INFO ] [pid=34616] [watcher] event=unlink file=slides\10_acceptance.slide
+[2026-08-18 09:22:47.789] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.789] [INFO ] [pid=34616] [watcher] event=unlink file=slides\11_agents.slide
+[2026-08-18 09:22:47.790] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.790] [INFO ] [pid=34616] [watcher] event=unlink file=slides\12_next.slide
+[2026-08-18 09:22:47.790] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.790] [INFO ] [pid=34616] [watcher] event=unlink file=slides\13_ending.slide
+[2026-08-18 09:22:47.791] [INFO ] [pid=34616] [sync] submit round=2 dirty=<none> pendingDirtySize=4 merged=yes
+[2026-08-18 09:22:47.797] [INFO ] [pid=34616] [commit] commit ok pageId=f7ae6b revisionId=baae7a30 ms=10
+[2026-08-18 09:22:47.799] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=02_catalog slideId=f7ae6b index=1 version=29 baseVersion=11 revisionId=baae7a30 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=50
+[2026-08-18 09:22:47.800] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=03_overview index=2
+[2026-08-18 09:22:47.800] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=03_overview index=2
+[2026-08-18 09:22:47.800] [INFO ] [pid=34616] [render] start pageId=03_overview file=E:\lw\PPT\入职以来AI工作复盘\slides\03_overview.slide
+[2026-08-18 09:22:47.884] [INFO ] [pid=34616] [render] ok pageId=03_overview slides=1 ms=84
+[2026-08-18 09:22:47.885] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:47.892] [INFO ] [pid=34616] [commit] commit send pageId=517589 targetIndex=2 version=30 baseVersion=12 revisionBytes=19252
+[2026-08-18 09:22:47.894] [INFO ] [pid=34616] [watcher] event=add file=slides\06_training.slide
+[2026-08-18 09:22:47.894] [INFO ] [pid=34616] [watcher] event=add file=slides\07_acceptance.slide
+[2026-08-18 09:22:47.895] [INFO ] [pid=34616] [watcher] event=add file=slides\08_agents.slide
+[2026-08-18 09:22:47.895] [INFO ] [pid=34616] [watcher] event=add file=slides\09_next.slide
+[2026-08-18 09:22:47.895] [INFO ] [pid=34616] [watcher] event=add file=slides\10_ending.slide
+[2026-08-18 09:22:47.898] [INFO ] [pid=34616] [commit] commit ok pageId=517589 revisionId=225a0749 ms=6
+[2026-08-18 09:22:47.900] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=03_overview slideId=517589 index=2 version=30 baseVersion=12 revisionId=225a0749 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=100
+[2026-08-18 09:22:47.900] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=04_app_table index=3
+[2026-08-18 09:22:47.900] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=04_app_table index=3
+[2026-08-18 09:22:47.901] [INFO ] [pid=34616] [render] start pageId=04_app_table file=E:\lw\PPT\入职以来AI工作复盘\slides\04_app_table.slide
+[2026-08-18 09:22:47.988] [INFO ] [pid=34616] [render] ok pageId=04_app_table slides=1 ms=87
+[2026-08-18 09:22:47.988] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:47.993] [INFO ] [pid=34616] [commit] commit send pageId=6b94e2 targetIndex=3 version=31 baseVersion=13 revisionBytes=25636
+[2026-08-18 09:22:48.000] [INFO ] [pid=34616] [commit] commit ok pageId=6b94e2 revisionId=14a6aafc ms=7
+[2026-08-18 09:22:48.002] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=04_app_table slideId=6b94e2 index=3 version=31 baseVersion=13 revisionId=14a6aafc code=0 images=[local=0 remote=0 cached=0 failed=0] ms=102
+[2026-08-18 09:22:48.002] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=05_app_fusion index=4
+[2026-08-18 09:22:48.002] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=05_app_fusion index=4
+[2026-08-18 09:22:48.003] [INFO ] [pid=34616] [render] start pageId=05_app_fusion file=E:\lw\PPT\入职以来AI工作复盘\slides\05_app_fusion.slide
+[2026-08-18 09:22:48.066] [INFO ] [pid=34616] [render] ok pageId=05_app_fusion slides=1 ms=63
+[2026-08-18 09:22:48.067] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.071] [INFO ] [pid=34616] [commit] commit send pageId=e80ac6 targetIndex=4 version=32 baseVersion=14 revisionBytes=28472
+[2026-08-18 09:22:48.078] [INFO ] [pid=34616] [commit] commit ok pageId=e80ac6 revisionId=36a6fcaa ms=7
+[2026-08-18 09:22:48.080] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=05_app_fusion slideId=e80ac6 index=4 version=32 baseVersion=14 revisionId=36a6fcaa code=0 images=[local=0 remote=0 cached=0 failed=0] ms=78
+[2026-08-18 09:22:48.080] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=06_training index=5
+[2026-08-18 09:22:48.080] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=06_training index=5
+[2026-08-18 09:22:48.081] [INFO ] [pid=34616] [render] start pageId=06_training file=E:\lw\PPT\入职以来AI工作复盘\slides\06_training.slide
+[2026-08-18 09:22:48.138] [INFO ] [pid=34616] [render] ok pageId=06_training slides=1 ms=57
+[2026-08-18 09:22:48.138] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.145] [INFO ] [pid=34616] [commit] commit send pageId=5e33ce targetIndex=5 version=33 baseVersion=15 revisionBytes=22032
+[2026-08-18 09:22:48.152] [INFO ] [pid=34616] [commit] commit ok pageId=5e33ce revisionId=581d3793 ms=6
+[2026-08-18 09:22:48.154] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=06_training slideId=5e33ce index=5 version=33 baseVersion=15 revisionId=581d3793 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=74
+[2026-08-18 09:22:48.154] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=07_acceptance index=6
+[2026-08-18 09:22:48.154] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=07_acceptance index=6
+[2026-08-18 09:22:48.155] [INFO ] [pid=34616] [render] start pageId=07_acceptance file=E:\lw\PPT\入职以来AI工作复盘\slides\07_acceptance.slide
+[2026-08-18 09:22:48.204] [INFO ] [pid=34616] [render] ok pageId=07_acceptance slides=1 ms=49
+[2026-08-18 09:22:48.204] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.208] [INFO ] [pid=34616] [commit] commit send pageId=c9772c targetIndex=6 version=34 baseVersion=16 revisionBytes=24828
+[2026-08-18 09:22:48.217] [INFO ] [pid=34616] [commit] commit ok pageId=c9772c revisionId=bff3e4bc ms=8
+[2026-08-18 09:22:48.219] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=07_acceptance slideId=c9772c index=6 version=34 baseVersion=16 revisionId=bff3e4bc code=0 images=[local=0 remote=0 cached=0 failed=0] ms=65
+[2026-08-18 09:22:48.219] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=08_agents index=7
+[2026-08-18 09:22:48.219] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=08_agents index=7
+[2026-08-18 09:22:48.220] [INFO ] [pid=34616] [render] start pageId=08_agents file=E:\lw\PPT\入职以来AI工作复盘\slides\08_agents.slide
+[2026-08-18 09:22:48.292] [INFO ] [pid=34616] [render] ok pageId=08_agents slides=1 ms=72
+[2026-08-18 09:22:48.293] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.297] [INFO ] [pid=34616] [commit] commit send pageId=8b96dc targetIndex=7 version=35 baseVersion=17 revisionBytes=25652
+[2026-08-18 09:22:48.309] [INFO ] [pid=34616] [commit] commit ok pageId=8b96dc revisionId=147125cd ms=11
+[2026-08-18 09:22:48.311] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=08_agents slideId=8b96dc index=7 version=35 baseVersion=17 revisionId=147125cd code=0 images=[local=0 remote=0 cached=0 failed=0] ms=92
+[2026-08-18 09:22:48.312] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=09_next index=8
+[2026-08-18 09:22:48.312] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=09_next index=8
+[2026-08-18 09:22:48.312] [INFO ] [pid=34616] [render] start pageId=09_next file=E:\lw\PPT\入职以来AI工作复盘\slides\09_next.slide
+[2026-08-18 09:22:48.357] [INFO ] [pid=34616] [render] ok pageId=09_next slides=1 ms=45
+[2026-08-18 09:22:48.358] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.362] [INFO ] [pid=34616] [commit] commit send pageId=8d983a targetIndex=8 version=36 baseVersion=18 revisionBytes=18216
+[2026-08-18 09:22:48.367] [INFO ] [pid=34616] [commit] commit ok pageId=8d983a revisionId=44286b1f ms=5
+[2026-08-18 09:22:48.369] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=09_next slideId=8d983a index=8 version=36 baseVersion=18 revisionId=44286b1f code=0 images=[local=0 remote=0 cached=0 failed=0] ms=57
+[2026-08-18 09:22:48.369] [INFO ] [pid=34616] [sync] step=add round=2 attempt=2 pageId=10_ending index=9
+[2026-08-18 09:22:48.369] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=10_ending index=9
+[2026-08-18 09:22:48.370] [INFO ] [pid=34616] [render] start pageId=10_ending file=E:\lw\PPT\入职以来AI工作复盘\slides\10_ending.slide
+[2026-08-18 09:22:48.382] [INFO ] [pid=34616] [render] ok pageId=10_ending slides=1 ms=12
+[2026-08-18 09:22:48.382] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:22:48.385] [INFO ] [pid=34616] [commit] commit send pageId=52aaad targetIndex=9 version=37 baseVersion=19 revisionBytes=7984
+[2026-08-18 09:22:48.390] [INFO ] [pid=34616] [commit] commit ok pageId=52aaad revisionId=50c55fcd ms=4
+[2026-08-18 09:22:48.391] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=10_ending slideId=52aaad index=9 version=37 baseVersion=19 revisionId=50c55fcd code=0 images=[local=0 remote=0 cached=0 failed=0] ms=22
+[2026-08-18 09:22:48.392] [INFO ] [pid=34616] [sync] aligned round=2 attempt=2 size=10 desired=10 pendingDirtySize=0
+[2026-08-18 09:22:48.392] [INFO ] [pid=34616] [sync] reconcile ok round=2 attempt=2 ms=677
+[2026-08-18 09:22:48.392] [INFO ] [pid=34616] [sync] aligned round=2 attempt=3 size=10 desired=10 pendingDirtySize=0
+[2026-08-18 09:22:48.392] [INFO ] [pid=34616] [sync] reconcile ok round=2 attempt=3 ms=0
+[2026-08-18 09:22:48.393] [INFO ] [pid=34616] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:22:48.393] [INFO ] [pid=34616] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:22:48.408] [INFO ] [pid=34616] [watcher] flush batch dirty=[06_training,07_acceptance,08_agents,09_next,10_ending] size=5
+[2026-08-18 09:22:48.408] [INFO ] [pid=34616] [sync] submit round=2 dirty=06_training,07_acceptance,08_agents,09_next,10_ending pendingDirtySize=5 merged=yes
+[2026-08-18 09:22:48.452] [INFO ] [pid=34616] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=59
+[2026-08-18 09:22:48.452] [INFO ] [pid=34616] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=59
+[2026-08-18 09:22:48.453] [INFO ] [pid=34616] [sync] drain end round=2 reconciles=3 mergedSubmits=12 pendingDirtySize=5 ms=1046
+[2026-08-18 09:23:03.346] [INFO ] [pid=34616] [watcher] event=change file=slides\02_catalog.slide
+[2026-08-18 09:23:03.347] [INFO ] [pid=34616] [watcher] event=change file=slides\08_agents.slide
+[2026-08-18 09:23:03.347] [INFO ] [pid=34616] [watcher] event=change file=slides\03_overview.slide
+[2026-08-18 09:23:03.347] [INFO ] [pid=34616] [watcher] event=change file=slides\07_acceptance.slide
+[2026-08-18 09:23:03.347] [INFO ] [pid=34616] [watcher] event=change file=slides\04_app_table.slide
+[2026-08-18 09:23:03.347] [INFO ] [pid=34616] [watcher] event=change file=slides\06_training.slide
+[2026-08-18 09:23:03.348] [INFO ] [pid=34616] [watcher] event=change file=slides\09_next.slide
+[2026-08-18 09:23:03.858] [INFO ] [pid=34616] [watcher] flush batch dirty=[02_catalog,08_agents,03_overview,07_acceptance,04_app_table,06_training,09_next] size=7
+[2026-08-18 09:23:03.859] [INFO ] [pid=34616] [sync] submit nextRound=3 dirty=02_catalog,08_agents,03_overview,07_acceptance,04_app_table,06_training,09_next pendingDirtySize=8 merged=no
+[2026-08-18 09:23:03.859] [INFO ] [pid=34616] [sync] drain start round=3 pendingDirtySize=8
+[2026-08-18 09:23:03.860] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=02_catalog index=1
+[2026-08-18 09:23:03.860] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=1
+[2026-08-18 09:23:03.864] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":1}
+[2026-08-18 09:23:03.867] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:03.867] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=1 serverVersion=21 ms=7
+[2026-08-18 09:23:03.867] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=03_overview index=1
+[2026-08-18 09:23:03.868] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=1
+[2026-08-18 09:23:03.870] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":1}
+[2026-08-18 09:23:03.875] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:03.875] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=1 serverVersion=22 ms=7
+[2026-08-18 09:23:03.875] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=04_app_table index=1
+[2026-08-18 09:23:03.875] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=1
+[2026-08-18 09:23:03.878] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":1}
+[2026-08-18 09:23:03.880] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:23:03.881] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=1 serverVersion=23 ms=6
+[2026-08-18 09:23:03.881] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=06_training index=2
+[2026-08-18 09:23:03.881] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=2
+[2026-08-18 09:23:03.884] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":2}
+[2026-08-18 09:23:03.887] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:03.887] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=2 serverVersion=24 ms=6
+[2026-08-18 09:23:03.888] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=07_acceptance index=2
+[2026-08-18 09:23:03.888] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=2
+[2026-08-18 09:23:03.891] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":2}
+[2026-08-18 09:23:03.895] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:03.895] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=2 serverVersion=25 ms=7
+[2026-08-18 09:23:03.895] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=08_agents index=2
+[2026-08-18 09:23:03.895] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=2
+[2026-08-18 09:23:03.898] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":2}
+[2026-08-18 09:23:03.900] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:23:03.900] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=2 serverVersion=26 ms=5
+[2026-08-18 09:23:03.901] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=09_next index=2
+[2026-08-18 09:23:03.901] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=2
+[2026-08-18 09:23:03.904] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":2}
+[2026-08-18 09:23:03.906] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:23:03.907] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=2 serverVersion=27 ms=6
+[2026-08-18 09:23:03.907] [INFO ] [pid=34616] [sync] step=remove-dirty round=3 attempt=1 pageId=10_ending index=2
+[2026-08-18 09:23:03.907] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=2
+[2026-08-18 09:23:03.910] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":2}
+[2026-08-18 09:23:03.913] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:03.913] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=2 serverVersion=28 ms=6
+[2026-08-18 09:23:03.914] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=02_catalog index=1
+[2026-08-18 09:23:03.914] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=02_catalog index=1
+[2026-08-18 09:23:03.914] [INFO ] [pid=34616] [render] start pageId=02_catalog file=E:\lw\PPT\入职以来AI工作复盘\slides\02_catalog.slide
+[2026-08-18 09:23:03.936] [INFO ] [pid=34616] [render] ok pageId=02_catalog slides=1 ms=22
+[2026-08-18 09:23:03.936] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:03.939] [INFO ] [pid=34616] [commit] commit send pageId=657902 targetIndex=1 version=38 baseVersion=28 revisionBytes=9548
+[2026-08-18 09:23:03.944] [INFO ] [pid=34616] [commit] commit ok pageId=657902 revisionId=17057dd9 ms=4
+[2026-08-18 09:23:03.946] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=02_catalog slideId=657902 index=1 version=38 baseVersion=28 revisionId=17057dd9 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=32
+[2026-08-18 09:23:03.946] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=03_overview index=2
+[2026-08-18 09:23:03.946] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=03_overview index=2
+[2026-08-18 09:23:03.947] [INFO ] [pid=34616] [render] start pageId=03_overview file=E:\lw\PPT\入职以来AI工作复盘\slides\03_overview.slide
+[2026-08-18 09:23:03.989] [INFO ] [pid=34616] [render] ok pageId=03_overview slides=1 ms=42
+[2026-08-18 09:23:03.990] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:03.993] [INFO ] [pid=34616] [commit] commit send pageId=2f0d59 targetIndex=2 version=39 baseVersion=29 revisionBytes=19292
+[2026-08-18 09:23:03.999] [INFO ] [pid=34616] [commit] commit ok pageId=2f0d59 revisionId=cd23f37c ms=5
+[2026-08-18 09:23:04.001] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=03_overview slideId=2f0d59 index=2 version=39 baseVersion=29 revisionId=cd23f37c code=0 images=[local=0 remote=0 cached=0 failed=0] ms=55
+[2026-08-18 09:23:04.001] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=04_app_table index=3
+[2026-08-18 09:23:04.001] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=04_app_table index=3
+[2026-08-18 09:23:04.002] [INFO ] [pid=34616] [render] start pageId=04_app_table file=E:\lw\PPT\入职以来AI工作复盘\slides\04_app_table.slide
+[2026-08-18 09:23:04.055] [INFO ] [pid=34616] [render] ok pageId=04_app_table slides=1 ms=53
+[2026-08-18 09:23:04.056] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.060] [INFO ] [pid=34616] [commit] commit send pageId=d7c236 targetIndex=3 version=40 baseVersion=30 revisionBytes=25680
+[2026-08-18 09:23:04.068] [INFO ] [pid=34616] [commit] commit ok pageId=d7c236 revisionId=9f3077e3 ms=7
+[2026-08-18 09:23:04.069] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=04_app_table slideId=d7c236 index=3 version=40 baseVersion=30 revisionId=9f3077e3 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=68
+[2026-08-18 09:23:04.069] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=06_training index=5
+[2026-08-18 09:23:04.069] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=06_training index=5
+[2026-08-18 09:23:04.070] [INFO ] [pid=34616] [render] start pageId=06_training file=E:\lw\PPT\入职以来AI工作复盘\slides\06_training.slide
+[2026-08-18 09:23:04.129] [INFO ] [pid=34616] [render] ok pageId=06_training slides=1 ms=59
+[2026-08-18 09:23:04.129] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.133] [INFO ] [pid=34616] [commit] commit send pageId=4c6bca targetIndex=5 version=41 baseVersion=31 revisionBytes=22192
+[2026-08-18 09:23:04.143] [INFO ] [pid=34616] [commit] commit ok pageId=4c6bca revisionId=d6b89142 ms=10
+[2026-08-18 09:23:04.145] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=06_training slideId=4c6bca index=5 version=41 baseVersion=31 revisionId=d6b89142 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=76
+[2026-08-18 09:23:04.145] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=07_acceptance index=6
+[2026-08-18 09:23:04.145] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=07_acceptance index=6
+[2026-08-18 09:23:04.146] [INFO ] [pid=34616] [render] start pageId=07_acceptance file=E:\lw\PPT\入职以来AI工作复盘\slides\07_acceptance.slide
+[2026-08-18 09:23:04.218] [INFO ] [pid=34616] [render] ok pageId=07_acceptance slides=1 ms=73
+[2026-08-18 09:23:04.218] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.225] [INFO ] [pid=34616] [commit] commit send pageId=bda0af targetIndex=6 version=42 baseVersion=32 revisionBytes=24884
+[2026-08-18 09:23:04.233] [INFO ] [pid=34616] [commit] commit ok pageId=bda0af revisionId=449f8f45 ms=6
+[2026-08-18 09:23:04.234] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=07_acceptance slideId=bda0af index=6 version=42 baseVersion=32 revisionId=449f8f45 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=89
+[2026-08-18 09:23:04.234] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=08_agents index=7
+[2026-08-18 09:23:04.235] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=08_agents index=7
+[2026-08-18 09:23:04.235] [INFO ] [pid=34616] [render] start pageId=08_agents file=E:\lw\PPT\入职以来AI工作复盘\slides\08_agents.slide
+[2026-08-18 09:23:04.313] [INFO ] [pid=34616] [render] ok pageId=08_agents slides=1 ms=78
+[2026-08-18 09:23:04.313] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.317] [INFO ] [pid=34616] [commit] commit send pageId=ed7f71 targetIndex=7 version=43 baseVersion=33 revisionBytes=25696
+[2026-08-18 09:23:04.326] [INFO ] [pid=34616] [commit] commit ok pageId=ed7f71 revisionId=9529b3b7 ms=8
+[2026-08-18 09:23:04.328] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=08_agents slideId=ed7f71 index=7 version=43 baseVersion=33 revisionId=9529b3b7 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=93
+[2026-08-18 09:23:04.328] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=09_next index=8
+[2026-08-18 09:23:04.328] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=09_next index=8
+[2026-08-18 09:23:04.328] [INFO ] [pid=34616] [render] start pageId=09_next file=E:\lw\PPT\入职以来AI工作复盘\slides\09_next.slide
+[2026-08-18 09:23:04.375] [INFO ] [pid=34616] [render] ok pageId=09_next slides=1 ms=47
+[2026-08-18 09:23:04.375] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.378] [INFO ] [pid=34616] [commit] commit send pageId=8fe086 targetIndex=8 version=44 baseVersion=34 revisionBytes=18252
+[2026-08-18 09:23:04.384] [INFO ] [pid=34616] [commit] commit ok pageId=8fe086 revisionId=ded7ade3 ms=6
+[2026-08-18 09:23:04.386] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=09_next slideId=8fe086 index=8 version=44 baseVersion=34 revisionId=ded7ade3 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=58
+[2026-08-18 09:23:04.386] [INFO ] [pid=34616] [sync] step=add round=3 attempt=1 pageId=10_ending index=9
+[2026-08-18 09:23:04.386] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=10_ending index=9
+[2026-08-18 09:23:04.386] [INFO ] [pid=34616] [render] start pageId=10_ending file=E:\lw\PPT\入职以来AI工作复盘\slides\10_ending.slide
+[2026-08-18 09:23:04.400] [INFO ] [pid=34616] [render] ok pageId=10_ending slides=1 ms=14
+[2026-08-18 09:23:04.400] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:04.405] [INFO ] [pid=34616] [commit] commit send pageId=48ef93 targetIndex=9 version=45 baseVersion=35 revisionBytes=8012
+[2026-08-18 09:23:04.409] [INFO ] [pid=34616] [commit] commit ok pageId=48ef93 revisionId=f654a053 ms=3
+[2026-08-18 09:23:04.410] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=10_ending slideId=48ef93 index=9 version=45 baseVersion=35 revisionId=f654a053 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=24
+[2026-08-18 09:23:04.410] [INFO ] [pid=34616] [sync] aligned round=3 attempt=1 size=10 desired=10 pendingDirtySize=0
+[2026-08-18 09:23:04.411] [INFO ] [pid=34616] [sync] reconcile ok round=3 attempt=1 ms=551
+[2026-08-18 09:23:04.411] [INFO ] [pid=34616] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:04.411] [INFO ] [pid=34616] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:04.469] [INFO ] [pid=34616] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=58
+[2026-08-18 09:23:04.469] [INFO ] [pid=34616] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=58
+[2026-08-18 09:23:04.469] [INFO ] [pid=34616] [sync] drain end round=3 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=610
+[2026-08-18 09:23:23.982] [INFO ] [pid=34616] [watcher] event=change file=slides\02_catalog.slide
+[2026-08-18 09:23:24.491] [INFO ] [pid=34616] [watcher] flush batch dirty=[02_catalog] size=1
+[2026-08-18 09:23:24.491] [INFO ] [pid=34616] [sync] submit nextRound=4 dirty=02_catalog pendingDirtySize=1 merged=no
+[2026-08-18 09:23:24.492] [INFO ] [pid=34616] [sync] drain start round=4 pendingDirtySize=1
+[2026-08-18 09:23:24.494] [INFO ] [pid=34616] [sync] step=remove-dirty round=4 attempt=1 pageId=02_catalog index=1
+[2026-08-18 09:23:24.495] [INFO ] [pid=34616] [backend-ops] removeSlideAt start index=1
+[2026-08-18 09:23:24.500] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":1}
+[2026-08-18 09:23:24.505] [INFO ] [pid=34616] [mcp] mcp:slide_remove_slide ok ms=4
+[2026-08-18 09:23:24.506] [INFO ] [pid=34616] [backend-ops] removeSlideAt ok index=1 serverVersion=37 ms=11
+[2026-08-18 09:23:24.508] [INFO ] [pid=34616] [sync] step=add round=4 attempt=1 pageId=02_catalog index=1
+[2026-08-18 09:23:24.509] [INFO ] [pid=34616] [backend-ops] addSlideAt start pageId=02_catalog index=1
+[2026-08-18 09:23:24.511] [INFO ] [pid=34616] [render] start pageId=02_catalog file=E:\lw\PPT\入职以来AI工作复盘\slides\02_catalog.slide
+[2026-08-18 09:23:24.560] [INFO ] [pid=34616] [render] ok pageId=02_catalog slides=1 ms=49
+[2026-08-18 09:23:24.561] [INFO ] [pid=34616] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:24.568] [INFO ] [pid=34616] [commit] commit send pageId=b1759c targetIndex=1 version=46 baseVersion=37 revisionBytes=8852
+[2026-08-18 09:23:24.573] [INFO ] [pid=34616] [commit] commit ok pageId=b1759c revisionId=368883c7 ms=4
+[2026-08-18 09:23:24.575] [INFO ] [pid=34616] [backend-ops] addSlideAt ok pageId=02_catalog slideId=b1759c index=1 version=46 baseVersion=37 revisionId=368883c7 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=66
+[2026-08-18 09:23:24.575] [INFO ] [pid=34616] [sync] aligned round=4 attempt=1 size=10 desired=10 pendingDirtySize=0
+[2026-08-18 09:23:24.575] [INFO ] [pid=34616] [sync] reconcile ok round=4 attempt=1 ms=82
+[2026-08-18 09:23:24.575] [INFO ] [pid=34616] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:24.576] [INFO ] [pid=34616] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:24.634] [INFO ] [pid=34616] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=57
+[2026-08-18 09:23:24.634] [INFO ] [pid=34616] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=59
+[2026-08-18 09:23:24.634] [INFO ] [pid=34616] [sync] drain end round=4 reconciles=1 mergedSubmits=1 pendingDirtySize=0 ms=142
+=== boot pid=11140 ts=2026-08-18 09:23:39.407 cwd=E:\lw\PPT\入职以来AI工作复盘 argv=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx ===
+[2026-08-18 09:23:39.406] [INFO ] [pid=11140] [start] invoked pid=11140 cwd=E:\lw\PPT\入职以来AI工作复盘 daemonChild=no dev=no argv=[--project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx]
+[2026-08-18 09:23:39.408] [INFO ] [pid=11140] [start] previous instance pid=34616 found, sending SIGTERM ...
+[2026-08-18 09:23:39.678] [INFO ] [pid=11140] [start] spawning daemon projectDir=E:\lw\PPT\入职以来AI工作复盘 filename=入职以来AI工作复盘.pptx
+[2026-08-18 09:23:39.726] [INFO ] [pid=11140] [start] daemon spawned childPid=37140; waiting started ipc
+=== boot pid=37140 ts=2026-08-18 09:23:41.195 cwd=E:\lw\PPT\入职以来AI工作复盘 argv=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-start.js --project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx --__daemon-child ===
+[2026-08-18 09:23:41.194] [INFO ] [pid=37140] [start] invoked pid=37140 cwd=E:\lw\PPT\入职以来AI工作复盘 daemonChild=yes dev=no argv=[--project E:/lw/PPT/入职以来AI工作复盘 --filename 入职以来AI工作复盘.pptx --__daemon-child]
+[2026-08-18 09:23:41.196] [INFO ] [pid=37140] [start] daemon child runWorker ppid=11140
+[2026-08-18 09:23:41.196] [INFO ] [pid=37140] [worker] start projectDir=E:\lw\PPT\入职以来AI工作复盘 filename=入职以来AI工作复盘.pptx version=5.4.4
+[2026-08-18 09:23:41.197] [INFO ] [pid=37140] [worker] init ok dirs=ready
+[2026-08-18 09:23:41.197] [INFO ] [pid=37140] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-08-18 09:23:41.197] [INFO ] [pid=37140] [worker] openFile start
+[2026-08-18 09:23:41.201] [INFO ] [pid=37140] [open-file] backup (copy) existing pptx dest=E:\lw\PPT\入职以来AI工作复盘\.slidep\bak\入职以来AI工作复盘.bak-20260818-092341.pptx
+[2026-08-18 09:23:41.201] [INFO ] [pid=37140] [open-file] reopen existing pptx (preserve birthtime) filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:41.229] [INFO ] [pid=37140] [open-file] open skip (already in pool) fileId=sid_msxz filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:41.230] [INFO ] [pid=37140] [worker] openFile ok fileId=sid_msxz filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:41.230] [INFO ] [pid=37140] [worker] previewUrl=http://127.0.0.1:39099/static/slide/pc.html?local_edit=1&client=sdk_local&localFilePath=E%3A%5Clw%5CPPT%5C%E5%85%A5%E8%81%8C%E4%BB%A5%E6%9D%A5AI%E5%B7%A5%E4%BD%9C%E5%A4%8D%E7%9B%98%5C%E5%85%A5%E8%81%8C%E4%BB%A5%E6%9D%A5AI%E5%B7%A5%E4%BD%9C%E5%A4%8D%E7%9B%98.pptx
+[2026-08-18 09:23:41.232] [INFO ] [pid=37140] [worker] commitEndpoint=http://127.0.0.1:39099/localapi/commitrevision
+[2026-08-18 09:23:41.237] [INFO ] [pid=37140] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv"}
+[2026-08-18 09:23:41.240] [INFO ] [pid=37140] [mcp] mcp:slide_get_info ok ms=3
+[2026-08-18 09:23:41.241] [INFO ] [pid=37140] [purge] purge start backendSlideCount=10
+[2026-08-18 09:23:41.245] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.249] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:41.254] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.259] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=4
+[2026-08-18 09:23:41.263] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.268] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=5
+[2026-08-18 09:23:41.272] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.276] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:41.279] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.283] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:41.286] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.290] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:41.293] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.297] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=4
+[2026-08-18 09:23:41.301] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.305] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=3
+[2026-08-18 09:23:41.308] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.313] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=5
+[2026-08-18 09:23:41.316] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv","page_index":0}
+[2026-08-18 09:23:41.319] [INFO ] [pid=37140] [mcp] mcp:slide_remove_slide ok ms=2
+[2026-08-18 09:23:41.319] [INFO ] [pid=37140] [purge] purge ok removed=10 ms=87
+[2026-08-18 09:23:41.320] [INFO ] [pid=37140] [worker] initial sync submitted pages=10
+[2026-08-18 09:23:41.320] [INFO ] [pid=37140] [sync] submit nextRound=1 dirty=<none> pendingDirtySize=0 merged=no
+[2026-08-18 09:23:41.320] [INFO ] [pid=37140] [sync] drain start round=1 pendingDirtySize=0
+[2026-08-18 09:23:41.321] [INFO ] [pid=37140] [sync] step=add round=1 attempt=1 pageId=01_cover index=0
+[2026-08-18 09:23:41.321] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-18 09:23:41.322] [INFO ] [pid=37140] [render] start pageId=01_cover file=E:\lw\PPT\入职以来AI工作复盘\slides\01_cover.slide
+[2026-08-18 09:23:41.330] [INFO ] [pid=37140] [worker] ready fileId=sid_msxz backendUrl=http://127.0.0.1:39099 initialPages=10 ms=134
+[2026-08-18 09:23:41.331] [INFO ] [pid=11140] [start] daemon started childPid=37140 ms=1653
+[2026-08-18 09:23:41.578] [INFO ] [pid=37140] [render] ok pageId=01_cover slides=1 ms=256
+[2026-08-18 09:23:41.578] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:41.593] [INFO ] [pid=37140] [commit] commit send pageId=83413d targetIndex=0 version=47 baseVersion=0 revisionBytes=8596
+[2026-08-18 09:23:41.604] [INFO ] [pid=37140] [watcher] ready dir=E:\lw\PPT\入职以来AI工作复盘\slides
+[2026-08-18 09:23:41.774] [ERROR] [pid=37140] [http] commit http 500 url=http://127.0.0.1:39099/localapi/commitrevision body={"error":"CommitRevision failed: [13006][13006]msg:page index out of range, mut_info:mutation info: type:3, page_id:83413d, page_type:1, index:19, shape_tree:e4c8b9, related_layout_id:00000f, related_master_id:, slide_master_theme_id:, notes_master_theme_id:,notes_slide_id: , other_msg:","ok":false} ms=179
+[2026-08-18 09:23:41.775] [ERROR] [pid=37140] [backend-ops] addSlideAt commit FAIL pageId=01_cover slideId=83413d index=0 version=47 baseVersion=0 ms=454
+[2026-08-18 09:23:41.775] [WARN ] [pid=37140] [worker] reconcile failed (H3: commit bad response: HTTP 500 body={"error":"CommitRevision failed: [13006][13006]msg:page index out of range, mut_info:mutation info: type:3, page_id:83413d, page_type:1, index:19, shape_tree:e4c8b9, related_layout_id:00000f, related_master_id:, slide_master_theme_id:, notes_master_theme_id:,notes_slide_id: , other_msg:","ok":false}); trying soft recovery (purge backend + sync version, no editor restart)
+[2026-08-18 09:23:41.778] [INFO ] [pid=37140] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv"}
+[2026-08-18 09:23:41.781] [INFO ] [pid=37140] [mcp] mcp:slide_get_info ok ms=3
+[2026-08-18 09:23:41.781] [INFO ] [pid=37140] [purge] purge start backendSlideCount=0
+[2026-08-18 09:23:41.781] [INFO ] [pid=37140] [purge] purge ok removed=0 ms=6
+[2026-08-18 09:23:41.784] [INFO ] [pid=37140] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_msxz1wn8_gnh3viyv"}
+[2026-08-18 09:23:41.786] [INFO ] [pid=37140] [mcp] mcp:slide_get_info ok ms=2
+[2026-08-18 09:23:41.787] [INFO ] [pid=37140] [backend-ops] seedServerVersion from=0 to=48
+[2026-08-18 09:23:41.787] [INFO ] [pid=37140] [worker] recovery (soft) ok: purged=0 backendNow=0page(s) version=48, view reset; reconcile will redo full sync
+[2026-08-18 09:23:41.787] [INFO ] [pid=37140] [sync] reconcile FAIL but recovered via onReconcileFailure round=1 attempt=1 (recovery 1/2) ms=467; re-running reconcile
+[2026-08-18 09:23:41.787] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=01_cover index=0
+[2026-08-18 09:23:41.788] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=01_cover index=0
+[2026-08-18 09:23:41.788] [INFO ] [pid=37140] [render] start pageId=01_cover file=E:\lw\PPT\入职以来AI工作复盘\slides\01_cover.slide
+[2026-08-18 09:23:41.821] [INFO ] [pid=37140] [render] ok pageId=01_cover slides=1 ms=33
+[2026-08-18 09:23:41.822] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:41.828] [INFO ] [pid=37140] [commit] commit send pageId=ae0401 targetIndex=0 version=47 baseVersion=48 revisionBytes=8596
+[2026-08-18 09:23:41.834] [INFO ] [pid=37140] [commit] commit ok pageId=ae0401 revisionId=68567d8f ms=4
+[2026-08-18 09:23:41.836] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=01_cover slideId=ae0401 index=0 version=47 baseVersion=48 revisionId=68567d8f code=0 images=[local=0 remote=0 cached=0 failed=0] ms=48
+[2026-08-18 09:23:41.836] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=02_catalog index=1
+[2026-08-18 09:23:41.837] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=02_catalog index=1
+[2026-08-18 09:23:41.837] [INFO ] [pid=37140] [render] start pageId=02_catalog file=E:\lw\PPT\入职以来AI工作复盘\slides\02_catalog.slide
+[2026-08-18 09:23:41.893] [INFO ] [pid=37140] [render] ok pageId=02_catalog slides=1 ms=56
+[2026-08-18 09:23:41.894] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:41.899] [INFO ] [pid=37140] [commit] commit send pageId=16d1e6 targetIndex=1 version=48 baseVersion=49 revisionBytes=8844
+[2026-08-18 09:23:41.904] [INFO ] [pid=37140] [commit] commit ok pageId=16d1e6 revisionId=3933b84e ms=4
+[2026-08-18 09:23:41.906] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=02_catalog slideId=16d1e6 index=1 version=48 baseVersion=49 revisionId=3933b84e code=0 images=[local=0 remote=0 cached=0 failed=0] ms=69
+[2026-08-18 09:23:41.907] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=03_overview index=2
+[2026-08-18 09:23:41.907] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=03_overview index=2
+[2026-08-18 09:23:41.907] [INFO ] [pid=37140] [render] start pageId=03_overview file=E:\lw\PPT\入职以来AI工作复盘\slides\03_overview.slide
+[2026-08-18 09:23:41.992] [INFO ] [pid=37140] [render] ok pageId=03_overview slides=1 ms=85
+[2026-08-18 09:23:41.993] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.001] [INFO ] [pid=37140] [commit] commit send pageId=e3f00a targetIndex=2 version=49 baseVersion=50 revisionBytes=19284
+[2026-08-18 09:23:42.008] [INFO ] [pid=37140] [commit] commit ok pageId=e3f00a revisionId=a1dd8796 ms=6
+[2026-08-18 09:23:42.010] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=03_overview slideId=e3f00a index=2 version=49 baseVersion=50 revisionId=a1dd8796 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=103
+[2026-08-18 09:23:42.011] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=04_app_table index=3
+[2026-08-18 09:23:42.011] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=04_app_table index=3
+[2026-08-18 09:23:42.012] [INFO ] [pid=37140] [render] start pageId=04_app_table file=E:\lw\PPT\入职以来AI工作复盘\slides\04_app_table.slide
+[2026-08-18 09:23:42.123] [INFO ] [pid=37140] [render] ok pageId=04_app_table slides=1 ms=111
+[2026-08-18 09:23:42.123] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.128] [INFO ] [pid=37140] [commit] commit send pageId=d0454d targetIndex=3 version=50 baseVersion=51 revisionBytes=25676
+[2026-08-18 09:23:42.136] [INFO ] [pid=37140] [commit] commit ok pageId=d0454d revisionId=89771230 ms=8
+[2026-08-18 09:23:42.138] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=04_app_table slideId=d0454d index=3 version=50 baseVersion=51 revisionId=89771230 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=127
+[2026-08-18 09:23:42.139] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=05_app_fusion index=4
+[2026-08-18 09:23:42.139] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=05_app_fusion index=4
+[2026-08-18 09:23:42.139] [INFO ] [pid=37140] [render] start pageId=05_app_fusion file=E:\lw\PPT\入职以来AI工作复盘\slides\05_app_fusion.slide
+[2026-08-18 09:23:42.247] [INFO ] [pid=37140] [render] ok pageId=05_app_fusion slides=1 ms=108
+[2026-08-18 09:23:42.248] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.254] [INFO ] [pid=37140] [commit] commit send pageId=93b1f7 targetIndex=4 version=51 baseVersion=52 revisionBytes=28484
+[2026-08-18 09:23:42.260] [INFO ] [pid=37140] [commit] commit ok pageId=93b1f7 revisionId=2c5b4d33 ms=6
+[2026-08-18 09:23:42.262] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=05_app_fusion slideId=93b1f7 index=4 version=51 baseVersion=52 revisionId=2c5b4d33 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=123
+[2026-08-18 09:23:42.263] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=06_training index=5
+[2026-08-18 09:23:42.263] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=06_training index=5
+[2026-08-18 09:23:42.263] [INFO ] [pid=37140] [render] start pageId=06_training file=E:\lw\PPT\入职以来AI工作复盘\slides\06_training.slide
+[2026-08-18 09:23:42.344] [INFO ] [pid=37140] [render] ok pageId=06_training slides=1 ms=81
+[2026-08-18 09:23:42.344] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.348] [INFO ] [pid=37140] [commit] commit send pageId=053d04 targetIndex=5 version=52 baseVersion=53 revisionBytes=22192
+[2026-08-18 09:23:42.355] [INFO ] [pid=37140] [commit] commit ok pageId=053d04 revisionId=663b4c07 ms=6
+[2026-08-18 09:23:42.358] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=06_training slideId=053d04 index=5 version=52 baseVersion=53 revisionId=663b4c07 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=95
+[2026-08-18 09:23:42.359] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=07_acceptance index=6
+[2026-08-18 09:23:42.359] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=07_acceptance index=6
+[2026-08-18 09:23:42.359] [INFO ] [pid=37140] [render] start pageId=07_acceptance file=E:\lw\PPT\入职以来AI工作复盘\slides\07_acceptance.slide
+[2026-08-18 09:23:42.437] [INFO ] [pid=37140] [render] ok pageId=07_acceptance slides=1 ms=78
+[2026-08-18 09:23:42.437] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.444] [INFO ] [pid=37140] [commit] commit send pageId=f98b44 targetIndex=6 version=53 baseVersion=54 revisionBytes=24884
+[2026-08-18 09:23:42.453] [INFO ] [pid=37140] [commit] commit ok pageId=f98b44 revisionId=e2f4530c ms=8
+[2026-08-18 09:23:42.455] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=07_acceptance slideId=f98b44 index=6 version=53 baseVersion=54 revisionId=e2f4530c code=0 images=[local=0 remote=0 cached=0 failed=0] ms=96
+[2026-08-18 09:23:42.456] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=08_agents index=7
+[2026-08-18 09:23:42.456] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=08_agents index=7
+[2026-08-18 09:23:42.456] [INFO ] [pid=37140] [render] start pageId=08_agents file=E:\lw\PPT\入职以来AI工作复盘\slides\08_agents.slide
+[2026-08-18 09:23:42.532] [INFO ] [pid=37140] [render] ok pageId=08_agents slides=1 ms=76
+[2026-08-18 09:23:42.532] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.538] [INFO ] [pid=37140] [commit] commit send pageId=8a0f24 targetIndex=7 version=54 baseVersion=55 revisionBytes=25692
+[2026-08-18 09:23:42.545] [INFO ] [pid=37140] [commit] commit ok pageId=8a0f24 revisionId=c7e19d6b ms=7
+[2026-08-18 09:23:42.548] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=08_agents slideId=8a0f24 index=7 version=54 baseVersion=55 revisionId=c7e19d6b code=0 images=[local=0 remote=0 cached=0 failed=0] ms=92
+[2026-08-18 09:23:42.548] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=09_next index=8
+[2026-08-18 09:23:42.548] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=09_next index=8
+[2026-08-18 09:23:42.549] [INFO ] [pid=37140] [render] start pageId=09_next file=E:\lw\PPT\入职以来AI工作复盘\slides\09_next.slide
+[2026-08-18 09:23:42.617] [INFO ] [pid=37140] [render] ok pageId=09_next slides=1 ms=68
+[2026-08-18 09:23:42.617] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.621] [INFO ] [pid=37140] [commit] commit send pageId=ac4923 targetIndex=8 version=55 baseVersion=56 revisionBytes=18252
+[2026-08-18 09:23:42.626] [INFO ] [pid=37140] [commit] commit ok pageId=ac4923 revisionId=78d2ff03 ms=5
+[2026-08-18 09:23:42.628] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=09_next slideId=ac4923 index=8 version=55 baseVersion=56 revisionId=78d2ff03 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=80
+[2026-08-18 09:23:42.629] [INFO ] [pid=37140] [sync] step=add round=1 attempt=2 pageId=10_ending index=9
+[2026-08-18 09:23:42.629] [INFO ] [pid=37140] [backend-ops] addSlideAt start pageId=10_ending index=9
+[2026-08-18 09:23:42.629] [INFO ] [pid=37140] [render] start pageId=10_ending file=E:\lw\PPT\入职以来AI工作复盘\slides\10_ending.slide
+[2026-08-18 09:23:42.650] [INFO ] [pid=37140] [render] ok pageId=10_ending slides=1 ms=21
+[2026-08-18 09:23:42.650] [INFO ] [pid=37140] [render] renderSlideData result.resources={ images: {}, videos: {}, audios: {}, fonts: {} }
+[2026-08-18 09:23:42.653] [INFO ] [pid=37140] [commit] commit send pageId=5cd953 targetIndex=9 version=56 baseVersion=57 revisionBytes=8004
+[2026-08-18 09:23:42.659] [INFO ] [pid=37140] [commit] commit ok pageId=5cd953 revisionId=14f393a7 ms=5
+[2026-08-18 09:23:42.664] [INFO ] [pid=37140] [backend-ops] addSlideAt ok pageId=10_ending slideId=5cd953 index=9 version=56 baseVersion=57 revisionId=14f393a7 code=0 images=[local=0 remote=0 cached=0 failed=0] ms=35
+[2026-08-18 09:23:42.665] [INFO ] [pid=37140] [sync] aligned round=1 attempt=2 size=10 desired=10 pendingDirtySize=0
+[2026-08-18 09:23:42.665] [INFO ] [pid=37140] [sync] reconcile ok round=1 attempt=2 ms=878
+[2026-08-18 09:23:42.666] [INFO ] [pid=37140] [backend-ops] save start file=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:42.666] [INFO ] [pid=37140] [commit] save send filePath=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx
+[2026-08-18 09:23:42.727] [INFO ] [pid=37140] [commit] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=60
+[2026-08-18 09:23:42.728] [INFO ] [pid=37140] [backend-ops] save ok file_path=E:\lw\PPT\入职以来AI工作复盘\入职以来AI工作复盘.pptx ms=62
+[2026-08-18 09:23:42.728] [INFO ] [pid=37140] [sync] drain end round=1 reconciles=2 mergedSubmits=1 pendingDirtySize=0 ms=1408
+=== boot pid=40660 ts=2026-08-18 09:23:55.306 cwd=E:\lw\PPT\入职以来AI工作复盘 argv=C:\Users\windows\.workbuddy\binaries\node\versions\22.22.2\node_modules\@tencent\slidep\dist\slidep-validate.js --all --project E:/lw/PPT/入职以来AI工作复盘 ===
+[2026-08-18 09:23:55.306] [INFO ] [pid=40660] [validate] --all mode: found 10 files in E:\lw\PPT\入职以来AI工作复盘\slides
+[2026-08-18 09:23:55.307] [INFO ] [pid=40660] [validate] batch start files=10 checkOverflow=true
+[2026-08-18 09:23:56.188] [INFO ] [pid=40660] [validate] batch done total=10 passed=10 failed=0 ms=883

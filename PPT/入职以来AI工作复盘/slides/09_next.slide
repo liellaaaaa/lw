@@ -28,6 +28,6 @@
 
   <Box style={{ position:'absolute', left:56, top:668, right:56, flexDirection:'row', justifyContent:'space-between' }}>
     <Text style={{ fontSize:14, color:'#888' }}>入职以来 AI 工作复盘</Text>
-    <Text style={{ fontSize:14, color:'#888' }}>12 / 13</Text>
+    <Text style={{ fontSize:14, color:'#888' }}>09 / 10</Text>
   </Box>
 </Slide>
