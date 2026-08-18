@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>入职以来 AI 应用交付工作汇总（2026-04-15 ~ 2026-07-31）</title>
+<style>
+  :root{
+    --navy:#052B7C;      /* 主色 */
+    --blue:#4472C4;      /* 亮蓝 */
+    --dir-blue:#2F5597;  /* 目录蓝 */
+    --head-bg:#DAE3F3;   /* 表头浅蓝 */
+    --gray-1:#E7E6E6;
+    --gray-2:#F2F2F2;
+    --orange:#FCE4D6;    /* 合计浅橙 */
+    --red:#FF0000;
+    --ink:#1A1A1A;
+    --muted:#666;
+    --line:#CCCCCC;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Microsoft YaHei","微软雅黑","PingFang SC","Hiragino Sans GB",sans-serif;
+    color:var(--ink);
+    background:#EDEFF4;
+    line-height:1.65;
+    font-size:15px;
+  }
+  .wrap{max-width:1100px;margin:0 auto;background:#fff;box-shadow:0 0 24px rgba(5,43,124,.12);}
+
+  /* ===== 封面 ===== */
+  .cover{background:linear-gradient(135deg,var(--navy) 0%,var(--dir-blue) 60%,var(--blue) 100%);color:#fff;padding:54px 56px 46px;}
+  .cover .eyebrow{font-size:14px;letter-spacing:3px;opacity:.85;margin:0 0 14px;}
+  .cover h1{font-size:40px;line-height:1.25;margin:0 0 10px;font-weight:800;}
+  .cover .slogan{font-size:15px;opacity:.9;margin:0;}
+  .cover .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:13.5px;opacity:.92;}
+  .cover .meta b{font-weight:700;}
+
+  /* ===== 关键指标卡 ===== */
+  .kpis{display:flex;flex-direction:column;gap:1px;background:var(--line);}
+  .kpis-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;}
+  .kpis-row.narrow{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;width:66.666%;margin:0 auto;}
+  .kpi{background:#fff;padding:22px 18px;text-align:center;}
+  .kpi .num{font-size:30px;font-weight:800;color:var(--navy);line-height:1.1;}
+  .kpi .num .u{font-size:15px;font-weight:600;color:var(--blue);}
+  .kpi .lab{font-size:13px;color:var(--muted);margin-top:6px;}
+  .kpi.alt .num{color:var(--blue);}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+
+  /* ===== 目录 ===== */
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 30px;padding:30px 56px 8px;}
+  .toc a{display:flex;align-items:center;gap:10px;color:var(--dir-blue);text-decoration:none;font-size:14.5px;padding:6px 0;border-bottom:1px dashed #DDD;}
+  .toc a .ix{background:var(--blue);color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:0 0 auto;}
+  .toc a:hover{color:var(--navy);}
+
+  /* ===== 章节 ===== */
+  section{padding:30px 56px 14px;}
+  .sec-h{display:flex;align-items:center;gap:12px;margin:6px 0 18px;}
+  .sec-h .bar{width:8px;height:30px;background:var(--blue);border-radius:2px;}
+  .sec-h h2{font-size:23px;color:var(--navy);margin:0;font-weight:800;}
+  .sec-h .en{font-size:13px;color:var(--muted);font-weight:600;margin-left:auto;letter-spacing:1px;}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .card{background:var(--gray-2);border:1px solid #E3E3E3;border-radius:8px;padding:18px 20px;}
+  .card h3{margin:0 0 10px;font-size:16.5px;color:var(--dir-blue);}
+  .card ul{margin:0;padding-left:18px;}
+  .card li{margin:4px 0;}
+
+  .sub-h{font-size:17px;color:var(--dir-blue);font-weight:700;margin:22px 0 8px;border-left:4px solid var(--blue);padding-left:10px;}
+
+  /* ===== 表 ===== */
+  table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13.5px;}
+  caption{caption-side:top;text-align:left;font-size:13px;color:var(--muted);padding:4px 2px 8px;}
+  th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;}
+  thead th,tbody th{background:var(--head-bg);font-weight:700;color:var(--ink);}
+  tbody tr:nth-child(even) td{background:#FBFCFE;}
+  .tnum{text-align:center;}
+  .total td{background:var(--orange);font-weight:700;}
+  .ok{color:#1B7F3B;font-weight:700;}
+  .bad{color:var(--red);font-weight:700;}
+
+  /* ===== 应用卡 ===== */
+  .app{background:#fff;border:1px solid #E3E3E3;border-radius:10px;padding:0;margin:16px 0;overflow:hidden;}
+  .app .top{background:var(--navy);color:#fff;padding:12px 20px;display:flex;align-items:baseline;gap:12px;}
+  .app .top .nm{font-size:17px;font-weight:800;}
+  .app .top .en{font-size:13px;opacity:.85;}
+  .app .top .tag{margin-left:auto;font-size:12.5px;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:20px;}
+  .app .body{padding:14px 20px 18px;display:grid;grid-template-columns:1.3fr 1fr;gap:18px;}
+  .app .body p{margin:0 0 8px;}
+  .app .body .lead{font-size:14px;}
+  .app .body .val{background:#F4F8FF;border-left:3px solid var(--blue);padding:10px 12px;border-radius:0 6px 6px 0;font-size:13.5px;color:#234;}
+
+  /* ===== 洞察条 ===== */
+  .insight{background:linear-gradient(90deg,#EAF1FF,#F6F9FF);border-left:5px solid var(--blue);border-radius:0 8px 8px 0;padding:14px 18px;margin:16px 0;font-size:14.5px;}
+  .insight b{color:var(--navy);}
+
+  /* ===== 框架两路 ===== */
+  .flow{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  .flow .col{padding:18px 22px;}
+  .flow .in{background:#EAF1FF;}
+  .flow .out{background:#FFF4EC;}
+  .flow h3{margin:0 0 12px;font-size:17px;}
+  .flow .in h3{color:var(--navy);}
+  .flow .out h3{color:#B85C12;}
+  .flow ol{margin:0;padding-left:20px;}
+  .flow li{margin:7px 0;}
+
+  /* ===== 矩阵 ===== */
+  .matrix td,.matrix th{font-size:12.8px;}
+
+  /* ===== 页脚 ===== */
+  .foot{background:var(--navy);color:#fff;padding:26px 56px;font-size:13px;line-height:1.8;}
+  .foot b{color:#fff;}
+
+  @media print{
+    body{background:#fff;font-size:12.5px;}
+    .wrap{box-shadow:none;max-width:100%;}
+    section{page-break-inside:avoid;}
+    .app,.card,.insight,.kpi{page-break-inside:avoid;}
+    .toc a{border:none;}
+  }
+  @media (max-width:760px){
+    .kpis{grid-template-columns:repeat(2,1fr);}
+    .two,.flow,.app .body,.toc{grid-template-columns:1fr;}
+    section,.cover,.foot{padding-left:22px;padding-right:22px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 封面 -->
+  <header class="cover">
+    <p class="eyebrow">WORK SUMMARY · 入职以来 AI 应用交付盘点</p>
+    <h1>入职以来 AI 应用交付工作汇总</h1>
+    <p class="slogan">助力企业利润持续增长 · 从 0 搭起工具、Skill 与平台验收运营体系</p>
+    <div class="meta">
+      <span><b>盘点人：</b>肖聪（AI 技术专员）</span>
+      <span><b>入职：</b>2026-04-15</span>
+      <span><b>统计窗口：</b>2026-04-15 ~ 2026-07-31</span>
+      <span><b>数据截止：</b>2026-07-31（8/1–8/7 收尾并入）</span>
+      <span><b>生成：</b>2026-08-18</span>
+    </div>
+  </header>
+
+  <!-- 关键指标 -->
+  <div class="kpis">
+    <div class="kpi"><div class="num">5<span class="u"> 个</span></div><div class="lab">自研应用/工具交付</div></div>
+    <div class="kpi alt"><div class="num">2<span class="u"> 个</span></div><div class="lab">复用 Skill 交付</div></div>
+    <div class="kpi"><div class="num">4<span class="u"> 个</span></div><div class="lab">平台业务智能体</div></div>
+    <div class="kpi alt"><div class="num">37<span class="u"> 项</span></div><div class="lab">平台验收（19 问题闭环）</div></div>
+    <div class="kpi"><div class="num">110<span class="u">+ 条</span></div><div class="lab">代码迭代记录</div></div>
+    <div class="kpi alt"><div class="num">12<span class="u"> 场</span></div><div class="lab">培训（主导 6 + 协助 6）</div></div>
+    <div class="kpi"><div class="num">7<span class="u"> 方</span></div><div class="lab">跨部门对接部门</div></div>
+    <div class="kpi alt"><div class="num">15,227<span class="u"> 条</span></div><div class="lab">管理价格数据</div></div>
+  </div>
+
+  <!-- 目录 -->
+  <nav class="toc">
+    <a href="#s0"><span class="ix">0</span>工作框架总览（内 / 外两线）</a>
+    <a href="#s1"><span class="ix">1</span>入职以来总览量化</a>
+    <a href="#s2"><span class="ix">2</span>需求研判 · 方案设计 · 对接</a>
+    <a href="#s3"><span class="ix">3</span>自研应用交付（5 个）</a>
+    <a href="#s4"><span class="ix">4</span>Skill 抽象与复用（2 个）</a>
+    <a href="#s5"><span class="ix">5</span>培训与推广（12 场）</a>
+    <a href="#s6"><span class="ix">6</span>宏昊 AI 助手平台（外部）</a>
+    <a href="#s7"><span class="ix">7</span>硬指标 · 缺口建议</a>
+    <a href="#s8"><span class="ix">8</span>价值总览矩阵</a>
+  </nav>
+
+  <!-- 0 框架 -->
+  <section id="s0">
+    <div class="sec-h"><span class="bar"></span><h2>工作框架总览</h2><span class="en">INTERNAL / EXTERNAL</span></div>
+    <div class="flow">
+      <div class="col in">
+        <h3>内部（公司内）</h3>
+        <ol>
+          <li><b>需求研判 · 方案设计 · 跨部门对接</b>——从"接需求"前移为"判需求、出方案、对接领导拍板、推动执行与迁移"。</li>
+          <li><b>自研应用交付（建应用路径）</b>——客户端/前端/前后端程序：船务 T/T 助手、采购分析、对账单、退税审单、数据脱敏。</li>
+          <li><b>Skill 抽象与复用（提效路径）</b>——复现场景、抽象输入输出为可复用 Skill，提效或赋能业务自建。</li>
+          <li><b>培训与推广</b>——技术（编程/前后端/Skill）+ 非技术（WorkBuddy/千问/minimax code/读书）；含采纳驱动与宣推。</li>
+        </ol>
+      </div>
+      <div class="col out">
+        <h3>外部（供应商）</h3>
+        <ol>
+          <li style="text-decoration:line-through;color:#999">找供应商实现固定需求（线索获取等）——非重点，不展开。</li>
+          <li><b>宏昊 AI 助手平台（供应商）</b>——验收运营与质量闭环、知识库内容运营监督、权限与文档管理中心、各智能体、培训助手、内容生成助手（视频/图片）。</li>
+        </ol>
+        <div class="insight" style="margin-top:14px;">岗位本质：AI 技术专员 = <b>出方案 / 判断方案 / 对接领导一键 / 推动执行与迁移，不是运营</b>。本报告据此把"方案设计、验收监督、推广采纳"单列，不被"执行"吞没。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 总览量化 -->
+  <section id="s1">
+    <div class="sec-h"><span class="bar"></span><h2>一、入职以来总览量化</h2><span class="en">OVERVIEW</span></div>
+    <table>
+      <caption>统计窗口 2026-04-15 ~ 2026-07-31（1/1–4/14 未入职，无产出）</caption>
+      <thead><tr><th>维度</th><th>数量</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>在岗时长</td><td class="tnum">107 天</td><td>约 3.5 个月（4/15–7/31）</td></tr>
+        <tr><td>自研应用 / 工具</td><td class="tnum">5 个</td><td>采购分析(05-29)、shipping-helper(06-22)、Data_masking(07-28)、对账单(纯 HTML)、Tax_check(08-01 交付·收尾)</td></tr>
+        <tr><td>自研废弃重构</td><td class="tnum">1 次</td><td>PyQt5 桌面版船务助手 05-27 废弃，转 Web 端重构</td></tr>
+        <tr><td>代码迭代条目</td><td class="tnum">110+ 条</td><td>采购分析 56 + shipping-helper 62（含 2 次架构级重构）</td></tr>
+        <tr><td>Skill 交付</td><td class="tnum">2 个</td><td>tax-refund-audit（交财务）、daily-commodity-price-scraper（采购钩子）</td></tr>
+        <tr><td>平台验收项</td><td class="tnum">37 项</td><td>Q2 29 + 7 月 8</td></tr>
+        <tr><td>问题反馈闭环</td><td class="tnum">19 项</td><td>Q2 15 + 7 月 4</td></tr>
+        <tr><td>交付物文档</td><td class="tnum">80+ 份</td><td>4–6 月可统计约 76 + 7 月持续产出</td></tr>
+        <tr><td>培训场次</td><td class="tnum">12 场</td><td>主导 6 + 协助/参与 6</td></tr>
+        <tr><td>跨部门对接方</td><td class="tnum">7 个</td><td>采购/船务/财务/销售五部/营销中心/供应商/IT</td></tr>
+        <tr><td>工作记录</td><td class="tnum">106 篇</td><td>74 篇日报 + 16 周报 + 3 月报</td></tr>
+      </tbody>
+    </table>
+    <div class="insight"><b>总览结论：</b>入职 3.5 个月，从 0 搭起 <b>5 个自研工具 + 2 个复用 Skill + 4 个业务智能体 + 平台验收运营体系</b>，覆盖采购、船务、财务、销售、研发、营销 6 类业务方；交付节奏快（自研平均 ~25 天），且持续迭代（110+ 条代码、8 月仍有收尾深化 + 1 次架构重构）。</div>
+  </section>
+
+  <!-- 2 方案设计 -->
+  <section id="s2">
+    <div class="sec-h"><span class="bar"></span><h2>二、需求研判 · 方案设计 · 跨部门对接</h2><span class="en">SOLUTION DESIGN</span></div>
+    <table>
+      <thead><tr><th>动作</th><th>说明</th><th>量化</th></tr></thead>
+      <tbody>
+        <tr><td>需求研判</td><td>拆解运营回流 + 跨部门直提需求，判断可行性与优先级</td><td>覆盖全部 5 个自研应用 + 4 个平台智能体</td></tr>
+        <tr><td>方案设计</td><td>技术选型、架构设计、交付形态（Web / 桌面 exe / 纯前端 / Skill）</td><td>含 2 次架构级重构决策 + 1 次路线废弃（PyQt5→Web）</td></tr>
+        <tr><td>对接领导</td><td>方案一键对接领导确认、推动执行与迁移落地</td><td>7 个对接方协同推进</td></tr>
+        <tr><td>跨部门对接</td><td>采购/船务/财务/销售五部/营销中心/研发/供应商/IT</td><td>7 个主要对接方</td></tr>
+      </tbody>
+    </table>
+    <div class="insight"><b>价值结论：</b>需求不再"被动接收即做"，而是经研判与方案设计后再落地，避免方向返工；领导一键对接保证关键决策不失真，跨部门对接保证交付贴业务。</div>
+  </section>
+
+  <!-- 3 自研应用 -->
+  <section id="s3">
+    <div class="sec-h"><span class="bar"></span><h2>三、自研应用交付（建应用路径）</h2><span class="en">APPS DELIVERED</span></div>
+
+    <div class="app">
+      <div class="top"><span class="nm">采购分析助手</span><span class="en">ProcurementAnalysis</span><span class="tag">采购部 · 入职首个项目</span></div>
+      <div class="body">
+        <div>
+          <p class="lead">采购部原料价格监控与分析平台。原靠人工盯盘 + Excel，价格异常往往事后才发现。</p>
+          <ul>
+            <li>项目周期 61 天（04-30 → 06-30），交付周期 <b>29 天</b></li>
+            <li>代码迭代 <b>51 条</b>；覆盖有效产品 <b>61 个</b></li>
+            <li>管理价格数据 <b>15,227 条</b>（基准价 5,673 + 详细报价 9,554）</li>
+            <li>功能模块 7 个：看板/报表/供应商看板/预警/操作日志/认证/行为追踪</li>
+            <li>6 月重大升级 4 项（供应商看板/自动刷新/架构重构/行为追踪）</li>
+          </ul>
+        </div>
+        <div class="val"><b>价值：</b>把价格监控系统化——看板看趋势、预警推异常、供应商看板做横向对比；让"拍脑袋比价"变"看数据决策"。当前维护模式（最后推送 07-30）。</div>
+      </div>
+    </div>
+
+    <div class="app">
+      <div class="top"><span class="nm">外贸 T/T 协议自动化</span><span class="en">shipping-helper</span><span class="tag">船务部 · 交付量最大</span></div>
+      <div class="body">
+        <div>
+          <p class="lead">船务部 TT 协议全流程提效工具。原靠人工逐项填单，易错、耗时长。</p>
+          <ul>
+            <li>首版周期 <b>26 天</b>（05-28 → 06-22）；前置文档 14 份（PRD×4/测试×1/设计×6/阶段×3）</li>
+            <li>代码迭代 44 条；3 个 Phase 全打通（数据解析/单证生成/报关）</li>
+            <li>支持单证 4 类（Booking/LOI/MSDS/报关资料）；HS 编码 389 条；13 种桶型 + 2 托盘 + 3 运输模式</li>
+            <li>7 月深化：PI 解析接入 DeepSeek（失败降级 Regex）+ 报关资料自动化</li>
+            <li>当前进度 <b>95%+</b>（07-24 培训完成，3 项待定）</li>
+            <li><b>MSDS 中英文双语生成</b>：内嵌能力（非独立工具），中文进、英文出免翻译</li>
+          </ul>
+        </div>
+        <div class="val"><b>价值：</b>录入基础数据即生成 4 类单证、自动算包装与 HS 编码；PI 解析 + 报关自动化把"人填"变"系统出"；MSDS 双语免翻译、免乱码。</div>
+      </div>
+    </div>
+
+    <div class="app">
+      <div class="top"><span class="nm">数据脱敏工具</span><span class="en">Data_masking</span><span class="tag">财务部 · .exe 打包</span></div>
+      <div class="body">
+        <div>
+          <p class="lead">财务部等外发数据含身份证/银行卡/手机等敏感字段，手工脱敏易漏、易违规。</p>
+          <ul>
+            <li>版本 v1.1.0（07-10）→ v1.2.0（08-07·收尾）</li>
+            <li>脱敏方法 <b>12 种</b>（v1.2.0 新增金额保留格式）；支持编码 4 种</li>
+            <li>技术栈 Streamlit + pandas + openpyxl + Faker + cryptography + PyInstaller</li>
+            <li>07-28 移交财务部；08-07 起重激活为长期优化项目</li>
+          </ul>
+        </div>
+        <div class="val"><b>价值：</b>一键合规脱敏批量处理，支持 4 种编码，防数据泄露合规事故；移交财务自主使用。</div>
+      </div>
+    </div>
+
+    <div class="app">
+      <div class="top"><span class="nm">对账单（纯前端）</span><span class="en">纯 HTML 单页</span><span class="tag">财务部 · 零部署</span></div>
+      <div class="body">
+        <div>
+          <p class="lead">财务部对账场景轻量纯前端工具，内部"建应用"路径中"纯前端"形态代表。</p>
+          <ul>
+            <li>实现形态：纯 HTML 单页，无后端、无数据库，浏览器直接打开即用</li>
+            <li>交付状态：✅ 已追加交付财务部</li>
+            <li>轻量纯前端，无独立代码迭代条目统计</li>
+          </ul>
+        </div>
+        <div class="val"><b>价值：</b>把对账逻辑网页化，财务自助填写即生成规范对账单，零部署、即开即用；是"小需求、快交付"典型。</div>
+      </div>
+    </div>
+
+    <div class="app">
+      <div class="top"><span class="nm">退税资料审核</span><span class="en">Tax_check</span><span class="tag">财务部 · 08-01 交付运营</span></div>
+      <div class="body">
+        <div>
+          <p class="lead">财务部出口退税「资料齐全性体检」工具，08-01 打包交付运营（收尾并入）。</p>
+          <ul>
+            <li>架构演进：纯静态 HTML+JS → <b>FastAPI</b>（08-01 迁移）</li>
+            <li>技术栈 FastAPI + RapidOCR + pdfplumber/pypdf + PyInstaller 打包 .exe</li>
+            <li>数据合规：本地 .exe 运行，数据不出境</li>
+            <li>功能：OCR 识别+重命名、条款矩阵判定、一键导出规范 ZIP；LLM 智能审核(P2)待规划</li>
+          </ul>
+        </div>
+        <div class="val"><b>价值：</b>外贸退税命门是"资料齐全且规范"（16+ 种单据、按价格条款不同必传不同）。工具把"资料体检"自动化——OCR+重命名、条款矩阵判定、一键导出，把财务从"肉眼翻几百文件找缺什么"变"工具 1 分钟告诉你还差哪张单"。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Skill -->
+  <section id="s4">
+    <div class="sec-h"><span class="bar"></span><h2>四、Skill 抽象与复用（提效路径）</h2><span class="en">SKILLS</span></div>
+    <div class="two">
+      <div class="card">
+        <h3>① tax-refund-audit（退税审单 Skill）</h3>
+        <ul>
+          <li>交付对象：<b>财务部</b></li>
+          <li>形态：可复用 Skill（退税审单工作流抽象）</li>
+          <li>与应用关系：与 Tax_check 应用互补——应用做 OCR+条款矩阵"体检"，Skill 做审单流程复用与下沉</li>
+          <li>状态：✅ 已交付财务使用</li>
+        </ul>
+        <p style="margin-top:10px;font-size:13.5px;color:#234;"><b>价值：</b>把高频强规则工作流抽象为 Skill，财务直接复用，降低对专人/专工具依赖——"工具 + 技能"双交付。</p>
+      </div>
+      <div class="card">
+        <h3>② daily-commodity-price-scraper（价格爬取 Skill）</h3>
+        <ul>
+          <li>定位：<b>钩子（hook）</b>——培养采购部门自主制作 Skill 的能力</li>
+          <li>交付对象：采购部（赋能，非代劳）</li>
+          <li>后续：仍回采购部门培训，巩固"自建 Skill"能力</li>
+          <li>理念：复现场景 → 抽象复用 → <b>赋能业务自建</b></li>
+        </ul>
+        <p style="margin-top:10px;font-size:13.5px;color:#234;"><b>价值：</b>不止"帮采购抓价格"，更以价格爬取 Skill 为教具让采购部学会自己造 Skill——把提效能力留在业务侧，AI 小组退后为赋能与把关角色。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 培训 -->
+  <section id="s5">
+    <div class="sec-h"><span class="bar"></span><h2>五、培训与推广</h2><span class="en">TRAINING</span></div>
+    <table>
+      <thead><tr><th>月份</th><th class="tnum">主导</th><th class="tnum">协助/参与</th><th>主题</th></tr></thead>
+      <tbody>
+        <tr><td>4 月</td><td class="tnum">1</td><td class="tnum">2</td><td>Claude Code + 前后端数据库组内培训(04-30)；协助研发部培训；协助采购部 OpenClaw 部署(04-24)</td></tr>
+        <tr><td>5 月</td><td class="tnum">1</td><td class="tnum">3</td><td>AI 小组软件开发流程培训+作业(05-08)；参与视频生成/AI 培训助手/PBC 培训</td></tr>
+        <tr><td>6 月</td><td class="tnum">3</td><td class="tnum">1</td><td>月度培训×2（AI 工具推荐/AI 黑话扫盲）、总经办 mmxCode/codex 培训(06-05)；协助销售五部三合一(06-22)</td></tr>
+        <tr><td>7 月</td><td class="tnum">1</td><td class="tnum">0</td><td>船务部 shipping-helper 使用培训(07-24)</td></tr>
+        <tr class="total"><td>合计</td><td class="tnum">6</td><td class="tnum">6</td><td>12 场，配套沉淀：Hermes 部署手册 1 份、培训作业点评 1 轮、培训反馈 2 份</td></tr>
+      </tbody>
+    </table>
+    <div class="insight"><b>价值结论：</b>把"做出来的工具"变"用起来的能力"，覆盖采购、船务、销售五部、研发、总经办；培训与推广是交付物真正产生业务价值的<b>最后一公里</b>。06-22 销售五部三合一、07-24 船务部培训直接对应两个自研工具上手落地；价格爬取 Skill 以"回采购培训"巩固自建能力。</div>
+  </section>
+
+  <!-- 6 外部平台 -->
+  <section id="s6">
+    <div class="sec-h"><span class="bar"></span><h2>六、宏昊 AI 助手平台（外部 · 供应商）</h2><span class="en">PLATFORM</span></div>
+
+    <div class="sub-h">6.1 验收运营与质量闭环</div>
+    <table>
+      <thead><tr><th>周期</th><th class="tnum">验收产出</th><th class="tnum">问题反馈</th><th>通过情况</th></tr></thead>
+      <tbody>
+        <tr><td>4 月</td><td class="tnum">5</td><td class="tnum">4</td><td>3 测试报告 + 2 验收报告</td></tr>
+        <tr><td>5 月</td><td class="tnum">9</td><td class="tnum">3</td><td>9 测试验收报告</td></tr>
+        <tr><td>6 月</td><td class="tnum">15</td><td class="tnum">8</td><td>通过 14 / 未通过 1，<span class="ok">通过率 93.3%</span></td></tr>
+        <tr><td>7 月（2607）</td><td class="tnum">8</td><td class="tnum">4</td><td>5 轮验收，通过 8 项</td></tr>
+        <tr class="total"><td>合计</td><td class="tnum">37</td><td class="tnum">19</td><td>入库验收 + 问题反馈闭环</td></tr>
+      </tbody>
+    </table>
+    <div class="insight"><b>价值结论：</b>宏昊 AI 助手是供应商平台，功能稳不稳需有人持续验收与跟进。入职以来 37 项验收 + 19 项问题反馈闭环，6 月单月通过率 93.3%，把"供应商交付"变"可度量、可追溯、有退回机制"的质量门槛。</div>
+
+    <div class="sub-h">6.2 知识库内容运营监督（责任分工）</div>
+    <table>
+      <thead><tr><th>动作</th><th>责任方</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>源文档上传 / 维护</td><td><b>各部门负责人</b></td><td>业务方自行上传本领域知识（印染手册、SOP、TDS、培训资料等）</td></tr>
+        <tr><td>监督 / 指导 / 排查</td><td><b>AI 小组（本人）</b></td><td>监督上传质量、指导规范、排查权限隔离与内容异常</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sub-h">6.3 ~ 6.5 权限文档中心 · 智能体矩阵 · 培训助手 · 内容生成</div>
+    <table>
+      <thead><tr><th>智能体 / 模块</th><th>面向</th><th>核心能力</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr><td>说明书助手</td><td>外贸/销售/研发</td><td>6 模式 + 强制"信息充分性检查"（不足即反问、不瞎编）+ 结构化输出</td><td class="ok">已上线</td></tr>
+        <tr><td>销售 SOP / 全能助手</td><td>销售</td><td>7 份 SOP + 6 场景触发；07-11 与说明书合并为"销售全能助手"</td><td class="ok">已上线</td></tr>
+        <tr><td>业务智能助理</td><td>营销中心/业务</td><td>三阶段工作流 + 4 岗位自适应 + 措辞红线校验</td><td>🔧 迭代中 v5</td></tr>
+        <tr><td>应用工艺助手</td><td>研发为主+业务</td><td>工艺手册 + 研发培训资料，覆盖 20+ 疵病排查</td><td class="ok">已上线</td></tr>
+        <tr><td>培训助手</td><td>HR/内部培训</td><td>培训计划/简历抓取/群组档案（验收 260615、260618）</td><td class="ok">已上线</td></tr>
+        <tr><td>内容生成助手</td><td>营销/销售</td><td>seedance/seedream 独立化（三视图/参考图/配音转场视频），07-14 测试完成</td><td class="ok">已落地</td></tr>
+      </tbody>
+    </table>
+    <div class="insight"><b>定位说明：</b>文档管理中心作为各智能体与培训助手的知识底座；权限隔离（260608，2/3 通过 1 退回）、部门/用户管理（260610，2/2）已验收。AI 小组负责验收、监督、指导，而非 hands-on 运营。</div>
+  </section>
+
+  <!-- 7 硬指标 + 缺口 -->
+  <section id="s7">
+    <div class="sec-h"><span class="bar"></span><h2>七、硬指标 · 缺口与建议</h2><span class="en">METRICS & GAPS</span></div>
+    <div class="sub-h">可直接对外引用的硬指标</div>
+    <ol>
+      <li><b>5 个自研应用/工具从 0 到交付</b>（含 1 个纯前端对账单），平均周期 <b>~25 天</b>（采购 29 / 船务 26 / 退税 17）。</li>
+      <li><b>110+ 条代码迭代</b>，含 2 次架构级重构（06-27 采购 + 08-01 船务）+ 1 次路线废弃重构（PyQt5 → Web，05-27）。</li>
+      <li><b>管理 15,227 条价格数据</b>（5,673 基准 + 9,554 详细），覆盖 61 个采购品类。</li>
+      <li><b>平台验收通过率 93.3%</b>（6 月 15 项用例通过 14），累计 37 项验收 + 19 项问题反馈闭环。</li>
+      <li><b>2 个复用 Skill</b>（退税审单交财务、价格爬取作采购自建钩子）+ 服务 7 部门 / 12 场培训，交付物约 80+ 份。</li>
+    </ol>
+
+    <div class="sub-h">缺口与建议</div>
+    <table>
+      <thead><tr><th>问题</th><th>说明</th><th>建议</th></tr></thead>
+      <tbody>
+        <tr><td>效率提升缺量化</td><td>采购/船务均未记录"节省工时/人天"</td><td>补用户访谈，采集使用前后耗时</td></tr>
+        <tr><td>对账单缺迭代统计</td><td>纯前端轻量工具无代码条目</td><td>后续迭代纳入统计；当前维持轻量</td></tr>
+        <tr><td>Skill 复用率待跟踪</td><td>2 个 Skill 已交付，业务侧使用频次未量化</td><td>跟财务、采购回收使用数据</td></tr>
+        <tr><td>业务智能助理仍迭代</td><td>v5 未定版，偶发型号检索失败</td><td>上线前完成检索稳定性测试</td></tr>
+        <tr><td>部分反馈项待解</td><td>图片变视频范围、视频不支持竖屏</td><td>推动供应商下一迭代修复</td></tr>
+        <tr><td>推广采纳缺量化</td><td>培训有场次但"用得多深"无数据</td><td>建工具活跃度/采纳率轻量看板</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 8 价值矩阵 -->
+  <section id="s8">
+    <div class="sec-h"><span class="bar"></span><h2>八、价值总览矩阵</h2><span class="en">VALUE MATRIX</span></div>
+    <table class="matrix">
+      <caption>汇报用：关注点（解决什么痛点）→ 核心价值 → 主要对象</caption>
+      <thead><tr><th>应用/事项</th><th>关注点（解决什么痛点）</th><th>核心价值</th><th>主要对象</th><th>归属</th></tr></thead>
+      <tbody>
+        <tr><td>采购分析</td><td>价格人工盯盘、异常滞后</td><td>系统监控+预警，61 品类可视化</td><td>采购部</td><td>内·应用</td></tr>
+        <tr><td>T/T 协议自动化</td><td>船务单证/报关手工填单易错慢</td><td>自动生成单证+报关，降错提速</td><td>船务部</td><td>内·应用</td></tr>
+        <tr><td>数据脱敏</td><td>敏感数据外发手工易漏</td><td>一键合规脱敏批量</td><td>财务部等</td><td>内·应用</td></tr>
+        <tr><td>对账单</td><td>财务对账靠 Excel 手工易错</td><td>纯前端自助生成对账单</td><td>财务部</td><td>内·应用</td></tr>
+        <tr><td>Tax_check</td><td>退税资料人工核对慢易漏、退单风险</td><td>OCR+条款矩阵自动体检、本地合规</td><td>财务部</td><td>内·应用</td></tr>
+        <tr><td>tax-refund-audit</td><td>退税审单高频强规则</td><td>审单流程抽象复用</td><td>财务部</td><td>内·Skill</td></tr>
+        <tr><td>价格爬取 Skill</td><td>采购价格获取依赖人工</td><td>钩子培养采购自建 Skill</td><td>采购部</td><td>内·Skill</td></tr>
+        <tr><td>说明书助手</td><td>TDS 咨询靠翻文档、解读靠经验</td><td>秒级应答+结构化选型</td><td>销售/业务</td><td>外·智能体</td></tr>
+        <tr><td>销售 SOP/全能</td><td>销售动作不标准、话术不统一</td><td>标准化流程+抗拒点话术</td><td>销售</td><td>外·智能体</td></tr>
+        <tr><td>业务智能助理</td><td>客户刁钻问题/投诉易答错、踩红线</td><td>全流程 AI 处理+合规校验</td><td>营销中心/业务</td><td>外·智能体</td></tr>
+        <tr><td>应用工艺助手</td><td>工艺/疵病/助剂缺即时权威答案</td><td>专业知识+客户投诉应对</td><td>研发为主+业务</td><td>外·智能体</td></tr>
+        <tr><td>视频/图片生成</td><td>营销素材靠外部/手工</td><td>自助生产三视图/参考图/转场</td><td>营销/销售</td><td>外·内容生成</td></tr>
+        <tr><td>平台验收运营</td><td>供应商交付质量不可控</td><td>验收+问题闭环可追溯</td><td>内部/供应商</td><td>外·验收</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12.5px;color:var(--muted);margin-top:6px;">* 每项均可单独展开为「痛点 — 方案 — 成效」三段式汇报页。</p>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="foot">
+    <div><b>盘点人：</b>肖聪（AI 技术专员）&nbsp;|&nbsp;<b>入职：</b>2026-04-15&nbsp;|&nbsp;<b>统计窗口：</b>2026-04-15 ~ 2026-07-31</div>
+    <div><b>数据来源：</b>本知识库 74 篇日报、16 周报、3 份月报、2 份项目日志、4+ 批次验收/问题反馈汇总、项目索引（GitHub 实时同步 08-06）。</div>
+    <div><b>口径说明：</b>1/1–4/14 未入职无产出；8/1–8/7 为交付收尾期并入对应章节；「外贸翻译工具」经核实非独立工具，已归并为 shipping-helper 的 MSDS 双语生成能力。</div>
+    <div style="opacity:.7;margin-top:8px;">生成日期 2026-08-18 · 数据截止 2026-07-31</div>
+  </footer>
+
+</div>
+</body>
+</html>
