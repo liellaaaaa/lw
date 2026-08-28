@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>绩效面谈准备材料（4P法）· 肖聪</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --ink:#1f2329; --sub:#5b6470;
+    --line:#e6e8eb; --brand:#2f6bff; --brand-soft:#eaf1ff;
+    --green:#1f9d55; --amber:#d98a00; --red:#d8453a; --purple:#6b3fd1;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.7;font-size:15px;}
+  .wrap{max-width:920px;margin:0 auto;padding:32px 24px 64px;}
+  header{background:linear-gradient(135deg,#2f6bff,#5b8cff);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:24px;}
+  header h1{margin:0 0 6px;font-size:24px;font-weight:700;}
+  header .meta{opacity:.95;font-size:14px;display:flex;flex-wrap:wrap;gap:18px;margin-top:12px;}
+  header .meta b{font-weight:600;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:18px;box-shadow:0 1px 2px rgba(0,0,0,.02);}
+  .card h2{margin:0 0 4px;font-size:19px;display:flex;align-items:center;gap:10px;}
+  .p-tag{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;color:#fff;font-weight:700;font-size:14px;flex:0 0 auto;}
+  .t-P{background:var(--brand);} .t-R{background:var(--purple);} .t-O{background:var(--amber);} .t-G{background:var(--green);}
+  .card .lead{color:var(--sub);font-size:13.5px;margin:2px 0 16px;}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:14px;}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+  th{background:#f7f9fc;font-weight:600;color:var(--sub);}
+  .status{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;}
+  .s-done{background:#e6f6ec;color:var(--green);}
+  .s-try{background:#fff4e0;color:var(--amber);}
+  .s-dev{background:#fdeaea;color:var(--red);}
+  .s-iter{background:var(--brand-soft);color:var(--brand);}
+  .bar{height:8px;border-radius:6px;background:#eef0f3;overflow:hidden;min-width:90px;}
+  .bar > i{display:block;height:100%;border-radius:6px;}
+  .b-100{background:var(--green);} .b-60{background:var(--amber);} .b-30{background:var(--red);} .b-80{background:#3fae7a;}
+  ul.tight{margin:8px 0;padding-left:20px;} ul.tight li{margin:5px 0;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr;}}
+  .box{background:#fafbfd;border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin:10px 0;}
+  .box h4{margin:0 0 8px;font-size:14.5px;color:var(--brand);}
+  .ask{background:#fff8ef;border:1px solid #f3e2c0;}
+  .ask h4{color:var(--amber);}
+  .cap{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line);}
+  .cap:last-child{border-bottom:none;}
+  .cap .score{font-weight:700;}
+  .pill{display:inline-block;padding:1px 8px;border-radius:12px;font-size:12px;font-weight:600;margin-left:6px;}
+  .pill.up{background:#e6f6ec;color:var(--green);} .pill.flat{background:#eef0f3;color:var(--sub);} .pill.weak{background:#fdeaea;color:var(--red);}
+  .agenda{list-style:none;padding:0;margin:6px 0;counter-reset:ag;}
+  .agenda li{counter-increment:ag;display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);}
+  .agenda li::before{content:counter(ag);flex:0 0 26px;height:26px;background:var(--brand-soft);color:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;}
+  .agenda .t{font-weight:600;} .agenda .d{color:var(--sub);font-size:13px;}
+  footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:24px;}
+  .note{font-size:12.5px;color:var(--sub);background:#f7f9fc;border-left:3px solid var(--brand);padding:8px 12px;border-radius:0 8px 8px 0;margin:10px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>绩效面谈准备材料 · 4P 工作法</h1>
+    <div class="meta">
+    <span><b>被面谈人：</b>肖聪（AI技术专员）</span>
+    <span><b>面谈周期：</b>2026 上半年 + 近期阶段（至 8 月）</span>
+    <span><b>建议时间：</b>2026-08-28（周五）16:00–16:45（45 分钟，可调）</span>
+  </div>
+</header>
+
+<!-- P1 Priority -->
+<div class="card">
+  <h2><span class="p-tag t-P">P1</span> Priority · 上一阶段重点与目标</h2>
+  <div class="lead">本阶段我的角色定位：AI 技术专员 = 出方案 / 判断方案 / 对接领导一键 / 推动执行与迁移（非运营执行）。</div>
+  <table>
+    <tr><th style="width:34%">重点工作</th><th>目标 / 衡量口径</th></tr>
+    <tr><td>宏昊AI助手问题反馈和验收</td><td>集中问题纳入月度验收/问题反馈文件；推动内容治理收口（文档管理中心统一入口）</td></tr>
+    <tr><td>自研 AI 工具交付</td><td>采购分析交付维护、船务助手交付试用、退税审单以 Skill 交付、销售陪练迭代</td></tr>
+    <tr><td>Skill 制作与推广</td><td>面向业务场景制作 Skill 并推广落地，提升一线采纳度</td></tr>
+    <tr><td>方案制作与落地实现</td><td>输出可落地技术方案并推动实现（如培训助手 6 大块方案定稿、报表双层架构）</td></tr>
+    <tr><td>协助培训推广</td><td>配合业务部门做 WorkBuddy / AI 技能培训，提升采纳度</td></tr>
+  </table>
+  <div class="note">说明：以上目标为基于岗位定位的阶段性重点。如你心目中的优先级不同，面谈时请直接纠偏。</div>
+</div>
+
+<!-- P2 Progress -->
+<div class="card">
+  <h2><span class="p-tag t-R">P2</span> Progress · 工作完成情况</h2>
+  <div class="lead">结论先行：交付类工具总体按节奏推进，退税审单已以 Skill 形式交付，船务助手交付试用，销售陪练迭代中；平台侧从"建设"转入"内容治理"。</div>
+  <table>
+    <tr><th style="width:26%">项目</th><th style="width:18%">状态</th><th style="width:14%">完成度</th><th>关键产出</th></tr>
+    <tr>
+      <td>采购分析 ProcurementAnalysis</td>
+      <td><span class="status s-done">已交付·维护中</span></td>
+      <td><div class="bar"><i class="b-100" style="width:100%"></i></div></td>
+      <td>已交付并持续维护，作为标杆案例</td>
+    </tr>
+    <tr>
+      <td>船务助手 shippiing_helper</td>
+      <td><span class="status s-try">交付·试用中</span></td>
+      <td><div class="bar"><i class="b-80" style="width:80%"></i></div></td>
+      <td>已交付试用，含 T/T 协议报表等模块</td>
+    </tr>
+    <tr>
+      <td>退税审单 Tax_check</td>
+      <td><span class="status s-done">已交付·Skill</span></td>
+      <td><div class="bar"><i class="b-100" style="width:100%"></i></div></td>
+      <td>已以 Skill 状态交付，面向财务部做退税资料智能审核</td>
+    </tr>
+    <tr>
+      <td>销售陪练 ai-sales-coach</td>
+      <td><span class="status s-iter">接手·迭代中</span></td>
+      <td><div class="bar"><i class="b-60" style="width:60%"></i></div></td>
+      <td>接手后持续迭代优化</td>
+    </tr>
+    <tr>
+      <td>培训助手（宏昊学院）</td>
+      <td><span class="status s-done">方案定稿</span></td>
+      <td><div class="bar"><i class="b-100" style="width:100%"></i></div></td>
+      <td>6 大块方案定稿；报表双层架构（必修 22 列 + 选修 3 列）；选修→必修翻转规则明确</td>
+    </tr>
+    <tr>
+      <td>AI 培训推广</td>
+      <td><span class="status s-done">已完成</span></td>
+      <td><div class="bar"><i class="b-100" style="width:100%"></i></div></td>
+      <td>2026-08-10 完成采购部 WorkBuddy 技能培训</td>
+    </tr>
+    <tr>
+      <td>宏昊AI助手 验收运营</td>
+      <td><span class="status s-iter">持续治理</span></td>
+      <td><div class="bar"><i class="b-80" style="width:80%"></i></div></td>
+      <td>8 月集中问题（文件解析/内编暴露/通知失败/移动端/搜索准确度）逐项纳入验收与问题反馈文件</td>
+    </tr>
+  </table>
+  <div class="box">
+    <h4>采纳度数据（平台侧）</h4>
+    <ul class="tight">
+      <li>用户满意度约 <b>71%</b>（满意），但存在低频 / 未使用人群 → 工具未真正嵌进日常流，是隐形风险。</li>
+      <li>阶段判断：宏昊AI助手已过"从 0 建设"，进入"内容治理/统一收口"阶段，主要矛盾在内容质量与拉齐，不在功能有无。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- P3 Problem -->
+<div class="card">
+  <h2><span class="p-tag t-O">P3</span> Problem · 问题、困难与归因</h2>
+  <div class="lead">诚实自评：本阶段主要瓶颈不在技术，在跨职能协同与上游数据治理。</div>
+  <table>
+    <tr><th style="width:30%">问题</th><th style="width:16%">类型</th><th>根因 / 我的判断</th></tr>
+    <tr><td>内编权限矛盾</td><td><span class="status s-dev">待拍板</span></td><td>对应问卷 B 类①"内编关联查找说明书"诉求：研发不公开内编、业务员需内编精准定位，权限 vs 一线可用张力待定，需领导拍板脱敏/权限方案，我仅出方案不定策</td></tr>
+    <tr><td>回答不准 / 理化缺失</td><td><span class="status s-dev">根因未解</span></td><td>即时表现：中台引用/索引/漏召致答非所问（外贸部最集中，疑英文 TDS 解析链路，见 0804/0808 反馈 + 问卷报告）；深层根因：理化指标等研发实验数据不全量上传、资料散落（问卷 A 类④，直接决定回答准确性）。提示词优化是止血治标，研发规范上传流程才治本</td></tr>
+    <tr><td>采纳度隐形风险</td><td><span class="status s-try">运营缺口</span></td><td>问卷 41 份有效答卷：满意 71%（满意6+基本满意23），但一般 8、不满意 1、暂未使用 3；存在低频/未使用人群，工具未真正嵌进日常流，是隐形风险，需运营推动固化</td></tr>
+    <tr><td>个人：模型原理弱项</td><td><span class="status s-dev">能力短板</span></td><td>数理逻辑/模型原理是弱项（自我认知），影响对 Agent/RAG 深度的判断</td></tr>
+  </table>
+
+  <div class="box ask">
+    <h4>⚠️ 需要你提前拍板 / 协调的资源（请面谈时给结论）</h4>
+    <ul class="tight">
+      <li><b>内编脱敏/权限方案</b>：请领导层拍板方向（脱敏展示 / 权限分级），我据此出技术实现。</li>
+      <li><b>研发上传规范</b>：需你/领导推动研发把实验数据、说明书全量、规范上传文档管理中心——这是回答准确率的根因。</li>
+      <li><b>跨部门协调授权</b>：AI 小组仅 3 人（肖聪技术/刘妍妍运营/邓楚羿主管），推动动作需有上层背书才推得动。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- P4 Plan -->
+<div class="card">
+  <h2><span class="p-tag t-G">P4</span> Plan · 下一阶段计划</h2>
+  <div class="lead">治标与治本并行：快赢（技术修补）先止血，根治（组织推动）排优先级。</div>
+  <table>
+    <tr><th style="width:34%">计划项</th><th style="width:14%">类型</th><th>动作 / 预期</th></tr>
+    <tr><td>退税审单 Skill 推广</td><td><span class="status s-iter">推广</span></td><td>已以 Skill 交付，推动业务侧试用并收集反馈持续迭代优化</td></tr>
+    <tr><td>内编方案落地</td><td><span class="status s-iter">根治</span></td><td>拿到领导拍板后出技术实现，解决"内编关联查找说明书"诉求</td></tr>
+    <tr><td>培训助手推广</td><td><span class="status s-iter">推广</span></td><td>6 大块方案落地 + 报表跑通，推动厂商接口 course_type 规范</td></tr>
+    <tr><td>采纳度运营固化</td><td><span class="status s-try">运营</span></td><td>针对低频/未使用人群做运营触达，把工具嵌进日常流</td></tr>
+    <tr><td>内容治理收口</td><td><span class="status s-iter">治理</span></td><td>推动文档管理中心作为唯一内容入口，逐步关停公共盘/ima/个人电脑等零散来源</td></tr>
+    <tr><td>个人能力补强</td><td><span class="status s-iter">成长</span></td><td>按 Agent 学习路线深入：ReAct 框架、模型缓存、Skill/MCP 机制、RAG 召回优化；补模型原理短板</td></tr>
+  </table>
+</div>
+
+<!-- 能力提升自评 -->
+<div class="card">
+  <h2>🚀 能力提升自评（上一阶段）</h2>
+  <div class="lead">自我评价工作完成情况的同时，附能力提升对照，供你判断我成长是否匹配岗位。</div>
+  <div class="cap"><span>工程串联 / 全栈交付（Vue3+Python+SQLite+DeepSeek+OCR+OnlyOffice）<span class="pill up">↑ 提升</span></span><span class="score">强</span></div>
+  <div class="cap"><span>AI 工具链搭建与业务嵌入（如 PI 解析接 DeepSeek）<span class="pill up">↑ 提升</span></span><span class="score">强</span></div>
+  <div class="cap"><span>跨部门协调与推动（分动作给真实执行方）<span class="pill up">↑ 提升</span></span><span class="score">中+</span></div>
+  <div class="cap"><span>培训与推广运营（方案设计 + 授课）<span class="pill flat">持平</span></span><span class="score">中</span></div>
+  <div class="cap"><span>Agent/RAG 原理深度判断<span class="pill weak">↓ 短板</span></span><span class="score">待补</span></div>
+  <div class="cap"><span>数理 / 模型原理底层理解<span class="pill weak">↓ 短板</span></span><span class="score">待补</span></div>
+  <div class="note">短板说明：弱项在"原理深度"而非"应用落地"，与我的岗位（应用层/工程串联）基本匹配，但制约了对方案深度的独立判断，已列入学习计划。</div>
+</div>
+
+<!-- 职业风格成长 -->
+<div class="card">
+  <h2>🌱 职业风格成长（4月测评 baseline → 8月现状）</h2>
+  <div class="lead">4月入职时做过一次 DISC 职场风格测评（SC 型，状态"尚在适应"，当时岗位总经办助理）。隔 4 个月回到同一份 baseline，看我在项目推进、跟进力度、独立判断上的实际变化，作为成长佐证。</div>
+  <table>
+    <tr><th style="width:15%">维度</th><th style="width:33%">4月测评画像（baseline）</th><th style="width:34%">8月实际表现（知识库证据）</th><th style="width:18%">小结</th></tr>
+    <tr>
+      <td>项目推进</td>
+      <td>综合/适应模式"尚在适应"，以"提供支持"为主，偏被安排、支持型角色</td>
+      <td>转岗后独立接项目并交付：退税审单封装 tax-refund-audit Skill（08-12 实战 WA231 通过）、培训助手方案独立定稿 6 大块、采购部培训 08-10 独立主讲；多项目（采购分析/船务/销售陪练/退税/培训助手/平台治理）并行推进</td>
+      <td><span class="status s-done">↑ 明显增强</span></td>
+    </tr>
+    <tr>
+      <td>跟进力度</td>
+      <td>耐心、按章，但"稳定性"优先，主动追进度意愿未显现</td>
+      <td>宏昊AI助手 8 月集中问题（内编暴露/通知失败/移动端/漏召索引/文件解析）持续纳入月度验收与问题反馈文件跟踪；推动研发实验数据规范上传（内编根因）的动作已发起</td>
+      <td><span class="status s-done">↑ 增强</span></td>
+    </tr>
+    <tr>
+      <td>独立决策</td>
+      <td>慎行、决策偏慢、怕风险、不擅突发紧急</td>
+      <td>已能自己判断走 Skill 路线交付、独立出方案、独立授课；但涉及内编权限等跨部门决策仍"出方案不定策"交领导拍板——属角色边界认知，非能力缺口</td>
+      <td><span class="status s-done">↑ 改善</span></td>
+    </tr>
+    <tr>
+      <td>抗压 / 模糊适应</td>
+      <td>压力源"随性/模糊标准/善变上司"，影响较高，易内耗</td>
+      <td>在研发配合未定、领导拍板未明的模糊环境里持续推进，适应力提升；外部干扰为秋招精力分流（已单列），非风格问题</td>
+      <td><span class="status s-done">↑ 改善</span></td>
+    </tr>
+    <tr>
+      <td>动机满足</td>
+      <td>"知识-4 明显下降、明显不满"，缺专家感/学习空间</td>
+      <td>转岗后独立串起 AI 工具链、做方案、授课、沉淀知识库，正好喂饱"钻研+成为专家"动机；缺口明显收窄</td>
+      <td><span class="status s-done">↑ 收窄</span></td>
+    </tr>
+  </table>
+  <div class="note">底色未变：慎行、准确、合规仍是我做技术工作的优势，没有"变成另一个人"。变化在于——从"被安排的支持者"长到"能独立接项目、判断路线、持续跟进的推进者"，这正是 4 月报告里"尚在适应"想要走到的状态。测评原始资料见 [[99-归档/个人档案/肖聪-职场风格测评-2026-04]]。</div>
+</div>
+
+</div>
+</body>
+</html>
